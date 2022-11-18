@@ -261,6 +261,18 @@ a{
 	border:solid 1px grey;
 	margin: auto 4px;
 }
+.selectedButton{
+	height:8px;
+	width:8px;
+	display:block;
+	border-radius:50%;
+	z-index:1;
+	padding:0;
+	position:relative;
+	background-color:white;
+	border:solid 1px white;
+	margin: auto 4px;
+}
 .button-container{
 	display:flex;
 	justify-content:center;

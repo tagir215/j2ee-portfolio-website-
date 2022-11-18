@@ -7,12 +7,13 @@ import java.util.List;
 import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.ajax.AbstractAjaxTimerBehavior;
 import org.apache.wicket.ajax.AjaxRequestTarget;
-import org.apache.wicket.ajax.markup.html.form.AjaxSubmitLink;
+import org.apache.wicket.ajax.markup.html.form.AjaxButton;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.head.JavaScriptHeaderItem;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.image.Image;
 import org.apache.wicket.markup.repeater.RepeatingView;
@@ -200,7 +201,7 @@ public class HomePage extends WebPage {
 	    	initialButtons.add(buttonIds.get(i).get(0));
 	    }
 	    for(int i=0; i<initialButtons.size(); i++) {
-	    	stringBuilder1.append(getHighlightSelectedJavascript(initialButtons.get(i)));
+	    	stringBuilder1.append(getHighlightSelectedJs(initialButtons.get(i),"topic"+i));
 	    }
 	    
 	    stringBuilder1.append("}");
@@ -265,9 +266,12 @@ public class HomePage extends WebPage {
 		ImagePickerButton firstButton;
 		ImagePickerButton currentButton;
 		int waitTime = 0;
+		String topicId;
 		public Topic(String id , String[] images, String title, String italy, String[] p) {
 			super(id);
-			
+			topicId = "topic"+topicNumber;
+			this.setOutputMarkupId(true);
+			this.setMarkupId(topicId);
 			add(new Label("work-title",title));
 			add(new Label("italic-section",italy));
 			RepeatingView paragraphs = new RepeatingView("work-p");
@@ -348,7 +352,8 @@ public class HomePage extends WebPage {
 	
 	
 	
-	private class ImagePickerButton extends AjaxSubmitLink {
+	private class ImagePickerButton extends AjaxButton {
+	
 		Topic topic;
 		ImagePickerButton nextButton;
 		String buttonId;
@@ -359,17 +364,19 @@ public class HomePage extends WebPage {
 			this.buttonId = markupId;
 			this.e = e;
 		}
+		
+		@Override
+		protected String getOnClickScript() {
+			return getAnimateMovementJs(topic.imageContainerId,e,buttonId,topic.topicId);
+		}
+		
 		@Override
 		protected void onSubmit(AjaxRequestTarget target) {
-			if(topic.selectedButtonId==buttonId)
-				return;
-			
-			target.appendJavaScript(getAnimateMovementJavascript(topic.imageContainerId,e,topic.selectedButtonId));
-			topic.selectedButtonId = buttonId;
-			target.appendJavaScript(getHighlightSelectedJavascript(topic.selectedButtonId));			
+			super.onSubmit(target);
 			topic.currentButton = this; 
 			topic.waitTime = 5;
 		}
+		
 		
 	}
 	
@@ -384,9 +391,8 @@ public class HomePage extends WebPage {
 		protected void onTimer(AjaxRequestTarget target) {
 			
 			if(topic.waitTime<=0 && userOnPage) {
-				target.appendJavaScript(getAnimateMovementJavascript(topic.imageContainerId,topic.currentButton.e,topic.selectedButtonId));
-				target.appendJavaScript(getHighlightSelectedJavascript(topic.currentButton.buttonId));
 				topic.selectedButtonId = topic.currentButton.buttonId;
+				target.appendJavaScript(getAnimateMovementJs(topic.imageContainerId,topic.currentButton.e,topic.selectedButtonId,topic.topicId));
 				topic.currentButton = topic.currentButton.nextButton;
 			} else {
 				topic.waitTime --;
@@ -398,13 +404,17 @@ public class HomePage extends WebPage {
 	
 
 	
-	private String getHighlightSelectedJavascript(String selectedButtonId) {
-		return "$('#"+selectedButtonId+"').css({background:'white' , 'border-color':'white'});";
+	private String getHighlightSelectedJs(String selectedButtonId, String topicId) {
+			
+		return "$('#"+topicId+"').find('.selectedButton').removeClass('selectedButton').addClass('button');"
+				+"$('#"+selectedButtonId+"').removeClass('button').addClass('selectedButton');";
 	}
 	
-	private String getAnimateMovementJavascript(String id,int e, String selectedButtonId) {
+	
+	private String getAnimateMovementJs(String id,int e, String selectedButtonId,String topicId) {
 		return "$('#"+id+"').animate({marginLeft:'"+e+"'},1000);"
-				+ "$('#"+selectedButtonId+"').css({background:'transparent' , 'border-color':'grey'});";
+				+ getHighlightSelectedJs(selectedButtonId,topicId);
+				
 	}
 	
 	
