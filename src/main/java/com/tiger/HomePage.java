@@ -412,7 +412,7 @@ public class HomePage extends WebPage {
 	
 	
 	private String getAnimateMovementJs(String id,int e, String selectedButtonId,String topicId) {
-		return "$('#"+id+"').animate({marginLeft:'"+e+"'},1000);"
+		return "$('#"+id+"').stop().animate({marginLeft:'"+e+"'},1000);"
 				+ getHighlightSelectedJs(selectedButtonId,topicId);
 				
 	}

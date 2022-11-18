@@ -37,7 +37,7 @@ public class Tabs extends WebMarkupContainer{
 		@Override
 		protected String getOnClickScript() {
 			return "$([document.documentElement, document.body])"
-					+ ".animate({"
+					+ ".stop().animate({"
 					+ "scrollTop: $('#"+markupId+"').offset().top"
 					+ "    }, 400);";
 		}
