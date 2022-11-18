@@ -3,6 +3,7 @@ com\tiger\HomePage$About.class
 com\tiger\HomePage$Topic.class
 com\tiger\MouseoverBehavior.class
 com\tiger\HomePage$ImagePickerButton.class
+Start.class
 com\tiger\Tabs.class
 com\tiger\HomePage$Skill.class
 com\tiger\Tabs$TabButton.class
