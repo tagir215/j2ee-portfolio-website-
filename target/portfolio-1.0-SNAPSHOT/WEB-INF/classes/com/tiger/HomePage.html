@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio</title>
+		<meta name="viewport" content="width=device-width"; initial-scale="1.0" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+	</head>
+	<body>
+		<!-- -tabs -->
+      	<div class="bar_tabs" wicket:id="bar-tabs">
+      		<span class="name">Tagir Tsarkov</span>
+      		<span class="profession">Developer</span>
+      		<div class="list_tabs" wicket:id="tabs-container">	
+   					<form wicket:id="tab-form">
+   						<input class="tab-input" type="button" wicket:id="tab-input"> 
+   					</form>
+      	</div>
+      		
+      	</div>
+      	
+      	<br/>
+      	
+      	<!-- front -->
+      	<div>
+      		<h4 class="main-title">Portfolio</h4>
+      		<img class="front-img" wicket:id="front-img">
+      	</div>
+      	
+     	<div class="conto" id="conto">this is master master</div>
+      	
+      	<!-- content -->
+      	<h1 class="topic-title" id="works">Works</h1>
+      	<div class="content" wicket:id="topic">
+      		
+      		<div class="left-container">
+      		
+	      		<div class="slider-container-plus" wicket:id="container-plus">
+	      		
+		      		<div class="slide-container" wicket:id="slide-container">
+		      			<span wicket:id="span-image"></span>
+		      			<div class="images-container" wicket:id="images-container">
+		      				<wicket:link>
+					   			<img wicket:id="imgSlideShow" class="imgSlideShow"/>
+				    		</wicket:link>
+		      			</div>
+			       	</div>
+			       	
+			       	<div class="button-container">
+			       	  	<form class="buttons" wicket:id="button-form">
+						 	<input value="" class="button" type="submit" wicket:id="button"/>
+						</form>
+			       	</div>
+			     
+			       	<div class="imgPhone-container">
+				       	<wicket:link class="imgPhone">
+						    <img class="imgPhone" wicket:id="imgPhone"/>
+					    </wicket:link>
+			       	</div>
+	      			
+				    
+	      		</div>
+      		
+      		</div>
+      		
+      		<div class="paragraph-div">
+      			<h1 class="work-title" wicket:id="work-title"></h1>
+      			<i class="work-i" wicket:id="italic-section"></i>
+      			<br>
+      			<p class="work-p" wicket:id="work-p">
+		      		
+      			</p>
+      		</div>
+      		
+      		
+      		
+      	</div>
+     	
+  		<!-- about -->
+  		<h1 class="topic-title" id="about">About</h1>
+      	<div class="about-container">
+      		<div wicket:id="about" class="about">
+      			<h1 class="about-title" wicket:id="about-title"></h1>
+      			<p class="about-p" wicket:id="about-p"></p>
+      		</div>
+      		
+      		<!-- skills -->
+	      	<div class="skill-div-div">
+		      	<div wicket:id="skill-div"  class="skill-div">
+		      		
+		      			<h2 wicket:id="skillTitle" class="skill-title"></h2>
+		      			<div class="skills">
+		      				<div class="skill" wicket:id="skill">
+		      					<div wicket:id="skill-square"></div>
+		      					
+		      					<span class="skill-label" wicket:id="skill-label"></span>
+		      				</div>
+		      			</div>
+		      			
+		      		
+		      	</div>
+	      	</div>
+      	</div>
+     
+     	
+      	      
+      	<!-- contact -->
+      	<h1 class="topic-title" id="contact">Contact</h1>
+      	<div class="contact-div">
+      		<h1 class="contact-title">Contact</h1>
+      		<br>
+      		<span class="email">tagir.tsarkov@gmail.com</span>
+      		<br>
+      		<span class="phone">+358401865843</span>
+      		<br>
+      		<span class="adress">Silfverhjelmintie 8, Raasepori</span>
+      	</div>
+	</body>
+</html>
