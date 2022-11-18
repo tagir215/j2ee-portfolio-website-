@@ -193,23 +193,18 @@ public class HomePage extends WebPage {
 	{
 		
 	    super.renderHead(response);
-	    StringBuilder stringBuilder = new StringBuilder();
-	    stringBuilder.append("window.onload = function(){");
+	    StringBuilder stringBuilder1 = new StringBuilder();
+	    stringBuilder1.append("window.onload = function(){");
 	    List<String>initialButtons = new ArrayList<String>();
 	    for(int i=0; i<buttonIds.size(); i++) {
 	    	initialButtons.add(buttonIds.get(i).get(0));
 	    }
 	    for(int i=0; i<initialButtons.size(); i++) {
-	    	stringBuilder.append(getHighlightSelectedJavascript(initialButtons.get(i)));
+	    	stringBuilder1.append(getHighlightSelectedJavascript(initialButtons.get(i)));
 	    }
 	    
-	    String changeColorOfTheThing = "$('#conto').on('click',whenClicked);"
-	    		+ "	function whenClicked(){"
-	    		+ "		$('#conto').css({'background':'black'});"
-	    		+ "	}";
-	    stringBuilder.append(changeColorOfTheThing);
-	    stringBuilder.append("}");
-	 	response.render(JavaScriptHeaderItem.forScript(stringBuilder.toString()	,"ok"));
+	    stringBuilder1.append("}");
+	 	response.render(JavaScriptHeaderItem.forScript(stringBuilder1.toString()	,"ok"));
 	   
 	}
 	

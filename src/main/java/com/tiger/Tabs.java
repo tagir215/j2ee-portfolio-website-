@@ -1,11 +1,13 @@
 package com.tiger;
 
 import org.apache.wicket.AttributeModifier;
-import org.apache.wicket.ajax.AjaxRequestTarget;
-import org.apache.wicket.ajax.markup.html.form.AjaxButton;
+import org.apache.wicket.behavior.AttributeAppender;
+import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.html.WebMarkupContainer;
+import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.repeater.RepeatingView;
+import org.apache.wicket.model.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,21 +33,24 @@ public class Tabs extends WebMarkupContainer{
 			rvTabs.add(tabButton);
     	}
 	}
-	class TabButton extends AjaxButton {
-		String markupId;
-		public TabButton(String id, String markupId) {
-			super(id);
-			this.markupId = markupId;
-		}
+	class TabButton extends Button {
 		@Override
-		protected void onSubmit(AjaxRequestTarget target) {
-			super.onSubmit(target);
-			target.appendJavaScript("$([document.documentElement, document.body])"
+		protected String getOnClickScript() {
+			return "$([document.documentElement, document.body])"
 					+ ".animate({"
 					+ "scrollTop: $('#"+markupId+"').offset().top"
-					+ "    }, 400);");
-			
+					+ "    }, 400);";
 		}
+		String markupId;
+		
+
+		public TabButton(String id, String markupId) {
+			super(id);			
+			this.markupId = markupId;
+		}
+		
+		
+		
 
 		
 	}
