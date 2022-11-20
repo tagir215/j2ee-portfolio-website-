@@ -145,7 +145,7 @@ a{
 	margin-top:10px;
 	margin-bottom:10px;
 	text-align:center;
-	font-size:17px;
+	font-size:13px;
 	color:white;
 }
 
@@ -298,6 +298,9 @@ a{
 .work-p{
 	flex-shrink:2;
 	font-size:17px;
+	color:white;
+}
+.work-li{
 	color:white;
 }
 .contact-div{

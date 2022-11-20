@@ -46,31 +46,37 @@ public class HomePage extends WebPage {
 		Image image = new Image("front-img","crocodile2.jpg");
 		add(image);
 		
+		RepeatingView abouts = new RepeatingView("about");
+		add(abouts);
 		
 		String aboutP = "Hei, tässä on portfolio koodaus projekteistani. Olen "
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
-				+ "töitä. Kaikki tämän portfolion projektit ovat vielä osittain "
-				+ "keskeneräisiä, koska niiden vieminen loppuun saakka veisi "
-				+ "vielä yllättävän paljon aikaa pieniä viilauksia tehdessä, "
-				+ "mitä ei voisi helposti esittää portfoliossa, minkä vuoksi "
-				+ "olen siirtyillyt projektista toiseen, mutta kaikki työt on "
-				+ "kuitenkin tarkoitus viedä loppuun lähitulevaisuudessa ja julkaista "
-				+ "App Storeen. ";
+				+ "töitä. Persoonani on sellainen, että motivoidun parhaiten "
+				+ "haastavemmista projekteista. Jostain syystä tunnun nauttivan siitä, että "
+				+ "mikään ei etene ja kaikki tuntuu mahdottomalta, joten ensimmäiset koodaus "
+				+ "projetkini olivat jo suhteellisen haastavia. Olen oppinut paljon tämän vuoden "
+				+ "aikan, mutta huomannut myös että on vieä paljon opittavaa.";
+		abouts.add(new About("about","Portfolio 2022",aboutP));
 		
 		String experienceP = "Minulla on tavallaan kokemusta koodaamisesta jo 12 vuotiaasta "
-				+ "saakka... Vaikka en ole tehnyt varsinaista koodausta, olen tehnyt pelejä "
-				+ "LittleBigPlanet ja Dreams pelinteko ohjelmilla. Tämä ei ehkä itsessään "
-				+ "vaikuta niin hyödylliseltä kokemukselta, mutta oma tapani luoda pelejä "
+				+ "saakka. Vaikka en ole tehnyt varsinaista koodausta, olen tehnyt pelejä "
+				+ "LittleBigPlanet ja Dreams pelinteko ohjelmilla. Oma tapani luoda pelejä "
 				+ "näillä alustoilla oli aina koetella työkalujen rajoja ja yrittää rakentaa "
-				+ "ylimonimutkaisia tekoälyjä ja kontrolleja. Tutkimusten mukaan ohjelmointiin "
-				+ "liittyvät aivo alueet ovat erilaiset verrattuna esimerkiksi pelkkään "
+				+ "monimutkaisia tekoälyjä ja kontrolleja. Tutkimusten mukaan ohjelmointiin "
+				+ "liittyvät aivo alueet ovat erilaiset verrattuna esimerkiksi "
 				+ "matematiikkaan tai kielelliseen ajatteluun. Luulen kokemukseni "
 				+ "näillä alustoilla kasvattaneen juuri näitä aivo alueita. ";
+		abouts.add(new About("about2","Kokemus?",experienceP));
 		
-		RepeatingView abouts = new RepeatingView("about");
-		add(abouts);
-		abouts.add(new About("about","Portfolio 2022",aboutP));
-		abouts.add(new About("about3","Kokemus?",experienceP));
+		String experienceA= "Olen itse oppinut ja lähinnä oppinut projekteja tehdessä. Erilaiset "
+				+ "tutoriaalit eivät yleensä jää pysyvästi mieleeni, joten opettelen asiat mielummin "
+				+ "käytännössä. "
+				+ "Tein kesällä myös n. kuukauden työharjoittelun/työvalmennuksen,"
+				+ " jossa tein kolme erilaista "
+				+ "harjoitus projektia. Minulla oli mentori joka tarkisteli koodejani joten opin "
+				+ "paljon koodin muotoilusta ja sain paljon materiaalia ja lukuvinkkejä.";
+		abouts.add(new About("about3","Koulutus?",experienceA));
+		
 		
 		RepeatingView skillGraphs = new RepeatingView("skill-div");
 		add(skillGraphs);
@@ -78,17 +84,17 @@ public class HomePage extends WebPage {
 		
 		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL"};
 		int[] measures = new int[] {8,6,3,2,3,2};
-		skillGraphs.add(new SkillGraph("skill-div1",skills,measures,"Coding"));
+		skillGraphs.add(new SkillGraph("skill-div1",skills,measures,"Koodaus"));
 		
-		String[] skills3 = new String[] {"Google Cloud","Heroku","MySQL"};
-		int[] measures3 = new int[] {4,2,1};
-		skillGraphs.add(new SkillGraph("skill-div3",skills3,measures3,"Cloud"));
+		String[] skills3 = new String[] {"Google Cloud","Heroku","Openshift","MySQL"};
+		int[] measures3 = new int[] {4,2,1,2};
+		skillGraphs.add(new SkillGraph("skill-div3",skills3,measures3,"Pilvi"));
 		
-		String[] skills2 = new String[] {"Android Studio","IntelliJ IDEA","Eclipse","Unity","Apache Wicket"};
-		int[] measures2 = new int[] {8,5,5,3,3};
-		skillGraphs.add(new SkillGraph("skill-div2",skills2,measures2,"Frameworks/Ide"));
+		String[] skills2 = new String[] {"Android Studio","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket"};
+		int[] measures2 = new int[] {8,5,5,4,3,3};
+		skillGraphs.add(new SkillGraph("skill-div2",skills2,measures2,"Framework/Ide"));
 		
-	
+		
 
 		
 		
@@ -103,22 +109,23 @@ public class HomePage extends WebPage {
 		};
 		String i1 = "C#, Unity, Xml, Google Cloud";
 		String[] p1 = new String[] { 
-				"GPS GOLF on Pokemon GO:n kaltainen AR peli kännykälle, joka käyttää"
-				+ "GPS paikannusta pää pelimekaniikkanaan. Tarkoitus on golfata pallot lippuihin"
+				"GPS GOLF on Pokemon GO:n kaltainen AR peli kännykälle, joka käyttää "
+				+ "GPS paikannusta pää pelimekaniikkanaan. Tarkoitus on golfata pallot lipputankoihin "
 				+ "jotka päivittyvät satunnaisesti joka päivä. Kartalle on merkitty tähän mennessä"
-				+ "kaikki Suomen tiet, jotka on tallennettu Xml tiedostoille Google Cloudiin."
-				+ "Tiedot on kerätty OpenStreetMap sivustolta jossa on open source käyttöoikeudet."
-				+ "Pelimoottoina on Unity. ",
-					"Tämä oli ensimmäinen projekti jonka koodasin, joten siinä meni yli 2 kuukautta."
-				+ "Pelkästään Xml tiedostoiden muokkailuun meni kuukausi, koska OpenStreetMapin "
-				+ "data oli tallennettu eristettyinä. Tällaisen datan yhdistäminen runtimessa olisi"
-				+ "ollut liian hidasta joten tiedot piti tallentaa trie data struktuuriin jotta operaatiot"
-				+ "nopeutuisivat. Projekti oli todella hyödyllinen oppimisen kannalta, sillä opin data struktuureja,"
-				+ "järjestely algoritmeja, datan käsittelyä ja tallentamista, sekä myös grafiikan luontiin"
-				+ "liittyvää matematiikkaa. Koko kartta on renderöity 3D pallon muotoiselle objektille, koska"
-				+ "datan laittaminen tasaiselle pohjalle vääristi tulosta liikaa. " 
+				+ "kaikki Suomen tiet, jotka on tallennettu Xml tiedostoille Google Cloudiin. "
+				+ "Tiedot on kerätty OpenStreetMap sivustolta. Pelimoottoina on Unity. " 
 				};
-		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1));
+		String[] ul1 = new String[] {
+				"Tein pelille erillisen OSM xml datan yhdistimen Visual Studiota käyttäen, koska en löytänyt netistä vastinetta. Yhdistin ohjelma "
+				+ "käytti trie data struktuuria yhdistämään ja suodattamaan 15 miljoonaa pistettä sopivampaan "
+				+ "muotoon.",
+				"Tiet on piirretty 3D pallon muotoiselle objektille. 3D koordinaatit on laskettu mapallon säteen mukaan.",
+				"Tiet on piirretty Unityn kolmioiden piirto työkalulla tehden mahdollisimman yhtenäisiä mesh objekteja, "
+				+ "jotta suorituskyky ei kärsisi.",
+				"Peli objektien koot muokkautuvat kameran etäisyyden perusteella",
+				
+		};
+		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1,ul1));
 		
 		
 		
@@ -128,23 +135,43 @@ public class HomePage extends WebPage {
 		};
 		String i2 = "Java, Android Studio, Xml, Json";
 		String[] p2 = new String[] {
-				"YourMindMap on ajatuskarttojen luontiin tarkoitettu sovellus."
-				+ "Sovelluksesta löytyy lukusisa asetuksia joissa käyttäjää mietitty"
-				+ "ensisijaisesti antamalla hänelle mahdollisimman vapaat kädet. "
-				+ "Kuitenkin pitämällä työkalut intuitiivisina ja helppokäyttöisinä."
-				+ "Sovelluksessa on rajoitettu erilaisten asetusikkunoiden navigointia"
+				"YourMindMap on ajatuskarttojen luontiin tarkoitettu sovellus. "
+				+ "Sovelluksesta löytyy lukusisa asetuksia joissa käyttäjää mietitty "
+				+ "antamalla hänelle mahdollisimman vapaat kädet. "
+				+ "Kuitenkin pitämällä työkalut intuitiivisina ja helppokäyttöisinä. "
+				+ "Sovelluksessa on rajoitettu erilaisten asetusikkunoiden navigointia "
 				+ "pitämällä kaikki tiiviisti yhdessä paikassa. Asetusten etsiminen "
-				+ "on nopeaa, sekä asetusten vaiutukset ovat heti nähtävissä ajatus"
-				+ "kartassa, sekä asetuksista toiseen vaihtaminen onnistuu helposti.",
-					"Sovelluksessa on kaikki vastaavien kilpailijasovellusten työkalut"
-				+ "sekä uniikkina kännykkäsovlluksena mahdollisuus luoda yli tuhannen"
-				+ "solun ajatuskartoja uniikin bitmappeja hyödyntävän piirtämis tekniikan"
-				+ "ansiota. Sovelluksessa kaikki tapahtuu canvaksessa ja esimerkiksi"
-				+ "missä voisi kuvitella olevan EditText työkaluja, onkin canvakselle"
-				+ "piirretty simulaatio tyhjästä tehdystä EditText emulaattorista."
+				+ "on nopeaa, sekä asetusten vaiutukset ovat heti nähtävissä ajatus "
+				+ "kartassa, sekä asetuksista toiseen vaihtaminen onnistuu helposti. ",
+					"Sovelluksessa on kaikki vastaavien kilpailijasovellusten työkalut "
+				+ "sekä uniikkina kännykkäsovlluksena mahdollisuus luoda yli tuhannen "
+				+ "solun ajatuskartoja uniikin bitmappeja hyödyntävän piirtämis tekniikan "
+				+ "ansiota. Sovelluksessa kaikki tapahtuu canvaksessa ja esimerkiksi "
+				+ "missä voisi kuvitella olevan EditText työkaluja, onkin canvakselle "
+				+ "piirretty simulaatio tyhjästä tehdystä EditText emulaattorista. "
 				};
-	
-		topics.add(new Topic("topic12",mapImages,"Your Mind Map",i2,p2));
+		String[] ul2 = new String[] {
+				"Ajatuskartan automaattinen tilan sommittelu. Kokeilin useita versioita, mutta päädyin laskemaan "
+				+ "kaikki koordinaatit täysin matemaattisesti ja piirtämään kaiken canvakselle.",
+				"Canvas ei piirrä karttaa joka ruudunpäivityksen jälkeen, vaan vain kun käyttäjä päästää irti "
+				+ "esimerkiksi liikutettuuan karttaa. Bitmap itse siirtyy sormen mukana, mutta siirtyy takaisin "
+				+ "paikoilleen sormen noustessa, jonka jälkeen piirtää kartan uudelleen, mutta ottaen siirretyn "
+				+ "matkan huomioon",
+				"Ajatuskartalla voi tehdä huonommallakin kännykällä noin tuhannen solun karttoja ilman huomattavaa "
+				+ "suorituskyvyn laskua. (tämä noin 10 kertaa enemmän kuin muilla app storen ajatuskartta ohjelmilla)",
+				"Laatikko valinta, ja monen solun muokkaaminen kerralla",
+				"Viivan, laatikon, reuonojen muotojen, värien, ja viiva tyyppien editointi työkalut.",
+				"Tekstien värien, fonttien, asettelu ja koon editointi työkalut, sekä kartan automaattinen sopeutuminen eri fontti- "
+				+ "ja teksti-koko asetuksille",
+				"Tallennus, undo ja redo komennont sekä useiden karttojen tallennus mahdollisuus",
+				"Vienti mahdollisuuksia pdf, jpg tai png",
+				"Zoom",
+				"Haarakkeiden pakkaus työkalu",
+				"Kopionti ja liittämistyökalut",
+				"Keskittämis työkalu",
+				"Kuvien lisäys mahdollisuus",
+		};
+		topics.add(new Topic("topic12",mapImages,"Your Mind Map",i2,p2,ul2));
 		
 		
 		
@@ -155,23 +182,29 @@ public class HomePage extends WebPage {
 		};
 		String i3 = "Java, Android Studio, OpenGL, Fast Fourier Transform, YIN algorithm, Autocorrelation";
 		String[] p3= new String[] { 
-				"Visual Metronome on musiikin harjoitteluun tarkoitettu"
-				+ "apu ohjelma. Joillakin muusikoilla rytmitaju saattaa heikentyä"
-				+ "soittaessa monimutkaisempia aivoja kuormattavia kappaleita,"
-				+ "jolloin aivot priorisoi rytmin sijaan muita soitamiseen"
-				+ "tarvittavaa keskittymistä, kuten oikeiden sävelten löytämiseen "
-				+ "tai muuhun"
-				+ "yleiseen äänten puhtauksiin. Tässä ongelmana on myös se, että "
-				+ "itse soittaja ei välttämättä edes kuule omia rytmi ongelmiaan, "
-				+ "mikä onkin se varsinainen ongelma, koska tällöin mitään kehittymistä"
-				+ "ei voi tapahtua.",
+				"Visual Metronome on musiikin harjoitteluun tarkoitettu "
+				+ "apu ohjelma. Joillakin muusikoilla rytmitaju saattaa heikentyä "
+				+ "soittaessa monimutkaisempia kuvioita, "
+				+ "jolloin aivot priorisoi rytmin sijaan muita soitamiseen "
+				+ "tarvittavaa keskittymistä. Tässä ongelmana on myös se, että "
+				+ "itse soittaja ei välttämättä edes kuule omia rytmi ongelmiaan, ",
 					" Visual Metronome pyrkii ratkaisemaan nämä ongelmat"
-				+ "antamalla reaali aikaista selkeää feedbackiä, jolloin soittaja"
-				+ "näkee virheet heti niiden tapahduttua, jolloin kehon luontainen"
-				+ "feedbackin avulla kehittyminen pääsee tapahtumaan paremmin."
+				+ "antamalla reaali aikaista selkeää feedbackiä, jolloin soittaja "
+				+ "näkee virheet heti niiden tapahduttua, jolloin kehon luontainen "
+				+ "feedbackin avulla kehittyminen pääsee tapahtumaan paremmin. "
 				};
-	
-		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3));
+		String[] ul3 = new String[] {
+				"Kokeilin erilaisia tapoja uuden nuotin tunnistamiseen, kuten Fast Fourier transformia, Autocorrelaatiota sekä Yin algoritmia, "
+				+ "mutta päädyin yksinkertaisesti vain laskemaan nolla kohtien määrät, nopeuden vuoksi",
+				"Sovellus aloittaa äänityken automaattisesti sekä toistaa soiton myös äänten hiljennyttä automaattisesti "
+				+ "valitun viiveen jälkeen",
+				"Ääni allot ja rytmi kuviot on mallinnettu käyttäen OpenGL:ää",
+				"Rytmi kuviot muodostuvat y suunnassa suurempina, jos nollakohtien määrä muttuu paljon edelliseen nuottiin "
+				+ "verrattuna, sekä taas keltaisena tai läpinäkyvän punaisena äänen amplitudin mukaan",
+				"Ohjelma toimii hyvin kitaran kanssa, mutta ei vielä kovin hyvin esimerkiksi pianon kanssa, joten "
+				+ "joitakin viilauksia pitää vielä tehdä"
+		};
+		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3));
 		
 		String italy21 = "Eclipse, Java, Junit";
 		String[] p21 = new String[] {
@@ -267,7 +300,7 @@ public class HomePage extends WebPage {
 		ImagePickerButton currentButton;
 		int waitTime = 0;
 		String topicId;
-		public Topic(String id , String[] images, String title, String italy, String[] p) {
+		public Topic(String id , String[] images, String title, String italy, String[] p, String[] ul) {
 			super(id);
 			topicId = "topic"+topicNumber;
 			this.setOutputMarkupId(true);
@@ -278,9 +311,12 @@ public class HomePage extends WebPage {
 			add(paragraphs);
 			for(int i=0; i<p.length; i++) {
 				paragraphs.add(new Label("p"+topicNumber + i,p[i]));
-				
 			}
-			
+			RepeatingView list = new RepeatingView("work-li");
+			add(list);
+			for(int i=0; i<ul.length; i++) {
+				list.add(new Label("li"+topicNumber+i,ul[i]));
+			}
 		
 			WebMarkupContainer containerPlus = new WebMarkupContainer("container-plus");
 			add(containerPlus);
