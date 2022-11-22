@@ -52,9 +52,9 @@ public class HomePage extends WebPage {
 		String aboutP = "Hei, tässä on portfolio koodaus projekteistani. Olen "
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
 				+ "töitä. Persoonani on sellainen, että motivoidun parhaiten "
-				+ "haastavemmista projekteista, joten ensimmäiset koodaus "
-				+ "projetkini olivat jo suhteellisen haastavia. Olen oppinut paljon tämän vuoden "
-				+ "aikan, mutta huomannut myös että on vieä paljon opittavaa.";
+				+ "haastavista projekteista, joten tein ensmmäisestä koodaus projektistani "
+				+ "jo suhteellisen haastavan. Olen oppinut paljon tämän vuoden "
+				+ "aikana, mutta huomannut myös että on vieä paljon opittavaa.";
 		abouts.add(new About("about","Portfolio 2022",aboutP));
 		
 		String experienceP = "Minulla on tavallaan kokemusta koodaamisesta jo 12 vuotiaasta "
@@ -73,8 +73,8 @@ public class HomePage extends WebPage {
 				+ "Tein kesällä myös n. kuukauden työharjoittelun/työvalmennuksen, "
 				+ "jossa tein kolme erilaista "
 				+ "harjoitus projektia. Minulla oli mentori joka tarkisteli koodejani joten opin "
-				+ "paljon koodin muotoilusta ja sain paljon materiaalia sekä lukuvinkkejä.";
-		abouts.add(new About("about3","Kokemus?",experienceA));
+				+ "paljon koodin muotoilusta ja sain lisäksi materiaalia sekä lukuvinkkejä.";
+		abouts.add(new About("about3","Kokemus",experienceA));
 		
 		
 		RepeatingView skillGraphs = new RepeatingView("skill-div");
@@ -109,17 +109,17 @@ public class HomePage extends WebPage {
 		String i1 = "C#, Unity, Xml, Google Cloud";
 		String[] p1 = new String[] { 
 				"GPS GOLF on Pokemon GO:n kaltainen AR peli kännykälle, joka käyttää "
-				+ "GPS paikannusta pää pelimekaniikkanaan. Tarkoitus on golfata pallot lipputankoihin "
+				+ "GPS paikannusta pääpelimekaniikkanaan. Tarkoitus on golfata pallot lipputankoihin "
 				+ "jotka päivittyvät satunnaisesti joka päivä. Kartalle on merkitty tähän mennessä "
 				+ "kaikki Suomen tiet, jotka on tallennettu Xml tiedostoille Google Cloudiin. "
 				+ "Tiedot on kerätty OpenStreetMap sivustolta. Pelimoottoina on Unity. " 
 				};
 		String[] ul1 = new String[] {
 				"Tein pelille erillisen OSM xml datan muokkaus ohjelman Visual Studiota käyttäen, koska en löytänyt netistä vastinetta. Ohjelma "
-				+ "käytti trie data struktuuria yhdistämään ja suodattamaan 15 miljoonaa Suomen teiden koordinaattia sopivampaan "
+				+ "käytti trie data struktuuria yhdistämään ja suodattamaan 15 miljoonaa Suomen teiden koordinaatteja sopivampaan "
 				+ "muotoon (OSM datan tie merkinnöissä oli vain viittaukset varsinasiin koordinaatteihin).",
 				"Tiet on piirretty 3D pallon muotoiselle objektille. 3D koordinaatit on laskettu mapallon säteen mukaan.",
-				"Tiet on piirretty Unityn kolmioiden piirto työkalulla tehden mahdollisimman yhtenäisiä mesh objekteja, "
+				"Tiet on piirretty Unityn kolmioiden piirto työkaluilla tehden mahdollisimman yhtenäisiä mesh objekteja, "
 				+ "jotta suorituskyky ei kärsisi.",
 				"Peli objektien koot muokkautuvat kameran etäisyyden perusteella",
 				
@@ -135,7 +135,7 @@ public class HomePage extends WebPage {
 		String i2 = "Java, Android Studio, Xml, Json";
 		String[] p2 = new String[] {
 				"YourMindMap on ajatuskarttojen luontiin tarkoitettu sovellus. "
-				+ "Sovelluksesta löytyy lukusisa asetuksia joissa käyttäjää ajateltu "
+				+ "Sovelluksesta löytyy lukusisa asetuksia joissa käyttäjää on ajateltu "
 				+ "antamalla hänelle mahdollisimman vapaat kädet. "
 				+ "Kuitenkin pitämällä työkalut intuitiivisina ja helppokäyttöisinä. "
 				+ "Sovelluksessa on rajoitettu erilaisten asetusikkunoiden navigointia "
@@ -154,7 +154,7 @@ public class HomePage extends WebPage {
 				+ "matkan huomioon",
 				"Ajatuskartalla voi tehdä huonommallakin kännykällä noin tuhannen solun karttoja ilman huomattavaa "
 				+ "suorituskyvyn laskua.",
-				"Suorakoumio valinta, ja monen solun muokkaaminen kerralla",
+				"Suorakulmio valinta, ja monen solun muokkaaminen kerralla",
 				"Viivan, laatikon, reuonojen muotojen, värien, ja viiva tyyppien editointi työkalut.",
 				"Tekstien värien, fonttien, asettelu ja koon editointi työkalut, sekä kartan automaattinen sopeutuminen eri fontti- "
 				+ "ja teksti-koko asetuksille",
@@ -178,7 +178,7 @@ public class HomePage extends WebPage {
 		String i3 = "Java, Android Studio, OpenGL, Fast Fourier Transform, YIN algorithm, Autocorrelation";
 		String[] p3= new String[] { 
 				"Visual Metronome on musiikin harjoitteluun tarkoitettu "
-				+ "apu ohjelma. Joillakin muusikoilla rytmitaju saattaa heikentyä "
+				+ "apuohjelma. Joillakin muusikoilla rytmitaju saattaa heikentyä "
 				+ "soittaessa monimutkaisempia kuvioita, "
 				+ "jolloin aivot priorisoi rytmin sijaan muita soitamiseen "
 				+ "tarvittavaa keskittymistä. Tässä ongelmana on myös se, että "
@@ -188,14 +188,14 @@ public class HomePage extends WebPage {
 				+ "näkee virheet heti niiden tapahduttua."
 				};
 		String[] ul3 = new String[] {
-				"Kokeilin erilaisia tapoja vaihtuvan nuotin tunnistamiseen, kuten Fast Fourier transformia, Autocorrelaatiota sekä Yin algoritmia, "
+				"Kokeilin erilaisia tapoja rytmien tunnistamiseen, kuten Fast Fourier transformia, Autocorrelaatiota sekä Yin algoritmia, "
 				+ "mutta päädyin lopulta vain laskemaan nolla kohtien määrät, nopeuden vuoksi",
 				"Sovellus aloittaa äänityken automaattisesti sekä toistaa soiton myös äänten hiljennyttä automaattisesti "
 				+ "valitun viiveen jälkeen",
 				"Ääniallot ja rytmi kuviot on mallinnettu käyttäen OpenGL:ää",
 				"Rytmi kuviot muodostuvat y suunnassa suurempina, jos nollakohtien määrä muttuu paljon edelliseen nuottiin "
 				+ "verrattuna, sekä taas keltaisena tai läpinäkyvän punaisena äänen amplitudin mukaan",
-				"Ohjelma toimii hyvin kitaran kanssa, mutta ei vielä niin hyvin esimerkiksi pianon kanssa, joten "
+				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä vähän puutteellisesti esimerkiksi pianon kanssa, joten "
 				+ "joitakin parannuksia pitää vielä tehdä"
 		};
 		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3));
