@@ -52,8 +52,7 @@ public class HomePage extends WebPage {
 		String aboutP = "Hei, tässä on portfolio koodaus projekteistani. Olen "
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
 				+ "töitä. Persoonani on sellainen, että motivoidun parhaiten "
-				+ "haastavemmista projekteista. Jostain syystä tunnun nauttivan siitä, että "
-				+ "mikään ei etene ja kaikki tuntuu mahdottomalta, joten ensimmäiset koodaus "
+				+ "haastavemmista projekteista, joten ensimmäiset koodaus "
 				+ "projetkini olivat jo suhteellisen haastavia. Olen oppinut paljon tämän vuoden "
 				+ "aikan, mutta huomannut myös että on vieä paljon opittavaa.";
 		abouts.add(new About("about","Portfolio 2022",aboutP));
@@ -66,16 +65,16 @@ public class HomePage extends WebPage {
 				+ "liittyvät aivo alueet ovat erilaiset verrattuna esimerkiksi "
 				+ "matematiikkaan tai kielelliseen ajatteluun. Luulen kokemukseni "
 				+ "näillä alustoilla kasvattaneen juuri näitä aivo alueita. ";
-		abouts.add(new About("about2","Kokemus?",experienceP));
+		abouts.add(new About("about2","LittleBigPlanet?",experienceP));
 		
 		String experienceA= "Olen itse oppinut ja lähinnä oppinut projekteja tehdessä. Erilaiset "
 				+ "tutoriaalit eivät yleensä jää pysyvästi mieleeni, joten opettelen asiat mielummin "
 				+ "käytännössä. "
-				+ "Tein kesällä myös n. kuukauden työharjoittelun/työvalmennuksen,"
-				+ " jossa tein kolme erilaista "
+				+ "Tein kesällä myös n. kuukauden työharjoittelun/työvalmennuksen, "
+				+ "jossa tein kolme erilaista "
 				+ "harjoitus projektia. Minulla oli mentori joka tarkisteli koodejani joten opin "
-				+ "paljon koodin muotoilusta ja sain paljon materiaalia ja lukuvinkkejä.";
-		abouts.add(new About("about3","Koulutus?",experienceA));
+				+ "paljon koodin muotoilusta ja sain paljon materiaalia sekä lukuvinkkejä.";
+		abouts.add(new About("about3","Kokemus?",experienceA));
 		
 		
 		RepeatingView skillGraphs = new RepeatingView("skill-div");
@@ -111,14 +110,14 @@ public class HomePage extends WebPage {
 		String[] p1 = new String[] { 
 				"GPS GOLF on Pokemon GO:n kaltainen AR peli kännykälle, joka käyttää "
 				+ "GPS paikannusta pää pelimekaniikkanaan. Tarkoitus on golfata pallot lipputankoihin "
-				+ "jotka päivittyvät satunnaisesti joka päivä. Kartalle on merkitty tähän mennessä"
+				+ "jotka päivittyvät satunnaisesti joka päivä. Kartalle on merkitty tähän mennessä "
 				+ "kaikki Suomen tiet, jotka on tallennettu Xml tiedostoille Google Cloudiin. "
 				+ "Tiedot on kerätty OpenStreetMap sivustolta. Pelimoottoina on Unity. " 
 				};
 		String[] ul1 = new String[] {
-				"Tein pelille erillisen OSM xml datan yhdistimen Visual Studiota käyttäen, koska en löytänyt netistä vastinetta. Yhdistin ohjelma "
-				+ "käytti trie data struktuuria yhdistämään ja suodattamaan 15 miljoonaa pistettä sopivampaan "
-				+ "muotoon.",
+				"Tein pelille erillisen OSM xml datan muokkaus ohjelman Visual Studiota käyttäen, koska en löytänyt netistä vastinetta. Ohjelma "
+				+ "käytti trie data struktuuria yhdistämään ja suodattamaan 15 miljoonaa Suomen teiden koordinaattia sopivampaan "
+				+ "muotoon (OSM datan tie merkinnöissä oli vain viittaukset varsinasiin koordinaatteihin).",
 				"Tiet on piirretty 3D pallon muotoiselle objektille. 3D koordinaatit on laskettu mapallon säteen mukaan.",
 				"Tiet on piirretty Unityn kolmioiden piirto työkalulla tehden mahdollisimman yhtenäisiä mesh objekteja, "
 				+ "jotta suorituskyky ei kärsisi.",
@@ -136,19 +135,15 @@ public class HomePage extends WebPage {
 		String i2 = "Java, Android Studio, Xml, Json";
 		String[] p2 = new String[] {
 				"YourMindMap on ajatuskarttojen luontiin tarkoitettu sovellus. "
-				+ "Sovelluksesta löytyy lukusisa asetuksia joissa käyttäjää mietitty "
+				+ "Sovelluksesta löytyy lukusisa asetuksia joissa käyttäjää ajateltu "
 				+ "antamalla hänelle mahdollisimman vapaat kädet. "
 				+ "Kuitenkin pitämällä työkalut intuitiivisina ja helppokäyttöisinä. "
 				+ "Sovelluksessa on rajoitettu erilaisten asetusikkunoiden navigointia "
-				+ "pitämällä kaikki tiiviisti yhdessä paikassa. Asetusten etsiminen "
-				+ "on nopeaa, sekä asetusten vaiutukset ovat heti nähtävissä ajatus "
-				+ "kartassa, sekä asetuksista toiseen vaihtaminen onnistuu helposti. ",
+				+ "pitämällä kaikki tiiviisti yhdessä paikassa.",
 					"Sovelluksessa on kaikki vastaavien kilpailijasovellusten työkalut "
 				+ "sekä uniikkina kännykkäsovlluksena mahdollisuus luoda yli tuhannen "
-				+ "solun ajatuskartoja uniikin bitmappeja hyödyntävän piirtämis tekniikan "
-				+ "ansiota. Sovelluksessa kaikki tapahtuu canvaksessa ja esimerkiksi "
-				+ "missä voisi kuvitella olevan EditText työkaluja, onkin canvakselle "
-				+ "piirretty simulaatio tyhjästä tehdystä EditText emulaattorista. "
+				+ "solun ajatuskartoja. Ajatuskartta sommittautuu automaattisesti, joten "
+				+ "käyttäjän ei tarvitse erikseen siirrellä soluja.  "
 				};
 		String[] ul2 = new String[] {
 				"Ajatuskartan automaattinen tilan sommittelu. Kokeilin useita versioita, mutta päädyin laskemaan "
@@ -158,8 +153,8 @@ public class HomePage extends WebPage {
 				+ "paikoilleen sormen noustessa, jonka jälkeen piirtää kartan uudelleen, mutta ottaen siirretyn "
 				+ "matkan huomioon",
 				"Ajatuskartalla voi tehdä huonommallakin kännykällä noin tuhannen solun karttoja ilman huomattavaa "
-				+ "suorituskyvyn laskua. (tämä noin 10 kertaa enemmän kuin muilla app storen ajatuskartta ohjelmilla)",
-				"Laatikko valinta, ja monen solun muokkaaminen kerralla",
+				+ "suorituskyvyn laskua.",
+				"Suorakoumio valinta, ja monen solun muokkaaminen kerralla",
 				"Viivan, laatikon, reuonojen muotojen, värien, ja viiva tyyppien editointi työkalut.",
 				"Tekstien värien, fonttien, asettelu ja koon editointi työkalut, sekä kartan automaattinen sopeutuminen eri fontti- "
 				+ "ja teksti-koko asetuksille",
@@ -190,32 +185,22 @@ public class HomePage extends WebPage {
 				+ "itse soittaja ei välttämättä edes kuule omia rytmi ongelmiaan, ",
 					" Visual Metronome pyrkii ratkaisemaan nämä ongelmat"
 				+ "antamalla reaali aikaista selkeää feedbackiä, jolloin soittaja "
-				+ "näkee virheet heti niiden tapahduttua, jolloin kehon luontainen "
-				+ "feedbackin avulla kehittyminen pääsee tapahtumaan paremmin. "
+				+ "näkee virheet heti niiden tapahduttua."
 				};
 		String[] ul3 = new String[] {
-				"Kokeilin erilaisia tapoja uuden nuotin tunnistamiseen, kuten Fast Fourier transformia, Autocorrelaatiota sekä Yin algoritmia, "
-				+ "mutta päädyin yksinkertaisesti vain laskemaan nolla kohtien määrät, nopeuden vuoksi",
+				"Kokeilin erilaisia tapoja vaihtuvan nuotin tunnistamiseen, kuten Fast Fourier transformia, Autocorrelaatiota sekä Yin algoritmia, "
+				+ "mutta päädyin lopulta vain laskemaan nolla kohtien määrät, nopeuden vuoksi",
 				"Sovellus aloittaa äänityken automaattisesti sekä toistaa soiton myös äänten hiljennyttä automaattisesti "
 				+ "valitun viiveen jälkeen",
-				"Ääni allot ja rytmi kuviot on mallinnettu käyttäen OpenGL:ää",
+				"Ääniallot ja rytmi kuviot on mallinnettu käyttäen OpenGL:ää",
 				"Rytmi kuviot muodostuvat y suunnassa suurempina, jos nollakohtien määrä muttuu paljon edelliseen nuottiin "
 				+ "verrattuna, sekä taas keltaisena tai läpinäkyvän punaisena äänen amplitudin mukaan",
-				"Ohjelma toimii hyvin kitaran kanssa, mutta ei vielä kovin hyvin esimerkiksi pianon kanssa, joten "
-				+ "joitakin viilauksia pitää vielä tehdä"
+				"Ohjelma toimii hyvin kitaran kanssa, mutta ei vielä niin hyvin esimerkiksi pianon kanssa, joten "
+				+ "joitakin parannuksia pitää vielä tehdä"
 		};
 		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3));
 		
-		String italy21 = "Eclipse, Java, Junit";
-		String[] p21 = new String[] {
-				"Tämä työ oli yksi kolmesta karsintatehtävänä työpaikalle, "
-				+ "mutta se osoittautui "
-				+ "aika yksityiskohtaiseksi projektiksi. Tehtävänä oli rakentaa "
-				+ "vuosilomalaskuri, joka otti huomioon vuosilomalain, työehtosopimuksen, "
-				+ "ja työsopimuksen tiedot ja päätteli näistä vuosilomapäivien määrän "
-				+ "sekä vuosilomapalkan laskusäännöt. Sitten tehdä yksityiskohtaiset "
-				+ "Junit testit ja lisätä kaikki lakiviittaukset koodin sekaan. "
-		};
+		
 		
 		
 	}
