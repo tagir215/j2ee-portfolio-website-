@@ -67,14 +67,17 @@ public class HomePage extends WebPage {
 				+ "näillä alustoilla kasvattaneen juuri näitä aivo alueita. ";
 		abouts.add(new About("about2","LittleBigPlanet?",experienceP));
 		
-		String experienceA= "Olen itse oppinut ja lähinnä oppinut projekteja tehdessä. Erilaiset "
+		String experienceA= "Olen itse oppinut lähinnä projekteja tehdessä. Erilaiset "
 				+ "tutoriaalit eivät yleensä jää pysyvästi mieleeni, joten opettelen asiat mielummin "
 				+ "käytännössä. "
 				+ "Tein kesällä myös n. kuukauden työharjoittelun/työvalmennuksen, "
 				+ "jossa tein kolme erilaista "
 				+ "harjoitus projektia. Minulla oli mentori joka tarkisteli koodejani joten opin "
-				+ "paljon koodin muotoilusta ja sain lisäksi materiaalia sekä lukuvinkkejä.";
-		abouts.add(new About("about3","Kokemus",experienceA));
+				+ "paljon koodin muotoilusta ja sain lisäksi materiaalia sekä lukuvinkkejä. Olen opiskellut myös ammattikorkeakoulussa "
+				+ "konetekniikkaa. Siellä opin matematiikkaa, elektroniikkaa, fysiikkaa sekä erilaisia cadeja, ja koska olin erikoistunut muotoiluun "
+				+ "opettelin itsenäisesti myös grafiikka ohjelmia, kuten blenderin käyttöä. "
+				+ "";
+		abouts.add(new About("about3","Opiskelut",experienceA));
 		
 		
 		RepeatingView skillGraphs = new RepeatingView("skill-div");
