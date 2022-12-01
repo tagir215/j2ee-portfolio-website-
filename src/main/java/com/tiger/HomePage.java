@@ -53,31 +53,24 @@ public class HomePage extends WebPage {
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
 				+ "töitä. Persoonani on sellainen, että motivoidun parhaiten "
 				+ "haastavista projekteista, joten tein ensmmäisestä koodaus projektistani "
-				+ "jo suhteellisen haastavan. Olen oppinut paljon tämän vuoden "
+				+ "jo suhteellisen haastavan. En ole ehtinyt vielä harjoittelemaan nettisivujen tekemistä "
+				+ "niin paljon, joten tämä portfolio on vielä vähän karkea, mutta yritän parannella sitä "
+				+ "tulevaisuudessa. Olen oppinut paljon tämän 10kk "
 				+ "aikana, mutta huomannut myös että on vieä paljon opittavaa.";
 		abouts.add(new About("about","Portfolio 2022",aboutP));
 		
-		String experienceP = "Minulla on tavallaan kokemusta koodaamisesta jo 12 vuotiaasta "
-				+ "saakka. Vaikka en ole tehnyt varsinaista koodausta, olen tehnyt pelejä "
-				+ "LittleBigPlanet ja Dreams pelinteko ohjelmilla. Oma tapani luoda pelejä "
-				+ "näillä alustoilla oli aina koetella työkalujen rajoja ja yrittää rakentaa "
-				+ "monimutkaisia tekoälyjä ja kontrolleja. Tutkimusten mukaan ohjelmointiin "
-				+ "liittyvät aivo alueet ovat erilaiset verrattuna esimerkiksi "
-				+ "matematiikkaan tai kielelliseen ajatteluun. Luulen kokemukseni "
-				+ "näillä alustoilla kasvattaneen juuri näitä aivo alueita. ";
-		abouts.add(new About("about2","LittleBigPlanet?",experienceP));
-		
-		String experienceA= "Olen itse oppinut lähinnä projekteja tehdessä. Erilaiset "
+		String experienceA= "Olen itse oppinut ja oppinut lähinnä projekteja tehdessä. Erilaiset "
 				+ "tutoriaalit eivät yleensä jää pysyvästi mieleeni, joten opettelen asiat mielummin "
 				+ "käytännössä. "
 				+ "Tein kesällä myös n. kuukauden työharjoittelun/työvalmennuksen, "
 				+ "jossa tein kolme erilaista "
 				+ "harjoitus projektia. Minulla oli mentori joka tarkisteli koodejani joten opin "
 				+ "paljon koodin muotoilusta ja sain lisäksi materiaalia sekä lukuvinkkejä. Olen opiskellut myös ammattikorkeakoulussa "
-				+ "konetekniikkaa. Siellä opin matematiikkaa, elektroniikkaa, fysiikkaa sekä erilaisia cadeja, ja koska olin erikoistunut muotoiluun "
-				+ "opettelin itsenäisesti myös grafiikka ohjelmia, kuten blenderin käyttöä. "
+				+ "konetekniikkaa. Siellä opin matematiikkaa, elektroniikkaa, fysiikkaa sekä erilaisia cadeja "
 				+ "";
 		abouts.add(new About("about3","Opiskelut",experienceA));
+		
+		
 		
 		
 		RepeatingView skillGraphs = new RepeatingView("skill-div");
@@ -97,7 +90,13 @@ public class HomePage extends WebPage {
 		skillGraphs.add(new SkillGraph("skill-div2",skills2,measures2,"Framework/Ide"));
 		
 		
-
+		String experienceP = "Minulla on tavallaan kokemusta koodaamisesta jo 12 vuotiaasta "
+				+ "saakka. Vaikka en ole tehnyt varsinaista koodausta, olen tehnyt pelejä "
+				+ "LittleBigPlanet ja Dreams pelinteko ohjelmilla. Oma tapani luoda pelejä "
+				+ "näillä alustoilla oli aina koetella työkalujen rajoja ja yrittää rakentaa "
+				+ "monimutkaisia tekoälyjä ja kontrolleja. En oikein edes pelaillut muita pelejä "
+				+ "vaan käytin kaiken ajan näiden ohjelmien parissa. ";
+		abouts.add(new About("about2","LittleBigPlanet?",experienceP));
 		
 		
 		
@@ -111,7 +110,7 @@ public class HomePage extends WebPage {
 		};
 		String i1 = "C#, Unity, Xml, Google Cloud";
 		String[] p1 = new String[] { 
-				"GPS GOLF on Pokemon GO:n kaltainen AR peli kännykälle, joka käyttää "
+				"GPS GOLF on AR peli kännykälle, joka käyttää "
 				+ "GPS paikannusta pääpelimekaniikkanaan. Tarkoitus on golfata pallot lipputankoihin "
 				+ "jotka päivittyvät satunnaisesti joka päivä. Kartalle on merkitty tähän mennessä "
 				+ "kaikki Suomen tiet, jotka on tallennettu Xml tiedostoille Google Cloudiin. "
@@ -125,6 +124,8 @@ public class HomePage extends WebPage {
 				"Tiet on piirretty Unityn kolmioiden piirto työkaluilla tehden mahdollisimman yhtenäisiä mesh objekteja, "
 				+ "jotta suorituskyky ei kärsisi.",
 				"Peli objektien koot muokkautuvat kameran etäisyyden perusteella",
+				"Tämä oli ensimmäinen koodaus projektini joten siinä meni noin 2 kuukautta. Opin yllättävän paljon data "
+				+ "struktuureista sekä järjestely algoritmeista"
 				
 		};
 		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1,ul1));
@@ -144,7 +145,7 @@ public class HomePage extends WebPage {
 				+ "Sovelluksessa on rajoitettu erilaisten asetusikkunoiden navigointia "
 				+ "pitämällä kaikki tiiviisti yhdessä paikassa.",
 					"Sovelluksessa on kaikki vastaavien kilpailijasovellusten työkalut "
-				+ "sekä uniikkina kännykkäsovlluksena mahdollisuus luoda yli tuhannen "
+				+ "sekä mahdollisuus luoda yli viiden tuhannen "
 				+ "solun ajatuskartoja. Ajatuskartta sommittautuu automaattisesti, joten "
 				+ "käyttäjän ei tarvitse erikseen siirrellä soluja.  "
 				};
@@ -155,7 +156,7 @@ public class HomePage extends WebPage {
 				+ "esimerkiksi liikutettuuan karttaa. Bitmap itse siirtyy sormen mukana, mutta siirtyy takaisin "
 				+ "paikoilleen sormen noustessa, jonka jälkeen piirtää kartan uudelleen, mutta ottaen siirretyn "
 				+ "matkan huomioon",
-				"Ajatuskartalla voi tehdä huonommallakin kännykällä noin tuhannen solun karttoja ilman huomattavaa "
+				"Ajatuskartalla voi tehdä huonommallakin kännykällä yli 5 tuhannen solun karttoja ilman huomattavaa "
 				+ "suorituskyvyn laskua.",
 				"Suorakulmio valinta, ja monen solun muokkaaminen kerralla",
 				"Viivan, laatikon, reuonojen muotojen, värien, ja viiva tyyppien editointi työkalut.",
@@ -168,6 +169,10 @@ public class HomePage extends WebPage {
 				"Kopionti ja liittämistyökalut",
 				"Keskittämis työkalu",
 				"Kuvien lisäys mahdollisuus",
+				"Tämän ohjelman tekoon minulla meni yli 4 kuukautta eikä se ole vieläkään ihan valmis. Opin paljon Android "
+				+ "Studion työkaluja sekä Javan- ja olio-ohjelmoinnin perusteita. Aloitin projektin useaan kertaan alusta "
+				+ "koska minulle tuli ongelmia suoristuskyvyn ja koodin sekavuuden kanssa. Vieläkin on paljon tekemistä "
+				+ "työkalujen parantelussa ja koodin puhtaudessa, mutta yritän pian julkaista tämän myös App Storeen. "
 		};
 		topics.add(new Topic("topic12",mapImages,"Your Mind Map",i2,p2,ul2));
 		
@@ -199,13 +204,15 @@ public class HomePage extends WebPage {
 				"Rytmi kuviot muodostuvat y suunnassa suurempina, jos nollakohtien määrä muttuu paljon edelliseen nuottiin "
 				+ "verrattuna, sekä taas keltaisena tai läpinäkyvän punaisena äänen amplitudin mukaan",
 				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä vähän puutteellisesti esimerkiksi pianon kanssa, joten "
-				+ "joitakin parannuksia pitää vielä tehdä"
+				+ "joitakin parannuksia pitää vielä tehdä",
+				"Ylesiä asetuksia esim. playback odotusajalle ja temmolle, sekä tahtilajin muutoksille. ",
+				"Tämän ohjelman tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Tein tätä noin kuukauden, mutta "
+				+ "saan tämän oikeastaan julkaistua ennen edellistä projektista, koska projektin koko on paljon pienempi."
 		};
 		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3));
 		
 		
-		
-		
+	
 	}
 	
 	 

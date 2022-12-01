@@ -10,7 +10,8 @@ body {
 
 
 .bar_tabs{
-	width:100%;
+	width:100hv;
+	max-width:2000px;
 	min-height:12vh;
 	position:sticky;
 	z-index:2;
@@ -24,7 +25,7 @@ body {
 	height:100%;
 	margin-top:auto;
 	margin-bottom:auto;
-	margin-right:auto;
+	margin-right:5%;
 	margin-left:auto;
 	justify-content:center;
 	list-style-type:none;
@@ -33,14 +34,14 @@ body {
 .tab-input {
 	line-height:50px;
 	border:none;
-	font: 0.8em "Fira Sans", sans-serif;
+	font: 0.8em "Arial Black", sans-serif;
 	margin: auto 20px;
-	font-size: 14px;
+	font-size: 17px;
 	cursor: pointer;
 	background:none;
 }
 a{
-	color: black;
+	color: grey;
   	text-decoration: none;  
 }
 
@@ -48,12 +49,12 @@ a{
 
 
 .name{
-	margin-left:auto;
-	font: 0.8em "Fira Sans", sans-serif;
+	margin-left:5%;
+	font: 0.8em "Arial Black", sans-serif;
 	font-style:italic;
 	margin-top:auto;
 	margin-bottom:auto;
-	font-size: 16px;
+	font-size: 17px;
 	color:grey;
 }
 
@@ -62,10 +63,10 @@ a{
 
 .main-title{
 	position:absolute;
-	margin-top:-6vh;
+	margin-top:-4vh;
 	margin-left: 3vh; 
 	z-index:1;
-	font-size:50vh;
+	font-size:100px;
 	color:rgba(0,0,0,0.1);
 }
 .topic-title{
@@ -96,7 +97,8 @@ a{
 	margin-top:40px;
 	margin-left:auto;
 	margin-right:auto;
-	background:#f2f2f2;
+	background:transparent;
+	border:solid 1px #bebebe;
 	border-radius:20px;
 }
 .about-p{
@@ -117,8 +119,7 @@ a{
 	padding-left:10px;
 	padding-right:10px;
 	border-radius:5px;
-	background:grey;
-	
+	border:solid 1px #d4d4d4;	
 }
 
 .skill-div-div{
@@ -142,12 +143,12 @@ a{
 	margin-bottom:10px;
 	text-align:center;
 	font-size:13px;
-	color:white;
+	color:black;
 }
 
 .skill-title{
 	text-align:center;
-	color:white;
+	color:black;
 }
 
 
@@ -300,14 +301,15 @@ a{
 	color:white;
 }
 .content2{
-	background:#f2f2f2;
+	background:transparent;
+	border:solid 1px #d4d4d4;	
 	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 	padding-top:20px;
 	padding-bottom:20px;
 	border-radius:20px;
-	margin-top:40px;
+	margin-top:60px;
 }
 .work-title2{
 	margin-left:20px;
@@ -320,7 +322,7 @@ a{
 	margin-left:30px;
 }
 .contact-div{
-	background:#f2f2f2;
+	background:transparent;
 	width:90%;
 	padding-top:100px;
 	border-radius:20px;
@@ -339,5 +341,38 @@ a{
 	min-width:200px;
 	min-height:200px;
 }
-
+.ratings-div{
+	background:black;
+	width:100%;
+	padding-top:50px;
+	padding-bottom:50px;
+	text-align:center;
+}
+.rating{
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+	display:flex;
+}
+.rating-title{
+	margin-left:5%;
+	color:white;
+	margin-top:auto;
+	margin-bottom:auto;
+	font-size:20px;
+}
+.stars{
+	display:flex;
+	margin-left:auto;
+	margin-right:5%;
+	margin-bottom:3%;
+}
+.star-0{
+	font-size:300%;
+	color:yellow;
+}
+.star-1{
+	font-size:300%;
+	color:yellow;
+}
 
