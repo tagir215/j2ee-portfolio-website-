@@ -34,7 +34,7 @@ body {
 .tab-input {
 	line-height:50px;
 	border:none;
-	font: 0.8em "Arial Black", sans-serif;
+	font: 0.8em "Courier New", sans-serif;
 	margin: auto 20px;
 	font-size: 17px;
 	cursor: pointer;
@@ -50,7 +50,7 @@ a{
 
 .name{
 	margin-left:5%;
-	font: 0.8em "Arial Black", sans-serif;
+	font: 0.8em "Courier New", sans-serif;
 	margin-top:auto;
 	margin-bottom:auto;
 	font-size: 17px;
