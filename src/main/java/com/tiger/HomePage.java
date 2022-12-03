@@ -94,8 +94,8 @@ public class HomePage extends WebPage {
 				+ "saakka. Vaikka en ole tehnyt varsinaista koodausta, olen tehnyt pelejä "
 				+ "LittleBigPlanet ja Dreams pelinteko ohjelmilla. Oma tapani luoda pelejä "
 				+ "näillä alustoilla oli aina koetella työkalujen rajoja ja yrittää rakentaa "
-				+ "monimutkaisia tekoälyjä ja kontrolleja. En oikein edes pelaillut muita pelejä "
-				+ "vaan käytin kaiken ajan näiden ohjelmien parissa. ";
+				+ "monimutkaisia tekoälyjä ja kontrolleja. Muutama tekemistäni peleistä ovat"
+				+ "ansainneet “MM-pick” valinnan, eli näiden pelinteko alustojen kehittäjien suositus leiman. ";
 		abouts.add(new About("about2","LittleBigPlanet?",experienceP));
 		
 		
