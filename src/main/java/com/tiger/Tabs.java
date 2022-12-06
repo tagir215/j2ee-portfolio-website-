@@ -19,7 +19,7 @@ public class Tabs extends WebMarkupContainer{
 	Tabs(String id) {
 		super(id);
 		log = LoggerFactory.getLogger(HomePage.class);
-    	String[] tabNames = new String[] {"Minusta","Työt","Yhteystiedot"};
+    	String[] tabNames = new String[] {"Esittely","Työt","Yhteystiedot"};
     	String[] markupIds = new String[] {"about","works","contact"};
     	WebMarkupContainer container = new WebMarkupContainer("tabs-container");
     	add(container);
