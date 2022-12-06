@@ -43,7 +43,7 @@ public class HomePage extends WebPage {
 		Tabs tabs = new Tabs("bar-tabs");
 		add(tabs);
 		
-		Image image = new Image("front-img","crocodile2.jpg");
+		Image image = new Image("front-img","vesitaustajpg.jpg");
 		add(image);
 		
 		RepeatingView abouts = new RepeatingView("about");
