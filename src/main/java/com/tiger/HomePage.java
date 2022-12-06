@@ -53,20 +53,19 @@ public class HomePage extends WebPage {
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
 				+ "töitä. Persoonani on sellainen, että motivoidun parhaiten "
 				+ "haastavista projekteista, joten tein ensmmäisestä koodaus projektistani "
-				+ "jo suhteellisen haastavan. En ole ehtinyt vielä harjoittelemaan nettisivujen tekemistä "
-				+ "niin paljon, joten tämä portfolio on vielä vähän karkea, mutta yritän parannella sitä "
-				+ "tulevaisuudessa. Olen oppinut paljon tämän 10kk "
+				+ "jo suhteellisen haastavan. Olen oppinut paljon tämän 10kk "
 				+ "aikana, mutta huomannut myös että on vieä paljon opittavaa.";
 		abouts.add(new About("about","Portfolio 2022",aboutP));
 		
-		String experienceA= "Olen itse oppinut ja oppinut lähinnä projekteja tehdessä. Erilaiset "
+		String experienceA= "Olen itse oppinut lähinnä projekteja tehdessä. Erilaiset "
 				+ "tutoriaalit eivät yleensä jää pysyvästi mieleeni, joten opettelen asiat mielummin "
 				+ "käytännössä. "
 				+ "Tein kesällä myös n. kuukauden työharjoittelun/työvalmennuksen, "
 				+ "jossa tein kolme erilaista "
 				+ "harjoitus projektia. Minulla oli mentori joka tarkisteli koodejani joten opin "
 				+ "paljon koodin muotoilusta ja sain lisäksi materiaalia sekä lukuvinkkejä. Olen opiskellut myös ammattikorkeakoulussa "
-				+ "konetekniikkaa. Siellä opin matematiikkaa, elektroniikkaa, fysiikkaa sekä erilaisia cadeja "
+				+ "konetekniikkaa. Siellä opin matematiikkaa, elektroniikkaa, fysiikkaa sekä erilaisia cadeja. Kävin siellä myös "
+				+ "kuukuden javascript kurssin. "
 				+ "";
 		abouts.add(new About("about3","Opiskelut",experienceA));
 		
@@ -88,15 +87,6 @@ public class HomePage extends WebPage {
 		String[] skills2 = new String[] {"Android Studio","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket"};
 		int[] measures2 = new int[] {8,5,5,4,3,3};
 		skillGraphs.add(new SkillGraph("skill-div2",skills2,measures2,"Framework/Ide"));
-		
-		
-		String experienceP = "Minulla on tavallaan kokemusta koodaamisesta jo 12 vuotiaasta "
-				+ "saakka. Vaikka en ole tehnyt varsinaista koodausta, olen tehnyt pelejä "
-				+ "LittleBigPlanet ja Dreams pelinteko ohjelmilla. Oma tapani luoda pelejä "
-				+ "näillä alustoilla oli aina koetella työkalujen rajoja ja yrittää rakentaa "
-				+ "monimutkaisia tekoälyjä ja kontrolleja. Muutama tekemistäni peleistä ovat "
-				+ "ansainneet “MM-pick” valinnan, eli näiden pelinteko alustojen kehittäjien suositus leiman. ";
-		abouts.add(new About("about2","LittleBigPlanet?",experienceP));
 		
 		
 		
