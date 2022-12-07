@@ -53,17 +53,17 @@ public class HomePage extends WebPage {
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
 				+ "töitä. Persoonani on sellainen, että motivoidun parhaiten "
 				+ "haastavista projekteista, joten tein ensmmäisestä koodaus projektistani "
-				+ "jo suhteellisen haastavan. Olen oppinut paljon tämän 10kk "
-				+ "aikana, mutta huomannut myös että on vieä paljon opittavaa.";
+				+ "jo suhteellisen haastavan. Olen oppinut paljon tämän 9kk "
+				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa.";
 		abouts.add(new About("about","Portfolio 2022",aboutP));
 		
 		String experienceA= "Olen itse oppinut lähinnä projekteja tehdessä. Erilaiset "
 				+ "tutoriaalit eivät yleensä jää pysyvästi mieleeni, joten opettelen asiat mielummin "
 				+ "käytännössä. "
-				+ "Tein kesällä myös n. kuukauden työharjoittelun/työvalmennuksen, "
+				+ "Tein kesällä myös n. kuukauden työharjoittelun, "
 				+ "jossa tein kolme erilaista "
 				+ "harjoitus projektia. Minulla oli mentori joka tarkisteli koodejani joten opin "
-				+ "paljon koodin muotoilusta ja sain lisäksi materiaalia sekä lukuvinkkejä. Olen opiskellut myös ammattikorkeakoulussa "
+				+ "oleellisia asioita koodin muotoilusta ja sain lisäksi materiaalia sekä lukuvinkkejä. Olen opiskellut myös ammattikorkeakoulussa "
 				+ "konetekniikkaa. Siellä opin matematiikkaa, elektroniikkaa, fysiikkaa sekä erilaisia cadeja. Kävin siellä myös "
 				+ "kuukuden javascript kurssin. "
 				+ "";
@@ -115,7 +115,7 @@ public class HomePage extends WebPage {
 				+ "jotta suorituskyky ei kärsisi.",
 				"Peli objektien koot muokkautuvat kameran etäisyyden perusteella",
 				"Tämä oli ensimmäinen koodaus projektini joten siinä meni noin 2 kuukautta. Opin yllättävän paljon data "
-				+ "struktuureista sekä järjestely algoritmeista"
+				+ "struktuureista ja järjestely algoritmeista sekä myös Google Cloudin käyttöä"
 				
 		};
 		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1,ul1));
@@ -129,14 +129,14 @@ public class HomePage extends WebPage {
 		String i2 = "Java, Android Studio, Xml, Json";
 		String[] p2 = new String[] {
 				"YourMindMap on ajatuskarttojen luontiin tarkoitettu sovellus. "
-				+ "Sovelluksesta löytyy lukusisa asetuksia joissa käyttäjää on ajateltu "
+				+ "Sovelluksesta löytyy lukuisia asetuksia joissa käyttäjää on huomioitu "
 				+ "antamalla hänelle mahdollisimman vapaat kädet. "
 				+ "Kuitenkin pitämällä työkalut intuitiivisina ja helppokäyttöisinä. "
 				+ "Sovelluksessa on rajoitettu erilaisten asetusikkunoiden navigointia "
 				+ "pitämällä kaikki tiiviisti yhdessä paikassa.",
 					"Sovelluksessa on kaikki vastaavien kilpailijasovellusten työkalut "
 				+ "sekä mahdollisuus luoda yli viiden tuhannen "
-				+ "solun ajatuskartoja. Ajatuskartta sommittautuu automaattisesti, joten "
+				+ "solun ajatuskarttoja. Ajatuskartta sommittautuu automaattisesti, joten "
 				+ "käyttäjän ei tarvitse erikseen siirrellä soluja.  "
 				};
 		String[] ul2 = new String[] {
@@ -149,7 +149,7 @@ public class HomePage extends WebPage {
 				"Ajatuskartalla voi tehdä huonommallakin kännykällä yli 5 tuhannen solun karttoja ilman huomattavaa "
 				+ "suorituskyvyn laskua.",
 				"Suorakulmio valinta, ja monen solun muokkaaminen kerralla",
-				"Viivan, laatikon, reuonojen muotojen, värien, ja viiva tyyppien editointi työkalut.",
+				"Viivan, laatikon, reuonojen muotojen, värien, ja viiva tyyppien editointi työkalut",
 				"Tekstien värien, fonttien, asettelu ja koon editointi työkalut, sekä kartan automaattinen sopeutuminen eri fontti- "
 				+ "ja teksti-koko asetuksille",
 				"Tallennus, undo ja redo komennont sekä useiden karttojen tallennus mahdollisuus",
@@ -180,8 +180,8 @@ public class HomePage extends WebPage {
 				+ "soittaessa monimutkaisempia kuvioita, "
 				+ "jolloin aivot priorisoi rytmin sijaan muita soitamiseen "
 				+ "tarvittavaa keskittymistä. Tässä ongelmana on myös se, että "
-				+ "itse soittaja ei välttämättä edes kuule omia rytmi ongelmiaan, ",
-					" Visual Metronome pyrkii ratkaisemaan nämä ongelmat"
+				+ "itse soittaja ei välttämättä edes kuule omia rytmi ongelmiaan. ",
+					"Visual Metronome pyrkii ratkaisemaan nämä ongelmat"
 				+ "antamalla reaali aikaista selkeää feedbackiä, jolloin soittaja "
 				+ "näkee virheet heti niiden tapahduttua."
 				};
@@ -191,11 +191,11 @@ public class HomePage extends WebPage {
 				"Sovellus aloittaa äänityken automaattisesti sekä toistaa soiton myös äänten hiljennyttä automaattisesti "
 				+ "valitun viiveen jälkeen",
 				"Ääniallot ja rytmi kuviot on mallinnettu käyttäen OpenGL:ää",
-				"Rytmi kuviot muodostuvat y suunnassa suurempina, jos nollakohtien määrä muttuu paljon edelliseen nuottiin "
+				"Rytmi kuviot muodostuvat y suunnassa suurempina, jos nollakohtien määrä muuttuu paljon edelliseen nuottiin "
 				+ "verrattuna, sekä taas keltaisena tai läpinäkyvän punaisena äänen amplitudin mukaan",
-				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä vähän puutteellisesti esimerkiksi pianon kanssa, joten "
+				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä puutteellisesti esimerkiksi pianon kanssa, joten "
 				+ "joitakin parannuksia pitää vielä tehdä",
-				"Ylesiä asetuksia esim. playback odotusajalle ja temmolle, sekä tahtilajin muutoksille. ",
+				"Ylesiä asetuksia esim. playback odotusajalle ja temmolle, sekä tahtilajin muutoksille ",
 				"Tämän ohjelman tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Tein tätä noin kuukauden, mutta "
 				+ "saan tämän oikeastaan julkaistua ennen edellistä projektista, koska projektin koko on paljon pienempi."
 		};
