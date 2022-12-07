@@ -77,7 +77,7 @@ public class HomePage extends WebPage {
 		
 		
 		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL"};
-		int[] measures = new int[] {8,6,3,2,3,2};
+		int[] measures = new int[] {8,6,3,2,2,2};
 		skillGraphs.add(new SkillGraph("skill-div1",skills,measures,"Koodaus"));
 		
 		String[] skills3 = new String[] {"Google Cloud","Heroku","Openshift","MySQL"};
