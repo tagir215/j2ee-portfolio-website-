@@ -152,7 +152,7 @@ public class HomePage extends WebPage {
 				"Viivan, laatikon, reuonojen muotojen, värien, ja viiva tyyppien editointi työkalut",
 				"Tekstien värien, fonttien, asettelu ja koon editointi työkalut, sekä kartan automaattinen sopeutuminen eri fontti- "
 				+ "ja teksti-koko asetuksille",
-				"Tallennus, undo ja redo komennont sekä useiden karttojen tallennus mahdollisuus",
+				"Tallennus, undo ja redo komennot sekä useiden karttojen tallennus mahdollisuus",
 				"Vienti mahdollisuuksia pdf, jpg tai png",
 				"Zoom",
 				"Haarakkeiden pakkaus työkalu",
