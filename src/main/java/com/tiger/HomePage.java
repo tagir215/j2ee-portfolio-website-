@@ -181,7 +181,7 @@ public class HomePage extends WebPage {
 				+ "jolloin aivot priorisoi rytmin sijaan muita soitamiseen "
 				+ "tarvittavaa keskittymistä. Tässä ongelmana on myös se, että "
 				+ "itse soittaja ei välttämättä edes kuule omia rytmi ongelmiaan. ",
-					"Visual Metronome pyrkii ratkaisemaan nämä ongelmat"
+					"Visual Metronome pyrkii ratkaisemaan nämä ongelmat "
 				+ "antamalla reaali aikaista selkeää feedbackiä, jolloin soittaja "
 				+ "näkee virheet heti niiden tapahduttua."
 				};
