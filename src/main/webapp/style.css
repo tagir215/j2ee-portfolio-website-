@@ -78,7 +78,7 @@ a{
 	border-bottom:solid 1px grey;
 }
 .front{
-	min-height:40vh;
+	min-height:60vh;
 	width:100%;
 }
 .front-img{
@@ -427,4 +427,9 @@ a{
 }
 .end{
 	color:grey;
+}
+.topic-title-end{
+	color:white;
+	font-size:50px;
+	margin-top:2px;
 }
