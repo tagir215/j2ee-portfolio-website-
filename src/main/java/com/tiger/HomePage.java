@@ -28,7 +28,7 @@ public class HomePage extends WebPage {
 	private static final Logger log = LoggerFactory.getLogger(HomePage.class);
 	int topicNumber=0;
 	int skillnumber = 0;
-	final int MARGIN_LEFT = -245;
+	final int MARGIN_LEFT = -255;
 	public boolean userOnPage=true;
 	ArrayList<ArrayList<String>> buttonIds = new ArrayList<ArrayList<String>>(); 
 	
@@ -43,7 +43,7 @@ public class HomePage extends WebPage {
 		Tabs tabs = new Tabs("bar-tabs");
 		add(tabs);
 		
-		Image image = new Image("front-img","vesitaustajpg.jpg");
+		Image image = new Image("front-img","leaves.jpg");
 		add(image);
 		
 		RepeatingView abouts = new RepeatingView("about");
@@ -76,18 +76,9 @@ public class HomePage extends WebPage {
 		add(skillGraphs);
 		
 		
-		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL"};
-		int[] measures = new int[] {8,6,3,2,2,2};
-		skillGraphs.add(new SkillGraph("skill-div1",skills,measures,"Koodaus"));
-		
-		String[] skills3 = new String[] {"Google Cloud","Heroku","Openshift","MySQL"};
-		int[] measures3 = new int[] {4,2,1,2};
-		skillGraphs.add(new SkillGraph("skill-div3",skills3,measures3,"Pilvi"));
-		
-		String[] skills2 = new String[] {"Android Studio","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket"};
-		int[] measures2 = new int[] {8,5,5,4,3,3};
-		skillGraphs.add(new SkillGraph("skill-div2",skills2,measures2,"Framework/Ide"));
-		
+		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL","Google Cloud","Heroku","Openshift","MySQL","Android Studio","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket"};
+		int[] measures = new int[] {7,5,3,2,2,2,4,2,1,2,7,5,5,4,3,3};
+		skillGraphs.add(new SkillGraph("skill-div1",skills,measures,"Taidot"));
 		
 		
 		RepeatingView topics = new RepeatingView("topic");
@@ -133,11 +124,7 @@ public class HomePage extends WebPage {
 				+ "antamalla hänelle mahdollisimman vapaat kädet. "
 				+ "Kuitenkin pitämällä työkalut intuitiivisina ja helppokäyttöisinä. "
 				+ "Sovelluksessa on rajoitettu erilaisten asetusikkunoiden navigointia "
-				+ "pitämällä kaikki tiiviisti yhdessä paikassa.",
-					"Sovelluksessa on kaikki vastaavien kilpailijasovellusten työkalut "
-				+ "sekä mahdollisuus luoda yli viiden tuhannen "
-				+ "solun ajatuskarttoja. Ajatuskartta sommittautuu automaattisesti, joten "
-				+ "käyttäjän ei tarvitse erikseen siirrellä soluja.  "
+				+ "pitämällä kaikki tiiviisti yhdessä paikassa."
 				};
 		String[] ul2 = new String[] {
 				"Ajatuskartan automaattinen tilan sommittelu. Kokeilin useita versioita, mutta päädyin laskemaan "
@@ -180,8 +167,8 @@ public class HomePage extends WebPage {
 				+ "soittaessa monimutkaisempia kuvioita, "
 				+ "jolloin aivot priorisoi rytmin sijaan muita soitamiseen "
 				+ "tarvittavaa keskittymistä. Tässä ongelmana on myös se, että "
-				+ "itse soittaja ei välttämättä edes kuule omia rytmi ongelmiaan. ",
-					"Visual Metronome pyrkii ratkaisemaan nämä ongelmat "
+				+ "itse soittaja ei välttämättä edes kuule omia rytmi ongelmiaan. "
+				+	"Visual Metronome pyrkii ratkaisemaan nämä ongelmat "
 				+ "antamalla reaali aikaista selkeää feedbackiä, jolloin soittaja "
 				+ "näkee virheet heti niiden tapahduttua."
 				};
@@ -250,7 +237,7 @@ public class HomePage extends WebPage {
 			
 			RepeatingView repeatingView = new RepeatingView("skill-square");
 			add(repeatingView);
-			for(int i=9; i>-1; i--) {
+			for(int i=0; i<10; i++) {
 				WebMarkupContainer square = new WebMarkupContainer("square"+skillnumber+i);
 				if(measure>i)
 					square.add(AttributeModifier.append("class", "square-yes"));
@@ -292,6 +279,10 @@ public class HomePage extends WebPage {
 			this.setMarkupId(topicId);
 			add(new Label("work-title",title));
 			add(new Label("italic-section",italy));
+			WebMarkupContainer background = new WebMarkupContainer("background");
+			background.add(new AttributeModifier("class","background"+topicNumber));
+			add(background);
+			
 			RepeatingView paragraphs = new RepeatingView("work-p");
 			add(paragraphs);
 			for(int i=0; i<p.length; i++) {

@@ -12,23 +12,23 @@ body {
 .bar_tabs{
 	width:100hv;
 	max-width:2000px;
-	min-height:12vh;
-	position:sticky;
+	height:50px;
 	z-index:2;
 	top:0;
 	margin-top:0;
 	display:flex;
-	background:white;
+	background:transparent;
 }
 .list_tabs {
 	display:flex;
 	height:100%;
-	margin-top:auto;
+	margin-top:20px;
 	margin-bottom:auto;
 	margin-right:5%;
 	margin-left:auto;
 	justify-content:center;
 	list-style-type:none;
+	z-index:1;
 }
 
 .tab-input {
@@ -54,7 +54,7 @@ a{
 	margin-top:auto;
 	margin-bottom:auto;
 	font-size: 17px;
-	color:grey;
+	color:white;
 }
 
 
@@ -62,92 +62,95 @@ a{
 
 .main-title{
 	position:absolute;
-	margin-top:-4vh;
+	margin-top:-65px;
 	margin-left: 3vh; 
+	font: 0.8em "Courier New", sans-serif;
 	z-index:1;
-	font-size:100px;
-	color:rgba(0,0,0,0.1);
+	font-size:80px;
+	color:white;
 }
 .topic-title{
-	margin-top:100px;
-	font-size:70px;
+	font-size:30px;
 	margin-left:10%;
+	color:grey;
+	width:80%;
+	margin-top:50px;
+	border-bottom:solid 1px grey;
+}
+.front{
+	min-height:40vh;
+	width:100%;
 }
 .front-img{
-	position:relative;
+	position:absolute;
 	width:100%;
 	height:auto;
-	margin-top:-20px;
+	z-index:-1;
+	top:-20px;
 }
 .about{
 	margin-top:40px;
 	margin-left:auto;
 	min-height:200px;
-	width:90%;
+	max-width:45%;
 	margin-right:auto;
 }
 .about-title{
-	text-align:center;
+	color:black;
+	font-size:40px;
 }
 .about-container{
-	width:90%;
+	width:95%;
 	padding-top:20px;
 	padding-bottom:20px;
 	margin-top:40px;
 	margin-left:auto;
 	margin-right:auto;
 	background:transparent;
-	border:solid 1px #bebebe;
-	border-radius:20px;
+	display:flex;
+	flex-wrap:wrap;
 }
 .about-p{
-	text-align:center;
-	max-width:80%;
-	margin-left:auto;
-	margin-right:auto;
-	padding:20px;
-	font-size:17px;
+	max-width:100%;
+	padding:10px;
+	font-size:25px;
+	color:black;
 }
 .skill-div{
 	padding:2px;
-	flex-grow:1;
+	width:100%;
 	margin-top:20px;
 	margin-bottom:20px;
-	margin-left:11px;
-	margin-right:11px;
+	margin-left:auto;
+	margin-right:auto;
 	padding-left:10px;
 	padding-right:10px;
-	border-radius:5px;
-	border:solid 1px #d4d4d4;	
+	
 }
 
 .skill-div-div{
-	border-radius:20px;
-	margin-top:40px;
 	margin-left:auto;
 	margin-right:auto;
-	width:92%;
+	width:80%;
 	display:flex;
 	flex-wrap:wrap;
 }
 .skills{
 	display:flex;
 	flex-wrap:wrap;
-	justify-content:space-around;
 }
 .skill{
-	width:60px;
-	margin:auto 5px;
+	margin:auto 10px;
 	margin-top:10px;
 	margin-bottom:10px;
 	text-align:center;
-	font-size:13px;
+	font-size:16px;
 	color:black;
 }
 
 .skill-title{
-	text-align:center;
 	color:black;
+	font-size:40px;
 }
 
 
@@ -156,19 +159,18 @@ a{
 	margin-left: auto;
 	margin-right:auto;
 	margin-bottom:3px;
-	width:30px;
+	width:6px;
 	height:6px;
-	border-radius:2px;
-	background-color:orange;
+	size:200%;
+	color:orange;
 }
 .square-no{
 	margin-left: auto;
 	margin-right:auto;
 	margin-bottom:3px;
-	width:30px;
-	height:6px;
+	size:200%;
 	border-radius:2px;
-	background-color:transparent;
+	color:black;
 }
 .content {
 	display:flex;
@@ -178,31 +180,55 @@ a{
 	padding-bottom:10px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:40px;
+	margin-top:100px;
 	position:relative;
-	background-image:linear-gradient(90deg,black,black);
-	border-radius:20px;
+	border-radius:50px;
+	
+
 }
 .left-container{
 	margin-top:auto;
 	margin-bottom:auto;
 	padding-top:20px;
 	padding-bottom:20px;
-	min-width:260px;
+	width:90%;
 	margin-left:auto;
 	margin-right:auto;
-	height:600px;
+	height:650px;
 	display:flex;
 	justify-content:center;
+	overflow:hidden;
+	position:relative;
+}
+.background0{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:-10px;
+	background-image:linear-gradient(yellow, green);
+}
+.background1{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:-10px;
+	background-image:linear-gradient(#9c39ff, #8000ff);
+}
+.background2{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:-10px;
+	background-image:linear-gradient(orange, red);
 }
 .imgPhone{
-	max-width:255px;
+	max-width:275px;
 	height:auto;
 }
 .imgPhone-container{
 	margin-top:14px;
 	position:absolute;
-	width:255px;
+	width:275px;
 	height:100%;
 	text-align:center;
 }
@@ -214,10 +240,10 @@ a{
 	height:100%;
 }
 .slide-container{
-	width:245px;
-	height:520px;
-	border-radius:10px;
-	margin-top:25px;
+	width:255px;
+	height:565px;
+	border-radius:15px;
+	margin-top:18px;
 	overflow:hidden;
 	background:yellow;
 	position:absolute;
@@ -225,7 +251,7 @@ a{
 	overflow:hidden;
 }
 .images-container{
-	height:520px;
+	height:565px;
 	margin-left:0;
 	width:2000px;
 	background:blue;
@@ -233,15 +259,15 @@ a{
 }
 .imgSlideShow{
 	float:left;
-	margin:0;
+	margin-top:9px;
 	padding:0;
 	position:relative;
-	width:245px;
+	width:255px;
 	height:100%;
 }
 .buttons{
 	position:absolute;
-	margin-top:580px;
+	margin-top:620px;
 	display:flex;
 	justify-content:center;
 }
@@ -254,7 +280,7 @@ a{
 	padding:0;
 	position:relative;
 	background-color:transparent;
-	border:solid 1px grey;
+	border:solid 1px white;
 	margin: auto 4px;
 }
 .selectedButton{
@@ -277,38 +303,40 @@ a{
 }
 .paragraph-div{
 	margin-top:20px;
-	margin-right:6%;
+	margin-left:auto;
+	margin-right:auto;
 	margin-bottom:20px;
 	border-radius:10px;
 	padding:10px;
-	max-width:60%;
+	width:90%;
 	height:auto;
-	
 }
 .work-title{
-	color:white;
+	color:blue;
 }
 .work-i{
-	color:white;
+	color:grey;
+	font-size:20px;
 }
 .work-p{
 	flex-shrink:2;
-	font-size:17px;
-	color:white;
+	font-size:24px;
+	color:black;
+	max-width:800px;
 }
 .work-li{
-	color:white;
+	color:black;
 }
 .content2{
 	background:transparent;
-	border:solid 1px #d4d4d4;	
 	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 	padding-top:20px;
 	padding-bottom:20px;
 	border-radius:20px;
-	margin-top:60px;
+	margin-top:80px;
+	margin-bottom:80px;
 }
 .work-title2{
 	margin-left:20px;
@@ -326,12 +354,12 @@ a{
 	padding-top:100px;
 	border-radius:20px;
 	padding-bottom:100px;
-	margin-top:40px;
-	margin-bottom:20px;
+	margin-top:50px;
+	margin-bottom:50px;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
-	color:black;
+	color:white;
 	font-size:3vh;
 }
 .extra-content{
@@ -377,4 +405,26 @@ a{
 .palaute{
 	font-size:12px;
 }
+.part1{
+	background:white;
+	width:100%;
 
+}
+.part2{
+	background:white;
+	width:100%;
+
+}
+.part3{
+	width:100%;
+	background:black;
+	margin-top:-5px;
+	text-align:center;
+}
+.end-div{
+	text-align:center;
+	padding-bottom:10px;
+}
+.end{
+	color:grey;
+}
