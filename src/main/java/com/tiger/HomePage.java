@@ -53,7 +53,7 @@ public class HomePage extends WebPage {
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
 				+ "töitä. Persoonani on sellainen, että motivoidun parhaiten "
 				+ "haastavista projekteista, joten tein ensmmäisestä koodaus projektistani "
-				+ "jo suhteellisen haastavan. Olen oppinut paljon tämän 9kk "
+				+ "jo suhteellisen haastavan. Olen oppinut paljon tämän vuoden "
 				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa.";
 		abouts.add(new About("about","Portfolio 2022",aboutP));
 		
