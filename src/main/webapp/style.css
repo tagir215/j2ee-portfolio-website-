@@ -10,7 +10,7 @@ body {
 
 
 .bar_tabs{
-	width:100hv;
+	width:100wv;
 	max-width:2000px;
 	height:50px;
 	z-index:2;
@@ -36,9 +36,10 @@ body {
 	border:none;
 	font: 0.8em "Courier New", sans-serif;
 	margin: auto 20px;
-	font-size: 17px;
+	font-size: 1.5vw;
 	cursor: pointer;
 	background:none;
+	
 }
 a{
 	color: grey;
@@ -62,12 +63,13 @@ a{
 
 .main-title{
 	position:absolute;
-	margin-top:-65px;
-	margin-left: 3vh; 
+	margin-top:40vh;
+	width:100%;
+	margin-left:14%;
 	font: 0.8em "Courier New", sans-serif;
 	z-index:1;
-	font-size:80px;
-	color:white;
+	font-size:6vw;
+	color:grey;
 }
 .topic-title{
 	font-size:30px;

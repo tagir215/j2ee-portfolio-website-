@@ -180,17 +180,17 @@ public class HomePage extends WebPage {
 				+ "Jos nollakohtien määrä muuttuu edelliseen nuottiin verrattuna, tai "
 				+ "jos amplitudi nousee ylöspäin yllättäen. niin se on todennäköisesti uusi nuotti ",
 				"Ääniallot ja rytmi kuviot on mallinnettu käyttäen OpenGL:ää",
-				"Rytmi kuviot muodostuvat y suunnassa suurempina, jos nollakohtien määrä muuttuu paljon edelliseen nuottiin "
-				+ "verrattuna, sekä taas keltaisena tai läpinäkyvän punaisena äänen amplitudin mukaan",
-				"Sovelluksessa on mahdollisuus myös äänittää soittoa automaattisesti sekä toistaa soitto äänten hiljennettyä automaattisesti "
+				"Rytmi kuviot muodostuvat y suunnassa suurempina nollakohtien perusteella "
+				+ "sekä taas keltaisena tai läpinäkyvän punaisena äänen amplitudin mukaan",
+				"Sovelluksessa on mahdollisuus myös äänittää soittoa sekä toistaa soitto äänten hiljennettyä automaattisesti "
 				+ "valitun viiveen jälkeen. Tällöin soittajan ei tarvitse jatkuvasti painella 'record' ja 'play' nappeja",
-				"Äänityksen ollessa päällä, sovellus tallentaa nauhoitusta jatkuvasti AudioBufferiin, josta se karsii n. sekunnin vanhat osiot pois, "
+				"Äänityksen ollessa päällä, sovellus tallentaa nauhoitusta AudioBufferiin, josta se karsii n. sekunnin vanhat osiot pois, "
 				+ "jotta äänitystä toistaessa nauhoitus alkaisi sopivasta kohdasta ",
 				"Ylesiä asetuksia esim. playback odotusajalle ja temmolle, sekä tahtilajin muutoksille ",
 				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä puutteellisesti esimerkiksi pianon kanssa, joten "
 				+ "joitakin parannuksia pitää vielä tehdä",
 				"Tämän projektin tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Olen tehnyt tätä noin kuukauden. "
-				+ "Seuraavassa projektissani aion todennäköisesti syventyä OpenGL:ään ja Tietokantojen käyttöön vielä enemmän"
+				+ "Seuraavassa projektissani aion todennäköisesti syventyä OpenGL:ään ja Tietokantojen käyttöön lisää"
 		};
 		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3,"https://github.com/tagir215/VisualMetronome"));
 		
