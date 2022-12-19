@@ -188,10 +188,9 @@ public class HomePage extends WebPage {
 				+ "jotta äänitystä toistaessa nauhoitus alkaisi sopivasta kohdasta ",
 				"Ylesiä asetuksia esim. playback odotusajalle ja temmolle, sekä tahtilajin muutoksille ",
 				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä puutteellisesti esimerkiksi pianon kanssa, joten "
-				+ "joitakin parannuksia pitää vielä tehdä. Toinen ongelma on että nollakohtien määrien muutokset ovat pienemmät matalilla taajuuksilla "
-				+ "kuin korkeilla taajuuksilla, joten sovellus toimii vain tietyllä korkeus alueella...",
-				"Tämän projektin tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Olen tehnyt tätä noin kuukauden "
-				+ "ja oppinut aika komplekseja asioita. Seuraavassa projektissani aion todennäköisesti syventyä OpenGL:ään ja Tietokantojen käyttöön vielä enemmän (joku vähän helpompi projekti tällä kertaa)"
+				+ "joitakin parannuksia pitää vielä tehdä",
+				"Tämän projektin tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Olen tehnyt tätä noin kuukauden. "
+				+ "Seuraavassa projektissani aion todennäköisesti syventyä OpenGL:ään ja Tietokantojen käyttöön vielä enemmän"
 		};
 		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3,"https://github.com/tagir215/VisualMetronome"));
 		
