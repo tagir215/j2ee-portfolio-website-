@@ -342,11 +342,24 @@ a{
 	margin-left:20px;
 }
 .gitlink{
-	margin-top:30px;
-	font-style:italic;
-	font-size:22px;
-	color:grey;
-	margin-left:30px;
+	font-size:19px;
+	color:#808080;
+	font-family:OCR A Std, monospace;
+	
+}
+.gitlink-box{
+	width: fit-content;
+	height:fit-content;
+	margin-left:auto;
+	margin-right:0px;
+	margin-top:auto;
+	margin-bottom:auto;
+	padding:8px;
+	border:solid 1.5px #808080;
+	border-radius:4px;
+}
+.title-plus-git{
+	display:flex;
 }
 .contact-div{
 	background:transparent;

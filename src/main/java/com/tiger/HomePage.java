@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.wicket.AttributeModifier;
+import org.apache.wicket.MarkupContainer;
 import org.apache.wicket.ajax.AbstractAjaxTimerBehavior;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
@@ -13,10 +14,11 @@ import org.apache.wicket.markup.head.JavaScriptHeaderItem;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.image.Image;
+import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.repeater.RepeatingView;
+import org.apache.wicket.model.IModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -109,7 +111,7 @@ public class HomePage extends WebPage {
 				+ "struktuureista ja järjestely algoritmeista sekä myös Google Cloudin käyttöä"
 				
 		};
-		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1,ul1));
+		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1,ul1,"https://github.com/tagir215/GPSGolf"));
 		
 		
 		
@@ -151,7 +153,7 @@ public class HomePage extends WebPage {
 				+ "koska minulle tuli ongelmia suoristuskyvyn ja koodin sekavuuden kanssa. Vieläkin on paljon tekemistä "
 				+ "työkalujen parantelussa ja koodin puhtaudessa, mutta yritän pian julkaista tämän myös App Storeen. "
 		};
-		topics.add(new Topic("topic12",mapImages,"Your Mind Map",i2,p2,ul2));
+		topics.add(new Topic("topic12",mapImages,"Your Mind Map",i2,p2,ul2,"https://github.com/tagir215/YourMindMap"));
 		
 		
 		
@@ -174,19 +176,24 @@ public class HomePage extends WebPage {
 				};
 		String[] ul3 = new String[] {
 				"Kokeilin erilaisia tapoja rytmien tunnistamiseen, kuten Fast Fourier transformia, Autocorrelaatiota sekä Yin algoritmia, "
-				+ "mutta päädyin lopulta vain laskemaan nolla kohtien määrät, nopeuden vuoksi",
-				"Sovellus aloittaa äänityken automaattisesti sekä toistaa soiton myös äänten hiljennyttä automaattisesti "
-				+ "valitun viiveen jälkeen",
+				+ "mutta päädyin lopulta vain laskemaan ääni aaltojen nollakohtien määrät, sekä ottamaan huomioon myös amplitudin muutokset ylöspäin."
+				+ "Jos nollakohtien määrä muuttuu edelliseen nuottiin verrattuna, tai "
+				+ "jos amplitudi nousee ylöspäin yllättäen. niin se on todennäköisesti uusi nuotti ",
 				"Ääniallot ja rytmi kuviot on mallinnettu käyttäen OpenGL:ää",
 				"Rytmi kuviot muodostuvat y suunnassa suurempina, jos nollakohtien määrä muuttuu paljon edelliseen nuottiin "
 				+ "verrattuna, sekä taas keltaisena tai läpinäkyvän punaisena äänen amplitudin mukaan",
-				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä puutteellisesti esimerkiksi pianon kanssa, joten "
-				+ "joitakin parannuksia pitää vielä tehdä",
+				"Sovelluksessa on mahdollisuus myös äänittää soittoa automaattisesti sekä toistaa soitto äänten hiljennettyä automaattisesti "
+				+ "valitun viiveen jälkeen. Tällöin soittajan ei tarvitse jatkuvasti painella 'record' ja 'play' nappeja",
+				"Äänityksen ollessa päällä, sovellus tallentaa nauhoitusta jatkuvasti AudioBufferiin, josta se karsii n. sekunnin vanhat osiot pois, "
+				+ "jotta äänitystä toistaessa nauhoitus alkaisi sopivasta kohdasta ",
 				"Ylesiä asetuksia esim. playback odotusajalle ja temmolle, sekä tahtilajin muutoksille ",
-				"Tämän ohjelman tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Tein tätä noin kuukauden, mutta "
-				+ "saan tämän oikeastaan julkaistua ennen edellistä projektista, koska projektin koko on paljon pienempi."
+				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä puutteellisesti esimerkiksi pianon kanssa, joten "
+				+ "joitakin parannuksia pitää vielä tehdä. Toinen ongelma on että nollakohtien määrien muutokset ovat pienemmät matalilla taajuuksilla "
+				+ "kuin korkeilla taajuuksilla, joten sovellus toimii vain tietyllä korkeus alueella...",
+				"Tämän projektin tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Olen tehnyt tätä noin kuukauden "
+				+ "ja oppinut aika komplekseja asioita. Seuraavassa projektissani aion todennäköisesti syventyä OpenGL:ään ja Tietokantojen käyttöön vielä enemmän (joku vähän helpompi projekti tällä kertaa)"
 		};
-		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3));
+		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3,"https://github.com/tagir215/VisualMetronome"));
 		
 		
 	
@@ -272,16 +279,20 @@ public class HomePage extends WebPage {
 		ImagePickerButton currentButton;
 		int waitTime = 0;
 		String topicId;
-		public Topic(String id , String[] images, String title, String italy, String[] p, String[] ul) {
+		public Topic(String id , String[] images, String title, String italy, String[] p, String[] ul,String url) {
 			super(id);
 			topicId = "topic"+topicNumber;
 			this.setOutputMarkupId(true);
 			this.setMarkupId(topicId);
 			add(new Label("work-title",title));
 			add(new Label("italic-section",italy));
+			add(new GitLink("gitlink",url));
 			WebMarkupContainer background = new WebMarkupContainer("background");
 			background.add(new AttributeModifier("class","background"+topicNumber));
 			add(background);
+			
+			
+			
 			
 			RepeatingView paragraphs = new RepeatingView("work-p");
 			add(paragraphs);
@@ -360,7 +371,24 @@ public class HomePage extends WebPage {
 		
 	}
 	
-	
+	private class GitLink extends Link {
+
+		public GitLink(String id, String url) {
+			super(id);
+			// TODO Auto-generated constructor stub
+			add(new AttributeModifier("href",url));
+		}
+		@Override
+		public MarkupContainer setDefaultModel(IModel arg0) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		@Override
+		public void onClick() {
+			// TODO Auto-generated method stub
+		}
+		
+	}
 	
 	
 	
