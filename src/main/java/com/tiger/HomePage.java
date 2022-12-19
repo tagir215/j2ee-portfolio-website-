@@ -176,7 +176,7 @@ public class HomePage extends WebPage {
 				};
 		String[] ul3 = new String[] {
 				"Kokeilin erilaisia tapoja rytmien tunnistamiseen, kuten Fast Fourier transformia, Autocorrelaatiota sekä Yin algoritmia, "
-				+ "mutta päädyin lopulta vain laskemaan ääni aaltojen nollakohtien määrät, sekä ottamaan huomioon myös amplitudin muutokset ylöspäin."
+				+ "mutta päädyin lopulta vain laskemaan ääni aaltojen nollakohtien määrät, sekä ottamaan huomioon myös amplitudin muutokset ylöspäin. "
 				+ "Jos nollakohtien määrä muuttuu edelliseen nuottiin verrattuna, tai "
 				+ "jos amplitudi nousee ylöspäin yllättäen. niin se on todennäköisesti uusi nuotti ",
 				"Ääniallot ja rytmi kuviot on mallinnettu käyttäen OpenGL:ää",
