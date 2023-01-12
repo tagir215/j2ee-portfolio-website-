@@ -45,7 +45,7 @@ public class HomePage extends WebPage {
 		Tabs tabs = new Tabs("bar-tabs");
 		add(tabs);
 		
-		Image image = new Image("front-img","leaves.jpg");
+		Image image = new Image("front-img","map.jpg");
 		add(image);
 		
 		RepeatingView abouts = new RepeatingView("about");
@@ -78,8 +78,8 @@ public class HomePage extends WebPage {
 		add(skillGraphs);
 		
 		
-		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL","Google Cloud","Heroku","Openshift","MySQL","Android Studio","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket"};
-		int[] measures = new int[] {7,5,3,2,2,2,4,2,1,2,7,5,5,4,3,3};
+		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL","Google Cloud","Heroku","Openshift","MySQL","Android Studio","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket","JUnit"};
+		int[] measures = new int[] {7,5,3,2,2,2,4,2,1,2,7,5,5,4,3,3,3};
 		skillGraphs.add(new SkillGraph("skill-div1",skills,measures,"Taidot"));
 		
 		

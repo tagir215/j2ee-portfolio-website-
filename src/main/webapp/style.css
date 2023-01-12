@@ -14,34 +14,77 @@ body {
 .bar_tabs{
 	width:100wv;
 	max-width:2000px;
-	height:50px;
+	height:11vh;
 	z-index:2;
 	top:0;
 	margin-top:0;
 	display:flex;
-	background:transparent;
+	background:#ffffff;
+	position:sticky;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.me{
+	display:flex;
+	margin-left:5%;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	z-index:1;
+	background:white;
+}
+.image-me{
+	max-width:4vw;
+	max-height:4vw;
+	border-radius:20vw;
+	overflow:hidden;
+	
+}
+.img-me{
+	width:100%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-10%;
+	margin-bottom:auto;
+	background:grey;
+}
+.name{
+	font-family: Arial;
+  	font-stretch: ultra-expanded;
+	font-size: 1.2vw;
+	color:grey;
+	margin-top:auto;
+	margin-bottom:auto;
+	font-weight:bold;
+	margin-left:2vw;
 }
 .list_tabs {
 	display:flex;
-	height:100%;
-	margin-top:20px;
 	margin-bottom:auto;
 	margin-right:5%;
 	margin-left:auto;
 	justify-content:center;
 	list-style-type:none;
 	z-index:1;
+	margin-top:auto;
+	margin-bottom:auto;
 }
 
 .tab-input {
 	line-height:50px;
 	border:none;
-	font: 0.8em "Courier New", sans-serif;
-	margin: auto 20px;
-	font-size: 1.3vw;
+	font-family: Arial;
+	font-weight:bold;
+  	font-stretch: ultra-expanded;
+  	margin-left:-0.2vw;
+	margin-right:2vw;
+	font-size: 1.2vw;
 	cursor: pointer;
 	background:none;
-	
+	color:#5a5a67;
+}
+.tab-number{
+	color:grey;
 }
 a{
 	color: grey;
@@ -49,42 +92,45 @@ a{
 }
 
 
-
-
-.name{
-	margin-left:5%;
-	font: 0.8em "Courier New", sans-serif;
-	margin-top:auto;
-	margin-bottom:auto;
-	font-size: 17px;
-	color:white;
-}
-
-
-
-
-.main-title{
+.main-titles{
 	position:absolute;
-	margin-top:40vh;
-	width:100%;
+	margin-top:24vh;
 	margin-left:14%;
+	
+}
+.main-title{
 	font: 0.8em "Courier New", sans-serif;
+	background:black;
 	z-index:1;
 	font-size:6vw;
-	color:grey;
+	padding-left:5px;
+	padding-right:5px;
+	color:white;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+}
+.main-title2{
+	font: 0.8em "Courier New", sans-serif;
+	background:black;
+	z-index:1;
+	font-size:1vw;
+	padding-left:5px;
+	padding-right:5px;
+	color:white;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
 }
 .topic-title{
-	font-size:30px;
+	font-size:5vh;
 	margin-left:10%;
 	color:grey;
 	width:80%;
-	margin-top:50px;
+	margin-top:-20vh;
+	padding-top:12vh;
 	border-bottom:solid 1px grey;
 }
 .front{
-	min-height:60vh;
+	height:80vh;
 	width:100%;
-	max-width:2000px;
+	background-image:linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
 .front-img{
 	position:absolute;
@@ -93,11 +139,14 @@ a{
 	z-index:-1;
 	top:-20px;
 	max-width:2000px;
+	opacity:1;
+	filter: grayscale(100%);
 }
 .about{
 	margin-top:40px;
 	margin-left:auto;
 	min-height:200px;
+	min-width:400px;
 	max-width:45%;
 	margin-right:auto;
 }
@@ -109,7 +158,6 @@ a{
 	width:95%;
 	padding-top:20px;
 	padding-bottom:20px;
-	margin-top:40px;
 	margin-left:auto;
 	margin-right:auto;
 	background:transparent;
@@ -140,6 +188,7 @@ a{
 	width:80%;
 	display:flex;
 	flex-wrap:wrap;
+	padding-bottom:20vh;
 }
 .skills{
 	display:flex;
@@ -190,7 +239,6 @@ a{
 	position:relative;
 	border-radius:50px;
 	
-
 }
 .left-container{
 	margin-top:auto;
@@ -211,21 +259,22 @@ a{
 	width:100%;
 	height:100%;
 	top:-10px;
-	background-image:linear-gradient(yellow, green);
+	background-image:linear-gradient(grey, #408080);
 }
 .background1{
 	position:absolute;
 	width:100%;
 	height:100%;
 	top:-10px;
-	background-image:linear-gradient(#9c39ff, #8000ff);
+	
+	background-image:linear-gradient(#9b37ff, #6b00d7);
 }
 .background2{
 	position:absolute;
 	width:100%;
 	height:100%;
 	top:-10px;
-	background-image:linear-gradient(orange, red);
+	background-image:linear-gradient(#fc6703, #d00000);
 }
 .imgPhone{
 	max-width:275px;
@@ -369,11 +418,11 @@ a{
 .contact-div{
 	background:transparent;
 	width:90%;
-	padding-top:100px;
+	padding-top:70px;
+	padding-bottom:70px;
 	border-radius:20px;
-	padding-bottom:100px;
-	margin-top:50px;
-	margin-bottom:50px;
+	margin-top:30px;
+	margin-bottom:30px;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
@@ -424,9 +473,11 @@ a{
 	font-size:12px;
 }
 .part1{
+	padding-top:10px;
 	background:white;
 	width:100%;
-
+	display:flex;
+	flex-wrap:wrap;
 }
 .part2{
 	background:white;
