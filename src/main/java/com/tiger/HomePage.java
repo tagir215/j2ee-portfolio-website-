@@ -116,7 +116,7 @@ public class HomePage extends WebPage {
 		
 		
 		String[] mapImages = new String[] {
-				"mappicture1.jpg","mappicture2.jpg","mappicture4.jpg","mappicture6.jpg"
+				"mappicture1.jpg","mappicture2.jpg","mappicture4.jpg","mindmapBB.jpg","mindmapCC.jpg","mappicture6.jpg"
 		};
 		String i2 = "Java, Android Studio, Xml, Json";
 		String[] p2 = new String[] {
@@ -159,7 +159,6 @@ public class HomePage extends WebPage {
 		
 		String[] metronomeImages = new String[] {
 				"picmetr1.jpg","picmetr2.jpg","picmetr3.jpg",
-				"picmetr5.jpg","picmetr6.jpg",
 		};
 		String i3 = "Java, Android Studio, OpenGL, Fast Fourier Transform, YIN algorithm, Autocorrelation";
 		String[] p3= new String[] { 
