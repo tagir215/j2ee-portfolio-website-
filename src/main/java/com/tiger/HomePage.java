@@ -45,7 +45,7 @@ public class HomePage extends WebPage {
 		Tabs tabs = new Tabs("bar-tabs");
 		add(tabs);
 		
-		Image image = new Image("front-img","map.jpg");
+		Image image = new Image("front-img","leaves.jpg");
 		add(image);
 		
 		RepeatingView abouts = new RepeatingView("about");
