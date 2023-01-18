@@ -44,13 +44,14 @@ body {
 .mail-me{
 	margin-top:auto;
 	margin-bottom:auto;
-	font-size: 3.2vw;
+	font-size: 2.4vw;
 	margin-left:1.6vw;
 	color:#5a5a67;
 	animation: pulse 4s infinite;
 	padding:-20px;
 	padding-top:-20px;
 	padding-bottom:-20px;
+	opacity:0;
 }
 
 
@@ -101,8 +102,8 @@ a{
 
 .main-titles{
 	position:absolute;
-	margin-top:31vh;
-	margin-left:16%;
+	margin-top:24vh;
+	margin-left:18%;
 }
 .main-title{
 	font: 0.8em "Courier New", sans-serif;
@@ -118,12 +119,10 @@ a{
 	margin-left:10%;
 	color:grey;
 	width:80%;
-	margin-top:-20vh;
-	padding-top:12vh;
 	border-bottom:solid 1px grey;
 }
 .front{
-	height: 70vh;
+	height: 50vh;
 	width:100%;
 	background-image:linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
@@ -151,7 +150,7 @@ a{
 }
 .about-container{
 	width:95%;
-	padding-top:20px;
+	padding-top:0px;
 	padding-bottom:20px;
 	margin-left:auto;
 	margin-right:auto;
@@ -254,7 +253,7 @@ a{
 	width:100%;
 	height:100%;
 	top:-10px;
-	background-image:linear-gradient(grey, #408080);
+	background-image:linear-gradient(green, #408080);
 }
 .background1{
 	position:absolute;
@@ -412,7 +411,7 @@ a{
 }
 .contact-div{
 	width:90%;
-	padding-top:100px;
+	padding-top:80px;
 	padding-bottom:100px;
 	border-radius:20px;
 	margin-bottom:30px;
@@ -420,7 +419,7 @@ a{
 	margin-right:auto;
 	text-align:center;
 	color:white;
-	font-size:5vh;
+	font-size:4vh;
 }
 .extra-content{
 	background:grey;
@@ -466,7 +465,6 @@ a{
 	font-size:12px;
 }
 .part1{
-	padding-top:10px;
 	background:white;
 	width:100%;
 	display:flex;
@@ -492,6 +490,6 @@ a{
 }
 .topic-title-end{
 	color:white;
-	font-size:50px;
+	font-size:5vw;
 	margin-top:2px;
 }

@@ -116,7 +116,7 @@ public class HomePage extends WebPage {
 		
 		
 		String[] mapImages = new String[] {
-				"mappicture1.jpg","mappicture2.jpg","mappicture4.jpg","mindmapBB.jpg","mindmapCC.jpg","mappicture6.jpg"
+				"mappicture1.jpg","mappicture2.jpg","mappicture4.jpg","mindmapBB.jpg","mindmapCC.jpg","mindmapWW.jpg","mindmapDD.jpg"
 		};
 		String i2 = "Java, Android Studio, Xml, Json";
 		String[] p2 = new String[] {
