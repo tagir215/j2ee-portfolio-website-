@@ -45,9 +45,9 @@ public class HomePage extends WebPage {
 		Tabs tabs = new Tabs("bar-tabs");
 		add(tabs);
 		
-		Image image = new Image("front-img","leaves.jpg");
+		Image image = new Image("front-img","title2.png");
 		add(image);
-		
+	
 		RepeatingView abouts = new RepeatingView("about");
 		add(abouts);
 		
@@ -116,7 +116,7 @@ public class HomePage extends WebPage {
 		
 		
 		String[] mapImages = new String[] {
-				"mappicture1.jpg","mappicture2.jpg","mappicture4.jpg","mindmapCCDA.jpg","mindmapBBA.jpg","mindmapWW.jpg","mindmapDDW.jpg"
+				"mappicture1.jpg","mappicture2.jpg","mappicture4.jpg","mindmapCCDA.jpg","mindmapBBA.jpg","mindmapWW.jpg"
 		};
 		String i2 = "Java, Android Studio, Xml, Json";
 		String[] p2 = new String[] {
