@@ -217,7 +217,7 @@ a{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
-	width:90%;
+	width:100%;
 	padding-bottom:10px;
 	margin-left:auto;
 	margin-right:auto;
@@ -230,7 +230,7 @@ a{
 	margin-bottom:auto;
 	padding-top:20px;
 	padding-bottom:20px;
-	width:90%;
+	width:100%;
 	margin-left:auto;
 	margin-right:auto;
 	height:650px;
@@ -241,30 +241,27 @@ a{
 }
 .background0{
 	position:absolute;
-	width:200%;
+	width:100%;
 	height:100%;
-	border-radius:2vh;
 	top:-1vh;
 	background-image:linear-gradient(#00d7d7,#008081 );
-	box-shadow:2vw 2vh 2px 2px #cacaca;
+	box-shadow:0px 2vh 2px 2px #cacaca;
 }
 .background1{
 	position:absolute;
-	width:200%;
+	width:100%;
 	height:100%;
 	top:-1vh;
-	border-radius:2vh;
 	background-image:linear-gradient( #c488ff,#6b00d7);
-	box-shadow:2vw 2vh 2px 2px #cacaca;
+	box-shadow:0px 2vh 2px 2px #cacaca;
 }
 .background2{
 	position:absolute;
-	width:200%;
+	width:100%;
 	height:100%;
 	top:-1vh;
-	border-radius:2vh;
 	background-image:linear-gradient( #777777, #191919);
-	box-shadow:2vw 2vh 2px 2px #cacaca;
+	box-shadow:0px 2vh 2px 2px #cacaca;
 }
 .imgPhone{
 	max-width:275px;
@@ -354,7 +351,7 @@ a{
 	margin-bottom:20px;
 	border-radius:10px;
 	padding:10px;
-	width:90%;
+	width:80%;
 	height:auto;
 }
 .work-title{
