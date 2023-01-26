@@ -17,8 +17,8 @@ public class Tabs extends WebMarkupContainer{
 	Tabs(String id) {
 		super(id);
 		log = LoggerFactory.getLogger(HomePage.class);
-    	String[] tabNames = new String[] {"Esittely","Työt","Yhteystiedot"};
-    	String[] markupIds = new String[] {"about","works","contact"};
+    	String[] tabNames = new String[] {"Esittely","Työt"};
+    	String[] markupIds = new String[] {"about","works"};
     	WebMarkupContainer container = new WebMarkupContainer("tabs-container");
     	add(container);
     	RepeatingView rvTabs = new RepeatingView("tab-form");
@@ -34,7 +34,7 @@ public class Tabs extends WebMarkupContainer{
 	class TabButton extends Button {
 		@Override
 		protected String getOnClickScript() {
-			return "$([document.documentElement, document.body])"
+			return "$('.page')"
 					+ ".stop().animate({"
 					+ "scrollTop: $('#"+markupId+"').offset().top"
 					+ "    }, 400);";
