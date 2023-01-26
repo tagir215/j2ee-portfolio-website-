@@ -172,7 +172,7 @@ a{
 	margin-top:40px;
 	margin-left:auto;
 	min-height:200px;
-	min-width:400px;
+	min-width:300px;
 	max-width:45%;
 	margin-right:auto;
 }
@@ -181,7 +181,7 @@ a{
 	font-size:40px;
 }
 .about-container{
-	width:95%;
+	width:98%;
 	padding-top:0px;
 	padding-bottom:20px;
 	margin-left:auto;
@@ -193,7 +193,7 @@ a{
 .about-p{
 	max-width:100%;
 	padding:10px;
-	font-size:25px;
+	font-size:20px;
 	font-family:Calibri;
 	color:#747474;
 }
@@ -540,7 +540,7 @@ a{
 .end{
 	color:grey;
 	margin-top:10px;
-	font-size:0.3vw;
+	font-size:1vw;
 	display:inline-block;
 }
 .topic-title-end{
