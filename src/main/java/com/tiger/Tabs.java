@@ -34,7 +34,7 @@ public class Tabs extends WebMarkupContainer{
 	class TabButton extends Button {
 		@Override
 		protected String getOnClickScript() {
-			return "$('.page')"
+			return "$('html, body')"
 					+ ".stop().animate({"
 					+ "scrollTop: $('#"+markupId+"').offset().top"
 					+ "    }, 400);";

@@ -2,52 +2,84 @@
 body {
 	padding: 0;   
 	margin: 0;
-	background:rgb(255, 255, 255);
-	display:flex;
-	justify-content:center;
 	width:100%;
-	height:100vh;
 	margin-left:auto;
 	margin-right:auto;
-	overflow-x: hidden;
-	}
-.page{
-	width:65%;
-	border-left:solid 1px #bfbfbf;
 	overflow:scroll;
-	height:100hv;
-	position:relative;
-}
+	max-width:1200px;
+	}
 
+.sticky-elements{
+	top:0;	
+	position:sticky;
+}
 .side{
-	width:20%;	
+	margin-left:20px;
+	top:10px;
+	width:270px;	
 	margin-right:20px;
+	overflow:hidden;
+	flex-shrink:0;
+}
+.side1img{
+	max-height:15px;
+	margin-right:10px;
+	margin-top:auto;
+	margin-bottom:auto;
+	width:auto;
+}
+.side2{
+	position:absolute;
+	width:40px;
+	top:30px;
+	right:20px;
+}
+.side2img{
+	max-width:100%;
+	height:auto;
+	margin-bottom:20px;
+	border-radius:50px;
 }
 
+.side-box{
+	margin-top:20px;
+	border:1px solid #cfcfcf;
+	border-radius:20px;
+	padding:10px;
+}
+.borders{
+	width:auto;
+	margin-top:-300px;
+	margin-right:80px;
+	margin-left:300px;
+}
 
 .side-thing{
-	margin-top:20px;
+	margin-top:10px;
 	border-radius:30px;
 	border: 1px solid #bbbbbb;
-	padding-bottom:30px;
-	text-align:center;
-	font-size:1.3vw;
+	font-size:10px;
 	font-family:Calibri;
-	padding:15px;
+	padding:14px;
 	color:black;
 	font-weight:bold;
+	display:flex;
+	align-items:center;
+	justify-content:center
 }
 .side-thing2{
-	margin-top:20px;
+	margin-top:8px;
 	border-radius:30px;
 	border: 1px solid #bbbbbb;
 	padding-bottom:30px;
-	text-align:center;
-	font-size:1.3vw;
+	font-size:10px;
 	font-family:Calibri;
 	padding:15px;
 	color:#7f7f7f;
 	background:#f4f8ff;
+	display:flex;
+	align-items:center;
+	justify-content:center
 }
 
 .bar_tabs{
@@ -110,8 +142,7 @@ body {
 	font-family: Calibri;
 	font-weight:bold;
   	font-stretch: ultra-expanded;
-  	margin-left:-0.2vw;
-	margin-right:2vw;
+	margin-right:10px;
 	font-size: 1.4vw;
 	cursor: pointer;
 	background:none;
@@ -127,22 +158,10 @@ a{
 }
 
 
-.main-titles{
-	position:absolute;
-	margin-top:-15vh;
-	margin-left:6%;
-}
-.main-title{
-	font: 0.8em Calibri, sans-serif;
-	z-index:1;
-	font-size:5vw;
-	padding-left:5px;
-	padding-right:5px;
-	color:grey;
-}
+
 
 .topic-title{
-	font-size:5vh;
+	font-size:30px;
 	margin-left:10%;
 	color:grey;
 	width:80%;
@@ -154,8 +173,8 @@ a{
 	width:100%;
 	display:flex;
 	justify-content:center;
-	padding-top:12vh;
-	padding-bottom:12vh;
+	padding-top:50px;
+	padding-bottom:150px;
 }
 .front-img{
 	position:relative;
@@ -168,21 +187,19 @@ a{
 }
 
 .about{
-	margin-top:40px;
+	margin-top:20px;
 	margin-left:auto;
 	min-height:200px;
 	min-width:300px;
-	max-width:45%;
+	max-width:47%;
 	margin-right:auto;
 }
 .about-title{
 	color:black;
-	font-size:40px;
+	font-size:38px;
 }
 .about-container{
 	width:98%;
-	padding-top:0px;
-	padding-bottom:20px;
 	margin-left:auto;
 	margin-right:auto;
 	background:transparent;
@@ -190,9 +207,9 @@ a{
 	flex-wrap:wrap;
 }
 .about-p{
+	margin-top:-10px;
 	max-width:100%;
-	padding:10px;
-	font-size:20px;
+	font-size:18px;
 	font-family:Calibri;
 	color:#747474;
 }
@@ -204,6 +221,7 @@ a{
 	margin-right:auto;
 	padding-left:10px;
 	padding-right:10px;	
+	margin-top:-10px;
 }
 
 .skill-div-div{
@@ -212,7 +230,7 @@ a{
 	width:80%;
 	display:flex;
 	flex-wrap:wrap;
-	padding-bottom:20vh;
+	padding-bottom:10vh;
 }
 .skills{
 	display:flex;
@@ -223,14 +241,14 @@ a{
 	margin-top:10px;
 	margin-bottom:10px;
 	text-align:center;
-	font-size:16px;
+	font-size:14px;
 	font-family:Calibri;
 	color:#808080;
 }
 
 .skill-title{
 	color:#000000;
-	font-size:40px;
+	font-size:38px;
 }
 
 
@@ -393,7 +411,7 @@ a{
 	margin-bottom:20px;
 	border-radius:10px;
 	padding:10px;
-	width:80%;
+	width:100%;
 	height:auto;
 }
 .work-title{
@@ -401,11 +419,11 @@ a{
 }
 .work-i{
 	color:grey;
-	font-size:20px;
+	font-size:18px;
 }
 .work-p{
 	flex-shrink:2;
-	font-size:24px;
+	font-size:22px;
 	color:black;
 	font-family:Calibri;
 	max-width:800px;
@@ -414,7 +432,7 @@ a{
 .work-li{
 	font-family:Calibri;
 	color:#666666;
-	font-size:20px;
+	font-size:18px;
 	max-width:1000px;
 }
 .content2{
@@ -539,7 +557,7 @@ a{
 .end{
 	color:grey;
 	margin-top:10px;
-	font-size:1vw;
+	font-size:9px;
 	display:inline-block;
 }
 .topic-title-end{
@@ -554,7 +572,14 @@ a{
 	.side{
 		display:none;
 	}
-	.page{
-	width:100%
+	.side2{
+		display:none;
+	}
+	
+	.borders{
+	margin-top:0px;
+	width:100%;
+	margin-left:0px;
+	margin-right:0px;
 	}
 }
