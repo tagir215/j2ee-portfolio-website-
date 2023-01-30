@@ -53,8 +53,9 @@ public class HomePage extends WebPage {
 		
 		String aboutP = "Hei, tässä on portfolio koodaus projekteistani. Olen "
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
-				+ "töitä. Persoonani on sellainen, että motivoidun parhaiten "
-				+ "haastavista ja uniikeista projekteista. Olen oppinut paljon tämän vuoden "
+				+ "töitä. Motivoidun parhaiten "
+				+ "haastavista ja uniikeista projekteista, joten olen pyrkinyt valitsemaan "
+				+ "projekteja sen perusteella. Olen oppinut paljon tämän vuoden "
 				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa.";
 		abouts.add(new About("about","Portfolio 2023",aboutP));
 		
