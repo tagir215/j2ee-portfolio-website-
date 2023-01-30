@@ -21,6 +21,10 @@ body {
 	overflow:hidden;
 	flex-shrink:0;
 }
+.side-title{
+	font-size:50px;
+	font-weight:bold;
+}
 .side1img{
 	max-height:15px;
 	margin-right:10px;
@@ -50,15 +54,15 @@ body {
 .borders{
 	width:auto;
 	margin-top:-300px;
-	margin-right:80px;
-	margin-left:300px;
+	margin-right:100px;
+	margin-left:320px;
 }
 
 .side-thing{
 	margin-top:10px;
 	border-radius:30px;
 	border: 1px solid #bbbbbb;
-	font-size:10px;
+	font-size:15px;
 	font-family:Calibri;
 	padding:14px;
 	color:black;
@@ -72,7 +76,7 @@ body {
 	border-radius:30px;
 	border: 1px solid #bbbbbb;
 	padding-bottom:30px;
-	font-size:10px;
+	font-size:15px;
 	font-family:Calibri;
 	padding:15px;
 	color:#7f7f7f;
@@ -174,11 +178,11 @@ a{
 	display:flex;
 	justify-content:center;
 	padding-top:50px;
-	padding-bottom:150px;
+	padding-bottom:120px;
 }
 .front-img{
 	position:relative;
-	width:50%;
+	width:60%;
 	height:auto;
 	z-index:2;
 	top:20px;
