@@ -17,8 +17,8 @@ public class Tabs extends WebMarkupContainer{
 	Tabs(String id) {
 		super(id);
 		log = LoggerFactory.getLogger(HomePage.class);
-    	String[] tabNames = new String[] {"Esittely","Työt","Harrastukset"};
-    	String[] markupIds = new String[] {"about","works","hobbies"};
+    	String[] tabNames = new String[] {"Esittely","Työt"};
+    	String[] markupIds = new String[] {"about","works"};
     	WebMarkupContainer container = new WebMarkupContainer("tabs-container");
     	add(container);
     	RepeatingView rvTabs = new RepeatingView("tab-form");
