@@ -56,12 +56,14 @@ public class HomePage extends WebPage {
 				+ "töitä. Motivoidun parhaiten "
 				+ "haastavista ja uniikeista projekteista, joten olen pyrkinyt valitsemaan "
 				+ "projekteja sen perusteella. Olen oppinut paljon tämän vuoden "
-				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa.";
+				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa. "
+				+ "Olen toistaiseksi keskittynyt lähinnä back end koodaukseen, mutta toisaalta myös motivoitunut "
+				+ "opettelemaan front end taitoja, jotta saisi enemmän ammattimaisen "
+				+ "ulkomuodon projekteille.";
 		abouts.add(new About("about","Portfolio 2023",aboutP));
 		
-		String experienceA= "Olen itse oppinut lähinnä projekteja tehdessä. Erilaiset "
-				+ "tutoriaalit eivät yleensä jää pysyvästi mieleeni, joten opettelen asiat mielummin "
-				+ "käytännössä. "
+		String experienceA= "Olen itse oppinut lähinnä projekteja tehdessä ja katsomalla opetusvideoita. "
+				+ "Katson opetusvideot yleensä Kotlinilla ja muutan koodit Java kielelle. "
 				+ "Tein kesällä myös n. kuukauden työharjoittelun, "
 				+ "jossa tein kolme erilaista "
 				+ "harjoitus projektia. Minulla oli mentori joka tarkisteli koodejani joten opin "
@@ -78,14 +80,41 @@ public class HomePage extends WebPage {
 		add(skillGraphs);
 		
 		
-		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL","Google Cloud","Heroku","Openshift","MySQL","Android Studio","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket","JUnit"};
-		int[] measures = new int[] {7,5,3,3,3,2,4,2,1,2,7,5,5,4,3,3,3};
+		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL","Google Cloud","Heroku","Openshift","MySQL","Android","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket"};
+		int[] measures = new int[] {7,5,3,3,3,2,4,2,1,2,7,5,5,4,3,3};
 		skillGraphs.add(new SkillGraph("skill-div1",skills,measures,"Taidot"));
 		
 		
 		RepeatingView topics = new RepeatingView("topic");
 		add(topics);
 		
+		
+		String[] starImages = new String[] {
+				"starchat0.jpg","starchat1.jpg","starchat2.jpg","starchat3.jpg","starchat4.jpg",
+		};
+		String i0 = "Java, Firebase, OpenGL, Xml";
+		String[] p0 = new String[] {
+				"STAR CHAT on whatsapp klooni, jossa kaikki kirjoittaminen tapahtuu Star Wars alkuteksteistä "
+				+ "insipiroituun tyyliin. Projektissa oli tarkoitus opetella Firebase ja OpenGl "
+				+ "teknologioita saman aikaisesti. Sovelluksessa on melkein kaikki samat ominaisuudet mitä "
+				+ "whatsapissakin on, paitsi muutamia asioita kuten viestien salaus.  "
+		};
+		String[] ul0 = new String[] {
+				"Tiesin jo etukäteen, että OpenGL:n käyttö ei ole sieltä helpoimmasta päästä, mutta en jotenkin "
+				+ "osannut odottaa että pelkän tekstin renderöinnissä tuli laskea jokaiselle kirjaimelle "
+				+ "leveys, korkeus, kirjaimen offsetti kirjoitus viivaan x ja y suunnassa, sekä tekstuuri koordinaatit "
+				+ "ja tekstuurin koordinaatit tekstuuri atlaksen sisällä, sekä laskea kaikki nämä koordinaatit erikseen eri fonttikoille, "
+				+ "sekä lopuksi vielä tehdä jokaiselle näille vektoreille 4 erillistä matriisilaskua. Ja laskea vielä "
+				+ "Star Wars tyylinen tasainen asettelu kirjaimille ja otsikoille.",
+				"OpengGL oli suhtellisen vaikea opetella edes chatGPT:tä hyödyntämällä, koska ongelmat saattoivat johtua "
+				+ "niin monesta syystä. Sekä kysymyksiä oli vaikea artikuloida. Sen sijaan "
+				+ "Firebasen opetteleminen oli nopeaa ja vaivatonta. ",
+				"Jouduin kuitenkin aika monta kertaa muuttaamaan firebase tietokannan rakennetta, joten tietynlainen kokonaiskuva "
+				+ "chatGPT:ltä tietty vielä puuttuu.",
+				"Tämä projeti oli ehkä vähän suoraviivaisempi kuin nuo edelliset projektit, joten siinä meni lopulta vain noin "
+				+ "kolme viikkoa. Jotkut ilmoitukset eivät tosin vielä toimi joillakin kännyköillä ja lisään sitten pari editointi työkalua "
+				+ "ja opettelen testauksen vielä kunnollisesti tässä projektissa. "
+		};
 		
 		String[] golfImages = new String[] {
 				"golfpicture13.png","golfpicture14.png","golfpicture15.png",
@@ -112,7 +141,6 @@ public class HomePage extends WebPage {
 				+ "struktuureista ja järjestely algoritmeista sekä myös Google Cloudin käyttöä"
 				
 		};
-		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1,ul1,"https://github.com/tagir215/GPSGolf"));
 		
 		
 		
@@ -149,12 +177,10 @@ public class HomePage extends WebPage {
 				"Kopionti ja liittämistyökalut",
 				"Keskittämis työkalu",
 				"Kuvien lisäys mahdollisuus",
-				"Tämän ohjelman tekoon minulla meni yli 4 kuukautta eikä se ole vieläkään ihan valmis. Opin paljon Android "
-				+ "Studion työkaluja sekä Javan- ja olio-ohjelmoinnin perusteita. Aloitin projektin useaan kertaan alusta "
-				+ "koska minulle tuli ongelmia suoristuskyvyn ja koodin sekavuuden kanssa. Vieläkin on paljon tekemistä "
-				+ "työkalujen parantelussa ja koodin puhtaudessa, mutta yritän pian julkaista tämän myös App Storeen. "
+				"Tämän ohjelman tekoon minulla meni yli 4 kuukautta. Opin paljon Android "
+				+ "Frameworkin työkaluja sekä Javan- ja olio-ohjelmoinnin perusteita. Aloitin projektin useaan kertaan alusta "
+				+ "koska minulle tuli ongelmia suoristuskyvyn ja koodin sekavuuden kanssa. "
 		};
-		topics.add(new Topic("topic12",mapImages,"Your Mind Map",i2,p2,ul2,"https://github.com/tagir215/YourMindMap"));
 		
 		
 		
@@ -162,12 +188,12 @@ public class HomePage extends WebPage {
 		String[] metronomeImages = new String[] {
 				"picmetr1.jpg","picmetr2.jpg","picmetr3.jpg",
 		};
-		String i3 = "Java, Android Studio, OpenGL, Fast Fourier Transform, YIN algorithm, Autocorrelation";
+		String i3 = "Java, Android Studio, OpenGL, Fast Fourier Transform, Autocorrelation";
 		String[] p3= new String[] { 
 				"Visual Metronome on musiikin harjoitteluun tarkoitettu "
 				+ "apuohjelma. Joillakin muusikoilla rytmitaju saattaa heikentyä "
 				+ "soittaessa monimutkaisempia kuvioita, "
-				+ "jolloin aivot priorisoi rytmin pitäsmisen sijaan muita soittamiseen "
+				+ "jolloin aivot priorisoi rytmin pitämisen sijaan muita soittamiseen "
 				+ "tarvittavia keskittymis alueita. Tässä ongelmana on myös se, että "
 				+ "itse soittaja ei välttämättä edes kuule omia rytmi ongelmiaan. "
 				+	"Visual Metronome pyrkii ratkaisemaan nämä ongelmat "
@@ -175,8 +201,8 @@ public class HomePage extends WebPage {
 				+ "näkee virheet heti niiden tapahduttua."
 				};
 		String[] ul3 = new String[] {
-				"Kokeilin erilaisia tapoja rytmien tunnistamiseen, kuten Fast Fourier transformia, Autocorrelaatiota sekä Yin algoritmia, "
-				+ "mutta päädyin lopulta vain laskemaan ääni aaltojen nollakohtien määrät, sekä ottamaan huomioon myös amplitudin muutokset ylöspäin. "
+				"Kokeilin erilaisia tapoja rytmien tunnistamiseen, kuten Fast Fourier transformia ja autokorrelaatiota, "
+				+ "mutta päädyin lopulta vain laskemaan ääni aaltojen nollakohtien määrät nopeuden vuoksi, sekä ottamaan huomioon myös amplitudin muutokset ylöspäin. "
 				+ "Jos nollakohtien määrä muuttuu edelliseen nuottiin verrattuna, tai "
 				+ "jos amplitudi nousee ylöspäin yllättäen. niin se on todennäköisesti uusi nuotti ",
 				"Ääniallot ja rytmi kuviot on mallinnettu käyttäen OpenGL:ää",
@@ -189,13 +215,16 @@ public class HomePage extends WebPage {
 				"Ylesiä asetuksia esim. playback odotusajalle ja temmolle, sekä tahtilajin muutoksille ",
 				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä puutteellisesti esimerkiksi pianon kanssa, joten "
 				+ "joitakin parannuksia pitää vielä tehdä",
-				"Tämän projektin tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Olen tehnyt tätä noin kuukauden. "
-				+ "Seuraavassa projektissani aion todennäköisesti syventyä OpenGL:ään ja Tietokantojen käyttöön lisää"
+				"Tämän projektin tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Tein tätä noin kuukauden. "
 		};
-		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3,"https://github.com/tagir215/VisualMetronome"));
+		topics.add(new Topic("topic10",starImages,"Star Chat",i0,p0,ul0,"https://github.com/tagir215/Star-Chat/tree/master/main/java/com/android/starchat"));		
+		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3,"https://github.com/tagir215/VisualMetronome/tree/master/main/java/com/example/artmetronome"));
+		topics.add(new Topic("topic12",mapImages,"Your Mind Map",i2,p2,ul2,"https://github.com/tagir215/YourMindMap/tree/master/myapplication"));
+		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1,ul1,"https://github.com/tagir215/GPSGolf"));
 		
 		
-	
+		
+		
 	}
 	
 	 
@@ -454,7 +483,7 @@ public class HomePage extends WebPage {
 	
 	
 	private String getAnimateMovementJs(String id,int e, String selectedButtonId,String topicId) {
-		return "$('#"+id+"').stop().animate({marginLeft:'"+e+"'},1000);"
+		return "$('#"+id+"').stop().animate({marginLeft:'"+e+"'},600);"
 				+ getHighlightSelectedJs(selectedButtonId,topicId);
 				
 	}

@@ -1,30 +1,40 @@
 
 body {
-	padding: 0;   
 	margin: 0;
+	top:0;
 	width:100%;
 	margin-left:auto;
 	margin-right:auto;
-	overflow:scroll;
 	max-width:1200px;
+	background:white;
 	}
 
 .sticky-elements{
 	top:0;	
-	position:sticky;
+	position:fixed;
+}
+.static-background{
+	position:absolute;
+	right:-30px;
+	top:-20vh;
+	width:100vw;
+	z-index:-1;
+	height:150vh;
+	background:#f2f9f9;
 }
 .side{
+	position:relative;
 	margin-left:20px;
 	top:10px;
 	width:270px;	
 	margin-right:20px;
-	overflow:hidden;
 	flex-shrink:0;
 }
 .side-title{
 	font-size:20px;
 	font-family:Calibri;
 	color:grey;
+	font-weight:bold;
 }
 .side1img{
 	max-height:15px;
@@ -37,7 +47,7 @@ body {
 	position:absolute;
 	width:40px;
 	top:40px;
-	right:20px;
+	left:1130px;
 }
 .side2img{
 	max-width:100%;
@@ -48,13 +58,14 @@ body {
 
 .side-box{
 	margin-top:20px;
-	border:1px solid #e3e3e3;
+	border:1px solid #e9e9e9;
 	border-radius:20px;
+	background:white;
 	padding:10px;
 }
+
 .borders{
 	width:auto;
-	margin-top:-170px;
 	margin-right:90px;
 	margin-left:320px;
 }
@@ -62,7 +73,7 @@ body {
 .side-thing{
 	margin-top:10px;
 	border-radius:30px;
-	border: 1px solid #bbbbbb;
+	border: 1px solid #c9c9c9;
 	font-size:15px;
 	font-family:Calibri;
 	padding-top:10px;
@@ -78,11 +89,12 @@ body {
 .side-thing2{
 	margin-top:8px;
 	border-radius:30px;
-	border: 1px solid #bbbbbb;
+	border: 1px solid #c9c9c9;
 	padding-bottom:30px;
 	font-size:15px;
 	font-family:Calibri;
 	padding-top:10px;
+	font-weight:bold;
 	padding-bottom:10px;
 	padding-left:20px;
 	padding-right:20px;
@@ -105,14 +117,7 @@ body {
 	display:flex;
 	background:transparent;
 }
-.me{
-	display:flex;
-	margin-left:5%;
-	margin-right:auto;
-	margin-top:auto;
-	margin-bottom:auto;
-	z-index:1;
-}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -150,16 +155,20 @@ body {
 }
 
 .tab-input {
-	line-height:50px;
 	border:none;
 	font-family: Calibri;
 	font-weight:bold;
-  	font-stretch: ultra-expanded;
 	margin-right:10px;
-	font-size: 20px;
+	font-size: 17px;
 	cursor: pointer;
-	background:none;
-	color:#5a5a67;
+	margin-top:10px;
+	padding-right:40px;
+	padding-left:40px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:30px;
+	background:#f2f2f2;
+	color:#636363;
 }
 
 .tab-number{
@@ -175,25 +184,34 @@ a{
 
 .topic-title{
 	font-size:30px;
-	margin-left:10%;
-	color:grey;
-	width:80%;
+	color:#66b3ff;
+	width:97%;
 	font-family:Calibri;
-	border-bottom:solid 1px grey;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom:solid 1px #66b3ff;
 }
 .front{
 	height: auto;
-	width:100%;
+	width:90%;
 	display:flex;
 	justify-content:center;
-	padding-top:50px;
+	padding-top:90px;
+	margin-top:50px;
+	background-image:url("pixel5.jpg");
+	background-size:auto 100%;
+	margin-left:auto;
+	margin-right:auto;
 	padding-bottom:120px;
+	border:1px solid #cacaca;
+	border-radius:20px;
 }
 .front-img{
 	position:relative;
-	width:60%;
+	width:70%;
 	height:auto;
 	z-index:2;
+	filter:invert(100%);
 	top:20px;
 	opacity:1;
 	animation: pulse 4s infinite;
@@ -212,7 +230,7 @@ a{
 	font-size:38px;
 }
 .about-container{
-	width:98%;
+	width:100%;
 	margin-left:auto;
 	margin-right:auto;
 	background:transparent;
@@ -222,7 +240,7 @@ a{
 .about-p{
 	margin-top:-10px;
 	max-width:100%;
-	font-size:18px;
+	font-size:15px;
 	font-family:Calibri;
 	color:#747474;
 }
@@ -300,6 +318,7 @@ a{
 	margin-left:auto;
 	margin-right:auto;
 	height:650px;
+	padding-bottom:20px;
 	display:flex;
 	justify-content:center;
 	position:relative;
@@ -318,18 +337,25 @@ a{
 	top:-1vh;
 	filter: hue-rotate(120deg);
 }
-.background1{
+.background2{
 	position:absolute;
 	width:100%;
 	height:100%;
 	top:-1vh;
 	filter: hue-rotate(200deg);
 }
-.background2{
+.background1{
 	position:absolute;
 	width:100%;
 	height:100%;
 	top:-1vh;
+}
+.background3{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:-1vh;
+	filter: hue-rotate(100deg);
 }
 .imgPhone{
 	max-width:275px;
@@ -415,9 +441,9 @@ a{
 .paragraph-div{
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom:20px;
 	border-radius:10px;
-	padding:10px;
+	padding-left:10px;
+	padding-right:30px;
 	width:100%;
 	height:auto;
 }
@@ -426,11 +452,11 @@ a{
 }
 .work-i{
 	color:grey;
-	font-size:18px;
+	font-size:16px;
 }
 .work-p{
 	flex-shrink:2;
-	font-size:22px;
+	font-size:17px;
 	color:black;
 	font-family:Calibri;
 	max-width:800px;
@@ -439,7 +465,7 @@ a{
 .work-li{
 	font-family:Calibri;
 	color:#666666;
-	font-size:18px;
+	font-size:15px;
 	max-width:1000px;
 }
 .content2{
@@ -458,14 +484,14 @@ a{
 	margin-left:20px;
 }
 .gitlink{
-	font-size:19px;
+	font-size:17px;
 	color:white;
 	font-family:OCR A Std, monospace;
 }
 .gitlink-box{
 	width: fit-content;
 	height:fit-content;
-	padding:8px;
+	padding:6px;
 	margin-top:auto;
 	margin-bottom:auto;
 	margin-left:20px;
@@ -545,10 +571,15 @@ a{
 	text-align:center;
 }
 .end{
-	color:grey;
-	margin-top:10px;
-	font-size:9px;
+	margin-top:20px;
+	font-size:12px;
 	display:inline-block;
+}
+.end1{
+	color:grey;
+}
+.end2{
+	color:grey;
 }
 
 .epic-div{
@@ -556,6 +587,7 @@ a{
 	flex-wrap:wrap;
 	justify-content:spread-around;
 	padding-top:50px;
+	text-align:center;
 	padding-bottom:100px;
 }
 .epic-img{
@@ -569,7 +601,10 @@ a{
 }
 .epic-text{
 	color:#5a5a5a;
-	font-size:20px;
+	font-size:15px;
+	width:97%;
+	margin-left:auto;
+	margin-right:auto;
 	font-family:Calibri;
 }
 .selitys-yritys{
@@ -578,12 +613,38 @@ a{
 	font-style:italic;
 }
 
+.part0{
+	padding-bottom:50px;
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;
+}
+.part1{
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;
+	border-top:1px solid #e1e1e1;
+}
+.part2{
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;
+	border-top:1px solid #e1e1e1;
+}
+.part3{
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;
+	border-top:1px solid #e1e1e1;
+}
+
 .part4{
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;
+	border-top:1px solid #e1e1e1;
 	width:100%;
 	display:flex;
+	box-sizing:border-box;
 	justify-content:center;
-	padding-bottom:150px;
+	padding-bottom:50px;
 	padding-top:50px;
+	margin-bottom:10px;
 }
 
 .contact-me{
@@ -598,6 +659,7 @@ a{
 	font-size:30px;
 	text-align:center;
 	font-family:Calibri;
+	opacity:0;
 }
 
 
@@ -612,10 +674,14 @@ a{
 	.bar_tabs{
 		display:none;
 	}
+	.contact-me{
+		opacity:1;
+	}
 	.borders{
 	margin-top:0px;
 	width:100%;
 	margin-left:0px;
 	margin-right:0px;
+	padding:10px;
 	}
 }
