@@ -401,6 +401,7 @@ a{
 	position:relative;
 	width:255px;
 	height:100%;
+	filter: contrast(120%);
 }
 .buttons{
 	position:absolute;

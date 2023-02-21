@@ -90,7 +90,7 @@ public class HomePage extends WebPage {
 		
 		
 		String[] starImages = new String[] {
-				"starchat0.jpg","starchat1.jpg","starchat2.jpg","starchat3.jpg","starchat4.jpg",
+				"starchat0.jpg","starchat6.jpg","starchat5.jpg","starchat2.jpg","starchat3.jpg","starchat7.jpg"
 		};
 		String i0 = "Java, Firebase, OpenGL, Xml";
 		String[] p0 = new String[] {
@@ -100,18 +100,17 @@ public class HomePage extends WebPage {
 				+ "whatsapissakin on, paitsi muutamia asioita kuten viestien salaus.  "
 		};
 		String[] ul0 = new String[] {
-				"Tiesin jo etukäteen, että OpenGL:n käyttö ei ole sieltä helpoimmasta päästä, mutta en jotenkin "
-				+ "osannut odottaa että pelkän tekstin renderöinnissä tuli laskea jokaiselle kirjaimelle "
-				+ "leveys, korkeus, kirjaimen offsetti kirjoitus viivaan x ja y suunnassa, sekä tekstuuri koordinaatit "
-				+ "ja tekstuurin koordinaatit tekstuuri atlaksen sisällä, sekä laskea kaikki nämä koordinaatit erikseen eri fonttikoille, "
-				+ "sekä lopuksi vielä tehdä jokaiselle näille vektoreille 4 erillistä matriisilaskua. Ja laskea vielä "
-				+ "Star Wars tyylinen tasainen asettelu kirjaimille ja otsikoille.",
-				"OpengGL oli suhtellisen vaikea opetella edes chatGPT:tä hyödyntämällä, koska ongelmat saattoivat johtua "
-				+ "niin monesta syystä. Sekä kysymyksiä oli vaikea artikuloida. Sen sijaan "
-				+ "Firebasen opetteleminen oli nopeaa ja vaivatonta. ",
-				"Jouduin kuitenkin aika monta kertaa muuttaamaan firebase tietokannan rakennetta, joten tietynlainen kokonaiskuva "
-				+ "chatGPT:ltä tietty vielä puuttuu.",
-				"Tämä projeti oli ehkä vähän suoraviivaisempi kuin nuo edelliset projektit, joten siinä meni lopulta vain noin "
+				"Kaikille käyttäjille ja ryhmille on generoitu uniiki id jotka on tallennettu firebaseen",
+				"Käyttäjä solmuihin on tallennettu yleisiä käyttäjätietoja ja ryhmille on yleisten tietojen lisäksi tallennettu "
+				+ "myös ryhmien jäsenet ja erilaisia aikamääreitä kuten milloin kukin henkilö on viimeksi nähty ryhmässä tai "
+				+ "viestien päivämäärät, jotta uusien viestien lukumäärät voitaisiin laskea",
+				"Kuvat on tallennettu FirebaseStorageen",
+				"Tekstit on renderöity käyttäen openGL:ää",
+				"Jokaiselle kirjaimelle pti määritellä sen leveys, korkeus, offsetit x ja y suunnille kirjoitus viivaan nähden, "
+				+ "tekstuuri koordinaatit, tekstuuri atlas koordinaatit, koordinaatit tekstin sisällä ja muokkautuvat koordinaatit eri levyisille "
+				+ "kirjaimille. Lisäksi kaikille vektorieille tuli tehdä neljä matriisilaskua, jotka muuttivat kirjaimet kolmiulotteisiksi.",
+				"Tähdet on myös generoitu käyttäen openGL.ää satunnaisesti eri paikkoihin ja ne liikkuvat scrollatessa tekstiä",
+				"Tämä projeti oli ehkä vähän suoraviivaisempi kuin nuo edelliset projektit (OpenGL:ää lukuunottamatta), joten siinä meni lopulta vain noin "
 				+ "kolme viikkoa. Jotkut ilmoitukset eivät tosin vielä toimi joillakin kännyköillä ja lisään sitten pari editointi työkalua "
 				+ "ja opettelen testauksen vielä kunnollisesti tässä projektissa. "
 		};
