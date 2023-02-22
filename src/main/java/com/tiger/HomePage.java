@@ -57,7 +57,7 @@ public class HomePage extends WebPage {
 				+ "haastavista ja uniikeista projekteista, joten olen pyrkinyt valitsemaan "
 				+ "projekteja sen perusteella. Olen oppinut paljon tämän vuoden "
 				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa. "
-				+ "Olen toistaiseksi keskittynyt suurimmaksi osaksi back end koodaukseen, mutta aion"
+				+ "Olen toistaiseksi keskittynyt suurimmaksi osaksi back end koodaukseen, mutta aion "
 				+ "opetella myös front end taitoja, jotta saisi enemmän ammattimaisen "
 				+ "ulkomuodon projekteille.";
 		abouts.add(new About("about","Portfolio 2023",aboutP));
