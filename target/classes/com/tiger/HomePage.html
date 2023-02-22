@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio</title>
+		<meta name="viewport" content="width=device-width"; initial-scale="1.0" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+	</head>
+	<body>
+	
+
+	
+	
+	<div class="sticky-elements">
+	
+	
+	<div class="side">
+		<!--  
+		<div class="static-background"></div>		
+		 -->
+		
+		<div class="side-box">
+		<span class="side-title">Yhteystiedot:</span>
+  		<div class="side-thing2">
+  			<img class="side1img" src="google.png">
+			<span>tagir.tsarkov@gmail.com</span>
+  		</div>
+  		<div class="side-thing">
+  			<img class="side1img" src="phone.png">
+			<span>+358401865843</span>
+  		</div>
+  			<div class="side-thing">
+  			
+  			<img class="side1img" src="location.png">
+			<span>Silfverhjelmintie 8, Mustio</span>
+  		</div>
+  		
+  		</div>
+  		
+  		<div class="end">
+  		<span class="end1">©</span><span class="end2">2023</span><span class="end1"> All rights reserved. – Designed & Coded by</span><span class="end2">Tagir Tsarkov</span>
+  		
+  		</div>
+	</div>
+	
+	<div class="side2">
+		<a href="mailto:tagir.tsarkov@gmail.com">
+			<img class="side2img" src="googleA.png">
+		</a>
+		<a target="_blank" href="https://github.com/tagir215">
+			<img class="side2img" src="gitgit.png">
+		</a>
+	</div>
+	
+	</div>
+	
+		
+	<div class="borders">
+		
+		<div class="part0">
+	
+		
+		<!-- -tabs -->
+      	<div class="bar_tabs" wicket:id="bar-tabs">
+      		
+      		
+      	
+      		<div class="list_tabs" wicket:id="tabs-container">	
+   					<form wicket:id="tab-form">
+   						<input class="tab-input" type="button" wicket:id="tab-input"> 
+   					</form>
+   					
+     		</div>
+      		
+      	</div>
+      	
+      	<br/>
+      	
+      	<!-- front -->
+      	<div class="front">
+      			
+      		
+      		<img class="front-img" wicket:id="front-img">
+      		
+      	</div>
+      	
+		</div>
+      	
+      	<div class="part1">
+	      	
+	      	<!-- about -->
+	  		<h1 class="topic-title" id="about">Esittely</h1>
+	      	<div class="about-container">
+	      		<div wicket:id="about" class="about">
+	      			<h1 class="about-title" wicket:id="about-title"></h1>
+	      			<p class="about-p" wicket:id="about-p"></p>
+	      		</div>
+	      		
+	      		<!-- skills -->
+		      	<div class="skill-div-div">
+			      	<div wicket:id="skill-div"  class="skill-div">
+			      		
+			      			<h2 wicket:id="skillTitle" class="skill-title"></h2>
+			      			<div class="skills">
+			      				<div class="skill" wicket:id="skill">
+			      					<span class="skill-label" wicket:id="skill-label"></span>
+			      					<br>
+			      					<span wicket:id="skill-square">&starf;</span>
+			      					
+			      				</div>
+			      			</div>
+			      			
+			      		
+			      	</div>
+		      	</div>
+	      	</div>
+     
+     	</div>
+	    <div class="part2">
+	      	<!-- content -->
+	      	<h1 class="topic-title" id="works">Työt</h1>
+	      	<div class="content" wicket:id="topic">
+	      		
+	      		<div class="left-container">
+	      			<div wicket:id="background" class="background0">
+	      				<img wicket:id="random" class="random">
+	      			</div>
+		      		<div class="slider-container-plus" wicket:id="container-plus">
+		      		
+			      		<div class="slide-container" wicket:id="slide-container">
+			      			<span wicket:id="span-image"></span>
+			      			<div class="images-container" wicket:id="images-container">
+			      				<wicket:link>
+						   			<img wicket:id="imgSlideShow" class="imgSlideShow"/>
+					    		</wicket:link>
+			      			</div>
+				       	</div>
+				       	
+				       	<div class="button-container">
+				       	  	<form class="buttons" wicket:id="button-form">
+							 	<input value="" class="button" type="button" wicket:id="button"/>
+							</form>
+				       	</div>
+				     
+				       	<div class="imgPhone-container">
+					       	<wicket:link class="imgPhone">
+							    <img class="imgPhone" wicket:id="imgPhone"/>
+						    </wicket:link>
+				       	</div>
+		      			
+					    
+		      		</div>
+	      		
+	      		</div>
+	      		
+	      		
+	      		
+	      		<div class="paragraph-div">
+	      			<div class="title-plus-git">
+	      				<h2 class="work-title" wicket:id="work-title"></h2>
+	      				<div class="gitlink-box">
+	      					<a wicket:id="gitlink" class="gitlink" target="_blank" href="https://github.com/tagir215?tab=repositories">github</a>
+	      				</div>
+	      			</div>
+	      			<i class="work-i" wicket:id="italic-section"></i>
+	      			<p class="work-p" wicket:id="work-p"></p>
+	      			<ul class="work-ul">
+	      				<li class="work-li" wicket:id="work-li"></li>
+	      			</ul>
+	      			
+	      		</div>
+	      		
+	      		
+	      	</div>
+	      	
+	    
+	     	
+	     
+	  		
+  		</div>
+  		
+  		
+  		
+  		
+  		
+  		
+  		
+  		<div class="part3">
+  				<h1 class="topic-title" id="hobbies">Harrastukset</h1>
+  				<br>
+  				<br>
+  				<br>
+  				<span class="epic-text">(Olen tehnyt pelejä harrastukseksi. Tekemieni pelien visuaalit olivat 
+  				usein aika surkeat muihin verrattuna, mutta vahvuuteni oli selkeästi 
+  				pelimekaniikkojen ohjelmointi. Olen ehkä tästä kokemuksesta oppinut ennustamaan mitä bugeja saattaa 
+  				tulla projekteissa ja mistä ne todennäköisesti johtuu)</span>
+  			<div class="epic-div">
+	  			<img class="epic-img" src="car.png">
+	  			<img class="epic-img" src="carlogic.png">
+	  			<img class="epic-img" src="dung.png">
+	  			<img class="epic-img" src="skeletoroo.png">
+	  			
+  			</div>
+  		</div>
+  		
+  		
+  		
+  		<div class="part4">
+  			<a href="mailto:tagir.tsarkov@gmail.com">
+  			<span class="contact-me">CONTACT ME</span>
+  			</a>
+  		</div>
+  		
+  	
+	</div>	
+  		
+  	
+  		
+	</body>
+</html>
