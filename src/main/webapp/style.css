@@ -230,7 +230,7 @@ a{
 	font-size:38px;
 }
 .about-container{
-	width:100%;
+	width:95%;
 	margin-left:auto;
 	margin-right:auto;
 	background:transparent;
@@ -378,7 +378,7 @@ a{
 }
 .slide-container{
 	width:255px;
-	height:565px;
+	height:570px;
 	border-radius:15px;
 	margin-top:18px;
 	overflow:hidden;
@@ -396,12 +396,11 @@ a{
 }
 .imgSlideShow{
 	float:left;
-	margin-top:9px;
+	margin-top:12px;
 	padding:0;
 	position:relative;
 	width:255px;
-	height:100%;
-	filter: contrast(120%);
+	height:98%;
 }
 .buttons{
 	position:absolute;
@@ -603,7 +602,7 @@ a{
 .epic-text{
 	color:#5a5a5a;
 	font-size:15px;
-	width:97%;
+	width:80%;
 	margin-left:auto;
 	margin-right:auto;
 	font-family:Calibri;

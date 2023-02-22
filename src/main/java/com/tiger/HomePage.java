@@ -57,12 +57,12 @@ public class HomePage extends WebPage {
 				+ "haastavista ja uniikeista projekteista, joten olen pyrkinyt valitsemaan "
 				+ "projekteja sen perusteella. Olen oppinut paljon tämän vuoden "
 				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa. "
-				+ "Olen toistaiseksi keskittynyt lähinnä back end koodaukseen, mutta toisaalta myös motivoitunut "
-				+ "opettelemaan front end taitoja, jotta saisi enemmän ammattimaisen "
+				+ "Olen toistaiseksi keskittynyt suurimmaksi osaksi back end koodaukseen, mutta aion"
+				+ "opetella myös front end taitoja, jotta saisi enemmän ammattimaisen "
 				+ "ulkomuodon projekteille.";
 		abouts.add(new About("about","Portfolio 2023",aboutP));
 		
-		String experienceA= "Olen itse oppinut lähinnä projekteja tehdessä ja katsomalla opetusvideoita. "
+		String experienceA= "Olen oppinut lähinnä projekteja tehdessä ja katsomalla opetusvideoita. "
 				+ "Katson opetusvideot yleensä Kotlinilla ja muutan koodit Java kielelle. "
 				+ "Tein kesällä myös n. kuukauden työharjoittelun, "
 				+ "jossa tein kolme erilaista "
@@ -90,7 +90,7 @@ public class HomePage extends WebPage {
 		
 		
 		String[] starImages = new String[] {
-				"starchat0.jpg","starchat6.jpg","starchat5.jpg","starchat2.jpg","starchat3.jpg","starchat7.jpg"
+				"starchat0.jpg","starchat6.jpg","starchat2.jpg","starchat3.jpg","starchat7.jpg"
 		};
 		String i0 = "Java, Firebase, OpenGL, Xml";
 		String[] p0 = new String[] {
@@ -101,18 +101,22 @@ public class HomePage extends WebPage {
 		};
 		String[] ul0 = new String[] {
 				"Kaikille käyttäjille ja ryhmille on generoitu uniiki id jotka on tallennettu firebaseen",
-				"Käyttäjä solmuihin on tallennettu yleisiä käyttäjätietoja ja ryhmille on yleisten tietojen lisäksi tallennettu "
+				"Käyttäjä solmuihin on tallennettu yleisiä käyttäjätietoja ja ryhmille on lisäksi tallennettu "
 				+ "myös ryhmien jäsenet ja erilaisia aikamääreitä kuten milloin kukin henkilö on viimeksi nähty ryhmässä tai "
 				+ "viestien päivämäärät, jotta uusien viestien lukumäärät voitaisiin laskea",
-				"Kuvat on tallennettu FirebaseStorageen",
-				"Tekstit on renderöity käyttäen openGL:ää",
-				"Jokaiselle kirjaimelle pti määritellä sen leveys, korkeus, offsetit x ja y suunnille kirjoitus viivaan nähden, "
-				+ "tekstuuri koordinaatit, tekstuuri atlas koordinaatit, koordinaatit tekstin sisällä ja muokkautuvat koordinaatit eri levyisille "
-				+ "kirjaimille. Lisäksi kaikille vektorieille tuli tehdä neljä matriisilaskua, jotka muuttivat kirjaimet kolmiulotteisiksi.",
-				"Tähdet on myös generoitu käyttäen openGL.ää satunnaisesti eri paikkoihin ja ne liikkuvat scrollatessa tekstiä",
+				"Tekstit on renderöity käyttäen openGL:ää mikä oli aika hankalaa",
+				"Jokaiselle tekstin kirjaimelle piti määritellä erillinen quad objektin jonka päälle tuli tekstuuri",
+				"Jokaiselle quad objetille piti määritellä sen leveys, korkeus, offsetit x ja y suunnille kirjoitus viivaan nähden, "
+				+ "tekstuuri koordinaatit, tekstuuri atlas koordinaatit, koordinaatit tekstin sisällä ja muokkautuvat koordinaatit eri kokoisille "
+				+ "teksteille kuten otsikoille. Lisäksi kaikille vektorieille tuli tehdä neljä matriisilaskua, jotka muuttivat kirjaimet kolmiulotteisiksi",
+				"Kaikki tekstit on piirretty yhdelle objektille jotta prosessorin tarvitsi tehdä vain yksi piirtokutsu. Ja samasta syystä tuli käyttää tekstuuri atlasta",
+				"Kirjaimet piti myös lajitella sanoiksi jotta uudet rivit eivät alkaisi sanan keskeltä tai toisaalta jos sanan pituus oli yli tekstin laatikon leveyden "
+				+ "niin ottaa myös ne tilanteet huomioon. Lisäksi Star Wars alkutekstit on aseteltu niin että kaikki rivit "
+				+ "ovat yhtä pitkät, joten kirjainten välinen etäisyys muokkautuu kunkin rivin tekstin leveyden perusteella",
+				"Tein kaikki tarvittavat järjestely algoritmit ja matriisi kertomat itse harjoituksen vuoksi",
 				"Tämä projeti oli ehkä vähän suoraviivaisempi kuin nuo edelliset projektit (OpenGL:ää lukuunottamatta), joten siinä meni lopulta vain noin "
-				+ "kolme viikkoa. Jotkut ilmoitukset eivät tosin vielä toimi joillakin kännyköillä ja lisään sitten pari editointi työkalua "
-				+ "ja opettelen testauksen vielä kunnollisesti tässä projektissa. "
+				+"kolme viikkoa. Tein tällä kertaa UI:n heti ensimmäisenä, koska en ilmeisesti jotenkin projektin lopussa enää jaksa "
+				+ "keskittyä visuaaleihin"
 		};
 		
 		String[] golfImages = new String[] {
