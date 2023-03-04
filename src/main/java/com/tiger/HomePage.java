@@ -149,7 +149,7 @@ public class HomePage extends WebPage {
 		
 		
 		String[] mapImages = new String[] {
-				"mappicture1.jpg","mappicture2.jpg","mappicture4.jpg","mindmapCCDA.jpg","mindmapWW.jpg"
+				"mappicture1.jpg","mappicture2.jpg","mappicture4.jpg","mindmapWW.jpg"
 		};
 		String i2 = "Java, Android Studio, Xml, Json";
 		String[] p2 = new String[] {
@@ -486,7 +486,7 @@ public class HomePage extends WebPage {
 	
 	
 	private String getAnimateMovementJs(String id,int e, String selectedButtonId,String topicId) {
-		return "$('#"+id+"').stop().animate({marginLeft:'"+e+"'},600);"
+		return "$('#"+id+"').stop().animate({marginLeft:'"+e+"'},400);"
 				+ getHighlightSelectedJs(selectedButtonId,topicId);
 				
 	}
