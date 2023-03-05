@@ -65,9 +65,7 @@ public class HomePage extends WebPage {
 				+ "jossa tein kolme erilaista "
 				+ "harjoitus projektia. Minulla oli mentori joka tarkisteli koodejani joten opin "
 				+ "oleellisia asioita koodin muotoilusta ja sain lisäksi materiaalia sekä lukuvinkkejä. Olen opiskellut myös ammattikorkeakoulussa "
-				+ "konetekniikkaa. Siellä opin matematiikkaa, elektroniikkaa, fysiikkaa sekä erilaisia cadeja. Kävin siellä myös "
-				+ "kuukuden javascript kurssin. "
-				+ "";
+				+ "konetekniikkaa. Siellä opin matematiikkaa, elektroniikkaa, fysiikkaa sekä erilaisia cadeja. ";
 		abouts.add(new About("about3","Opiskelut",experienceA));
 		
 		
@@ -483,7 +481,7 @@ public class HomePage extends WebPage {
 	
 	
 	private String getAnimateMovementJs(String id,int e, String selectedButtonId,String topicId) {
-		return "$('#"+id+"').stop().animate({marginLeft:'"+e+"'},400);"
+		return "$('#"+id+"').stop().animate({marginLeft:'"+e+"'},600);"
 				+ getHighlightSelectedJs(selectedButtonId,topicId);
 				
 	}
