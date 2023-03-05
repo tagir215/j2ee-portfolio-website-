@@ -89,7 +89,7 @@ public class HomePage extends WebPage {
 		String[] starImages = new String[] {
 				"starchat0.jpg","starchat6.jpg","starchat2.jpg","starchat3.jpg","starchat7.jpg"
 		};
-		String i0 = "Java, Firebase, OpenGL, Xml, Retrofit, GLSL";
+		String i0 = "Java, Firebase, OpenGL, Xml, Retrofit, GLSL, JUnit";
 		String[] p0 = new String[] {
 				"STAR CHAT on whatsapp klooni, jossa kaikki kirjoittaminen tapahtuu Star Wars alkuteksteistä "
 				+ "insipiroituun tyyliin. Projektissa oli tarkoitus opetella Firebase ja OpenGl "
