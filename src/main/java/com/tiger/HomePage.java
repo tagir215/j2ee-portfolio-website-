@@ -56,10 +56,7 @@ public class HomePage extends WebPage {
 				+ "töitä. Motivoidun parhaiten "
 				+ "haastavista ja uniikeista projekteista, joten olen pyrkinyt valitsemaan "
 				+ "projekteja sen perusteella. Olen oppinut paljon tämän vuoden "
-				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa. "
-				+ "Olen toistaiseksi keskittynyt suurimmaksi osaksi back end koodaukseen, mutta aion "
-				+ "opetella myös front end taitoja, jotta saisi enemmän ammattimaisen "
-				+ "ulkomuodon projekteille.";
+				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa. ";
 		abouts.add(new About("about","Portfolio 2023",aboutP));
 		
 		String experienceA= "Olen oppinut lähinnä projekteja tehdessä ja katsomalla opetusvideoita. "
@@ -81,7 +78,7 @@ public class HomePage extends WebPage {
 		
 		
 		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL","Google Cloud","Heroku","Openshift","MySQL","Android","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket"};
-		int[] measures = new int[] {7,5,3,3,3,2,4,2,1,2,7,5,5,4,3,3};
+		int[] measures = new int[] {7,5,3,2,3,1,3,2,1,2,7,5,5,4,3,3};
 		skillGraphs.add(new SkillGraph("skill-div1",skills,measures,"Taidot"));
 		
 		
@@ -92,7 +89,7 @@ public class HomePage extends WebPage {
 		String[] starImages = new String[] {
 				"starchat0.jpg","starchat6.jpg","starchat2.jpg","starchat3.jpg","starchat7.jpg"
 		};
-		String i0 = "Java, Firebase, OpenGL, Xml";
+		String i0 = "Java, Firebase, OpenGL, Xml, Retrofit, GLSL";
 		String[] p0 = new String[] {
 				"STAR CHAT on whatsapp klooni, jossa kaikki kirjoittaminen tapahtuu Star Wars alkuteksteistä "
 				+ "insipiroituun tyyliin. Projektissa oli tarkoitus opetella Firebase ja OpenGl "
