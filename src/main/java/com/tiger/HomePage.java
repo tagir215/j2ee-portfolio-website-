@@ -99,11 +99,9 @@ public class HomePage extends WebPage {
 				"Käyttäjä solmuihin on tallennettu yleisiä käyttäjätietoja ja ryhmille on lisäksi tallennettu "
 				+ "myös ryhmien jäsenet ja erilaisia aikamääreitä kuten milloin kukin henkilö on viimeksi nähty ryhmässä tai "
 				+ "viestien päivämäärät, jotta uusien viestien lukumäärät voitaisiin laskea",
-				"Tekstit on renderöity käyttäen openGL:ää mikä oli aika hankalaa",
-				"Jokaiselle tekstin kirjaimelle piti määritellä erillinen quad objektin jonka päälle tuli tekstuuri",
-				"Jokaiselle quad objetille piti määritellä sen leveys, korkeus, offsetit x ja y suunnille kirjoitus viivaan nähden, "
-				+ "tekstuuri koordinaatit, tekstuuri atlas koordinaatit, koordinaatit tekstin sisällä ja muokkautuvat koordinaatit eri kokoisille "
-				+ "teksteille kuten otsikoille. Lisäksi kaikille vektorieille tuli tehdä neljä matriisilaskua, jotka muuttivat kirjaimet kolmiulotteisiksi",
+				"En ollut välttämättä ihan valmistaunut siihen kuinka hankalaa tekstien renderöinti olisi kaikkineen "
+				+ "koordinaattilaskuineen eri kokoisille kirjaimille ja tekstuurikoordinaattilaskuineen ja tekstuuriatlaskoordinaattilaskuineen "
+				+ "ja matriisilaskuineen, mutta onpahan siitäkin nyt selvitty.",
 				"Kaikki tekstit on piirretty yhdelle objektille jotta prosessorin tarvitsi tehdä vain yksi piirtokutsu. Ja samasta syystä tuli käyttää tekstuuri atlasta",
 				"Kirjaimet piti myös lajitella sanoiksi jotta uudet rivit eivät alkaisi sanan keskeltä tai toisaalta jos sanan pituus oli yli tekstin laatikon leveyden "
 				+ "niin ottaa myös ne tilanteet huomioon. Lisäksi Star Wars alkutekstit on aseteltu niin että kaikki rivit "
@@ -151,9 +149,10 @@ public class HomePage extends WebPage {
 				"YourMindMap on ajatuskarttojen luontiin tarkoitettu sovellus. "
 				+ "Sovelluksesta löytyy lukuisia asetuksia joissa käyttäjää on huomioitu "
 				+ "antamalla hänelle mahdollisimman vapaat kädet. "
-				+ "Kuitenkin pitämällä työkalut intuitiivisina ja helppokäyttöisinä. "
-				+ "Sovelluksessa on rajoitettu erilaisten asetusikkunoiden navigointia "
-				+ "pitämällä kaikki tiiviisti yhdessä paikassa."
+				+ "Ajatuskartat sommittautuvat automaattisesti. Muihin samankaltaisiin sovelluksiin verrattuna "
+				+ "tässä sovelluksessa voi tehdä suurempia ajatuskarttoja sekä työkalut ovat nopeammin löydettettävissä ja "
+				+ "saatavilla. Yritin tehdä tästä julkaistavan, joten aika suuri osa ajasta meni 90-90 säännön mukaisesti "
+				+ "pieniä korjauksia tehdessä"
 				};
 		String[] ul2 = new String[] {
 				"Ajatuskartan automaattinen tilan sommittelu. Kokeilin useita versioita, mutta päädyin laskemaan "
