@@ -126,11 +126,10 @@ public class HomePage extends WebPage {
 		String i2 = "Java, Android Studio, Xml, Json";
 		String[] p2 = new String[] {
 				"YourMindMap on ajatuskarttojen luontiin tarkoitettu sovellus. "
-				+ "Sovelluksesta löytyy lukuisia asetuksia joissa käyttäjää on huomioitu "
+				+ "Sovelluksesta löytyy lukuisia työkaluja joissa käyttäjää on huomioitu "
 				+ "antamalla hänelle mahdollisimman vapaat kädet. "
-				+ "Ajatuskartat sommittautuvat automaattisesti. Muihin samankaltaisiin sovelluksiin verrattuna "
-				+ "tässä sovelluksessa voi tehdä suurempia ajatuskarttoja sekä työkalut ovat nopeammin löydettettävissä ja "
-				+ "saatavilla. Yritin tehdä tästä julkaistavan, joten aika suuri osa ajasta meni 90-90 säännön mukaisesti "
+				+ "Ajatuskartat sommittautuvat automaattisesti ja Ajatuskarttojen soluja on helppoa siirrellä."
+				+ "Yritin tehdä tästä julkaistavan äpin, joten aika suuri osa ajasta meni 90-90 säännön mukaisesti "
 				+ "pieniä korjauksia tehdessä"
 				};
 		String[] ul2 = new String[] {
