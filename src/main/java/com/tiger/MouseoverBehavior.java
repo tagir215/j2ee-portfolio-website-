@@ -15,9 +15,9 @@ public class MouseoverBehavior extends AjaxEventBehavior{
 	@Override
 	protected void onEvent(AjaxRequestTarget arg0) {
 		if(event.equals("mouseover")) {
-			homepage.userOnPage = true;
+			CurrentValues.userOnPage = true;
 		} else {
-			homepage.userOnPage = false;
+			CurrentValues.userOnPage = false;
 		}
 	}
 }

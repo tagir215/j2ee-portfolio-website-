@@ -1,38 +1,18 @@
 package com.tiger;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.wicket.AttributeModifier;
-import org.apache.wicket.MarkupContainer;
-import org.apache.wicket.ajax.AbstractAjaxTimerBehavior;
-import org.apache.wicket.ajax.AjaxRequestTarget;
-import org.apache.wicket.ajax.markup.html.form.AjaxButton;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.head.JavaScriptHeaderItem;
-import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.image.Image;
-import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.repeater.RepeatingView;
-import org.apache.wicket.model.IModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 
 public class HomePage extends WebPage {
-	private static final long serialVersionUID = 1L;
-	private static final Logger log = LoggerFactory.getLogger(HomePage.class);
-	int topicNumber=0;
-	int skillnumber = 0;
-	final int MARGIN_LEFT = -255;
-	public boolean userOnPage=true;
-	ArrayList<ArrayList<String>> buttonIds = new ArrayList<ArrayList<String>>(); 
 	
 	
 	
@@ -46,8 +26,7 @@ public class HomePage extends WebPage {
 		add(tabs);
 		
 		add( new Image("front-img","title2.png") );
-		add( new Image("arrow","wingarrow.png") );
-	
+		
 		RepeatingView abouts = new RepeatingView("about");
 		add(abouts);
 		
@@ -234,256 +213,31 @@ public class HomePage extends WebPage {
 	    StringBuilder stringBuilder1 = new StringBuilder();
 	    stringBuilder1.append("window.onload = function(){");
 	    List<String>initialButtons = new ArrayList<String>();
-	    for(int i=0; i<buttonIds.size(); i++) {
-	    	initialButtons.add(buttonIds.get(i).get(0));
+	    for(int i=0; i<CurrentValues.buttonIds.size(); i++) {
+	    	initialButtons.add(CurrentValues.buttonIds.get(i).get(0));
 	    }
 	    for(int i=0; i<initialButtons.size(); i++) {
-	    	stringBuilder1.append(getHighlightSelectedJs(initialButtons.get(i),"topic"+i));
+	    	stringBuilder1.append(JsScripts.getHighlightSelectedJs(initialButtons.get(i),"topic"+i));
 	    }
 	    
 	    stringBuilder1.append("}");
-	 	response.render(JavaScriptHeaderItem.forScript(stringBuilder1.toString()	,"ok"));
+	 	response.render(JavaScriptHeaderItem.forScript(stringBuilder1.toString(),"ok"));
+	 	
+	 	StringBuilder stringBuilder2 = new StringBuilder();
+	 	
+	 	for(String name : CurrentValues.currentPositions) {
+	 		String script ="var "+ name +" =0;";
+	 		stringBuilder2.append(script);
+	 	}
+	 	response.render(JavaScriptHeaderItem.forScript(stringBuilder2.toString(), "new var"));
 	   
 	}
 	
-	private class SkillGraph extends WebMarkupContainer{
-
-		public SkillGraph(String id, String[] skills, int[] measures, String title) {
-			super(id);
-			add(new Label("skillTitle",title));
-			
-			RepeatingView skillRow = new RepeatingView("skill");
-			add(skillRow);
-			for(int i=0; i<skills.length; i++) {
-				Skill skill = new Skill("skill"+i+skillnumber,skills[i],measures[i]);
-				skillRow.add(skill);
-			}
-			skillnumber++;
-		}
-		
-	}
-	private class Skill extends WebMarkupContainer{
-
-		public Skill(String id,String skill,int measure) {
-			super(id);
-			
-			RepeatingView repeatingView = new RepeatingView("skill-square");
-			add(repeatingView);
-			for(int i=0; i<10; i++) {
-				WebMarkupContainer square = new WebMarkupContainer("square"+skillnumber+i);
-				if(measure>i)
-					square.add(AttributeModifier.append("class", "square-yes"));
-				else
-					square.add(AttributeModifier.append("class", "square-no"));
-				repeatingView.add(square);
-			}
-			
-			Label label = new Label("skill-label",skill);
-			add(label);
-		}
-		
-	}
-	private class About extends WebMarkupContainer{
-
-		public About(String id,String title,String p) {
-			super(id);
-			
-			add(new Label("about-title",title));
-			add(new Label("about-p",p));
-		}
-		
-	}
 	
 
-	private class Topic extends WebMarkupContainer{
-		
-		String selectedButtonId;
-		String imageContainerId;
-		ImagePickerButton previousButton;
-		ImagePickerButton firstButton;
-		ImagePickerButton currentButton;
-		int waitTime = 0;
-		String topicId;
-		public Topic(String id , String[] images, String title, String italy, String[] p, String[] ul,String url) {
-			super(id);
-			topicId = "topic"+topicNumber;
-			this.setOutputMarkupId(true);
-			this.setMarkupId(topicId);
-			add(new Label("work-title",title));
-			add(new Label("italic-section",italy));
-			add(new GitLink("gitlink",url));
-			
-			
-			WebMarkupContainer background = new WebMarkupContainer("background");
-			background.add(new Image("random","sale.jpg"));
-			background.add(new AttributeModifier("class","background"+topicNumber));
-			add(background);
-			
-			
-			
-			
-			RepeatingView paragraphs = new RepeatingView("work-p");
-			add(paragraphs);
-			for(int i=0; i<p.length; i++) {
-				paragraphs.add(new Label("p"+topicNumber + i,p[i]));
-			}
-			RepeatingView list = new RepeatingView("work-li");
-			add(list);
-			for(int i=0; i<ul.length; i++) {
-				list.add(new Label("li"+topicNumber+i,ul[i]));
-			}
-		
-			WebMarkupContainer containerPlus = new WebMarkupContainer("container-plus");
-			add(containerPlus);
-			Image imagePhone = new Image("imgPhone","phone20.9.png");
-			imagePhone.setOutputMarkupId(true);
-			containerPlus.add(imagePhone);
-			
-			WebMarkupContainer containerSlide = new WebMarkupContainer("slide-container");
-			containerPlus.add(containerSlide);
-			containerSlide.setOutputMarkupId(true);
-			
-			
-			WebMarkupContainer containerImages = new WebMarkupContainer("images-container");
-			containerSlide.add(containerImages);
-			String markupId = "image-container"+String.valueOf(topicNumber);
-			imageContainerId = markupId;
-			containerImages.setMarkupId(markupId);
-			
-			Form form = new Form("button-form");
-			containerPlus.add(form);
-			
-			form.add(new IntervalMover2(Duration.ofMillis(4000),this));
-			
-			RepeatingView rvSpan = new RepeatingView("span-image");
-			containerSlide.add(rvSpan);
-			RepeatingView rvShow = new RepeatingView("imgSlideShow");
-			containerImages.add(rvShow);
-			RepeatingView rvButton = new RepeatingView("button");
-			form.add(rvButton);
-			
-			buttonIds.add(new ArrayList<String>());
-			
-			
-			for(int i=0; i<images.length; i++) {
-				rvShow.add(new Image("imgSlideShow"+i,images[i]));
-				rvSpan.add(new Label("span-image"+i));
-				String buttonId = "button"+String.valueOf(i)+String.valueOf(topicNumber);
-				
-				buttonIds.get(topicNumber).add(buttonId);
-				
-				final int e = i * MARGIN_LEFT;
-				ImagePickerButton button = new ImagePickerButton("button"+i,buttonId,this,e);
-				button.setMarkupId(buttonId);
-				button.setOutputMarkupId(true);
-				rvButton.add(button);
-				
-				if(i==0) {
-					selectedButtonId = buttonId;
-					firstButton = button;
-					currentButton = firstButton;
-				}
-				
-				if(previousButton != null) {
-					previousButton.nextButton = button;
-					if(i==images.length-1)
-						button.nextButton = firstButton;
-				}
-				previousButton = button;
-			}
-			
-			
-			topicNumber++;
-		}
-		
-		
-	}
-	
-	private class GitLink extends Link {
-
-		public GitLink(String id, String url) {
-			super(id);
-			// TODO Auto-generated constructor stub
-			add(new AttributeModifier("href",url));
-		}
-		@Override
-		public MarkupContainer setDefaultModel(IModel arg0) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		@Override
-		public void onClick() {
-			// TODO Auto-generated method stub
-		}
-		
-	}
-	
-	
-	
-	private class ImagePickerButton extends AjaxButton {
-	
-		Topic topic;
-		ImagePickerButton nextButton;
-		String buttonId;
-		int e;
-		public ImagePickerButton(String id,String markupId, Topic topic, int e) {
-			super(id);
-			this.topic = topic;
-			this.buttonId = markupId;
-			this.e = e;
-		}
-		
-		@Override
-		protected String getOnClickScript() {
-			return getAnimateMovementJs(topic.imageContainerId,e,buttonId,topic.topicId);
-		}
-		
-		@Override
-		protected void onSubmit(AjaxRequestTarget target) {
-			super.onSubmit(target);
-			topic.currentButton = this; 
-			topic.waitTime = 5;
-		}
-		
-		
-	}
-	
-	private class IntervalMover2 extends AbstractAjaxTimerBehavior {
-		Topic topic;
-		long startTime = 0;
-		public IntervalMover2(Duration updateInterval, Topic topic) {
-			super(updateInterval);
-			this.topic = topic;
-		}
-
-		protected void onTimer(AjaxRequestTarget target) {
-			
-			if(topic.waitTime<=0 && userOnPage) {
-				topic.selectedButtonId = topic.currentButton.buttonId;
-				target.appendJavaScript(getAnimateMovementJs(topic.imageContainerId,topic.currentButton.e,topic.selectedButtonId,topic.topicId));
-				topic.currentButton = topic.currentButton.nextButton;
-			} else {
-				topic.waitTime --;
-			}
-			
-		}
-		
-	}
-	
 
 	
-	private String getHighlightSelectedJs(String selectedButtonId, String topicId) {
-			
-		return "$('#"+topicId+"').find('.selectedButton').removeClass('selectedButton').addClass('button');"
-				+"$('#"+selectedButtonId+"').removeClass('button').addClass('selectedButton');";
-	}
 	
-	
-	private String getAnimateMovementJs(String id,int e, String selectedButtonId,String topicId) {
-		return "$('#"+id+"').stop().animate({marginLeft:'"+e+"'},600);"
-				+ getHighlightSelectedJs(selectedButtonId,topicId);
-				
-	}
 	
 	
 	

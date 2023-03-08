@@ -123,10 +123,17 @@
 	      	<h1 class="topic-title" id="works">Työt</h1>
 	      	<div class="content" wicket:id="topic">
 	      		
+	      		
 	      		<div class="left-container">
-	      			<div wicket:id="background" class="background0">
-	      				<img wicket:id="random" class="random">
+	      			<div wicket:id="background" class="background background0">
+	      				<img wicket:id="background-img" class="background-img">
 	      			</div>
+	      			
+	      			<form id="changer-container" class="slide-changer-container" wicket:id="slider-form">
+	      				<input class="slide-button slide-previous" type="button" wicket:id="slider-prev">
+	      				<input class="slide-button slide-next" type="button" wicket:id="slider-next">
+	      			</form>
+	      			
 		      		<div class="slider-container-plus" wicket:id="container-plus">
 		      		
 			      		<div class="slide-container" wicket:id="slide-container">
@@ -186,7 +193,9 @@
   		
   		
   		
+  		<!-- 
   		
+  		 
   		<div class="part3">
   				<h1 class="topic-title" id="hobbies">Harrastukset</h1>
   				<br>
@@ -204,7 +213,7 @@
 	  			
   			</div>
   		</div>
-  		
+  		-->
   		
   		
   		<div class="part4">
