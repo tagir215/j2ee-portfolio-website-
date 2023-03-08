@@ -128,7 +128,7 @@ public class HomePage extends WebPage {
 				"YourMindMap on ajatuskarttojen luontiin tarkoitettu sovellus. "
 				+ "Sovelluksesta löytyy lukuisia työkaluja joissa käyttäjää on huomioitu "
 				+ "antamalla hänelle mahdollisimman vapaat kädet. "
-				+ "Ajatuskartat sommittautuvat automaattisesti ja niiden soluja on helppoa siirrellä."
+				+ "Ajatuskartat sommittautuvat automaattisesti ja niiden soluja on helppoa siirrellä. "
 				+ "Yritin tehdä tästä julkaistavan äpin, joten aika suuri osa ajasta meni 90-90 säännön mukaisesti "
 				+ "pieniä korjauksia tehdessä"
 				};
