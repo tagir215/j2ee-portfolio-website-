@@ -22,7 +22,7 @@ public class Topic extends WebMarkupContainer{
 	public ImagePickerButton currentButton;
 	public int waitTime = 0;
 	public int number = 0;
-	public Topic(String id , String[] images, String title, String italy, String[] p, String[] ul,String url) {
+	public Topic(String id , String[] images, String title, String italy, String[] p, String[] ul,String url,int num) {
 		super(id);
 		topicId = "topic"+CurrentValues.topicNumber;
 		this.setOutputMarkupId(true);
@@ -33,8 +33,7 @@ public class Topic extends WebMarkupContainer{
 		number = CurrentValues.topicNumber;
 		WebMarkupContainer background = new WebMarkupContainer("background");
 		background.add(new Image("background-img","sale.jpg"));
-		int num = CurrentValues.topicNumber;
-		String colorFilter = "color-filter"+new Random().nextInt(3);
+		String colorFilter = "color-filter"+num;
 		add(background);
 		background.add(new AttributeModifier("class","background "+colorFilter));
 		

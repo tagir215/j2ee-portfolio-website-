@@ -192,10 +192,10 @@ public class HomePage extends WebPage {
 				+ "joitakin parannuksia pitää vielä tehdä",
 				"Tämän projektin tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Tein tätä noin kuukauden. "
 		};
-		topics.add(new Topic("topic10",starImages,"Star Chat",i0,p0,ul0,"https://github.com/tagir215/Star-Chat/tree/master/main/java/com/android/starchat"));		
-		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3,"https://github.com/tagir215/VisualMetronome/tree/master/main/java/com/example/artmetronome"));
-		topics.add(new Topic("topic12",mapImages,"Your Mind Map",i2,p2,ul2,"https://github.com/tagir215/YourMindMap/tree/master/myapplication"));
-		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1,ul1,"https://github.com/tagir215/GPSGolf"));
+		topics.add(new Topic("topic10",starImages,"Star Chat",i0,p0,ul0,"https://github.com/tagir215/Star-Chat/tree/master/main/java/com/android/starchat",0));		
+		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3,"https://github.com/tagir215/VisualMetronome/tree/master/main/java/com/example/artmetronome",1));
+		topics.add(new Topic("topic12",mapImages,"Your Mind Map",i2,p2,ul2,"https://github.com/tagir215/YourMindMap/tree/master/myapplication",2));
+		topics.add(new Topic("topic11",golfImages,"GPS GOLF",i1,p1,ul1,"https://github.com/tagir215/GPSGolf",3));
 		
 		
 		
