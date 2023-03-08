@@ -369,7 +369,8 @@ a{
 	opacity:1;
 	border-radius:10px;
 }
-.background{
+
+.background0{
 	position:absolute;
 	width:90%;
 	height:100%;
@@ -377,18 +378,37 @@ a{
 	margin-left:auto;
 	margin-right:auto;
 	top:-1vh;
-}
-.background0{
 	filter: hue-rotate(120deg);
 }
 
 .background2{
+	position:absolute;
+	width:90%;
+	height:100%;
+	opacity:1;
+	margin-left:auto;
+	margin-right:auto;
+	top:-1vh;
 	filter: hue-rotate(200deg);
 }
 .background1{
+	position:absolute;
+	width:90%;
+	height:100%;
+	opacity:1;
+	margin-left:auto;
+	margin-right:auto;
+	top:-1vh;
 	filter: hue-rotate(0deg);
 }
 .background3{
+	position:absolute;
+	width:90%;
+	height:100%;
+	opacity:1;
+	margin-left:auto;
+	margin-right:auto;
+	top:-1vh;
 	filter: hue-rotate(100deg);
 }
 .imgPhone{
