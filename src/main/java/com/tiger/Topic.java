@@ -2,6 +2,7 @@ package com.tiger;
 
 import java.util.ArrayList;
 
+import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.basic.Label;
@@ -31,7 +32,7 @@ public class Topic extends WebMarkupContainer{
 		number = CurrentValues.topicNumber;
 		WebMarkupContainer background = new WebMarkupContainer("background");
 		background.add(new Image("background-img","sale.jpg"));
-		//background.add(new AttributeModifier("class","background"+String.valueOf(number)));
+		background.add(AttributeModifier.append("class", "background color-filter0"));
 		add(background);
 		
 		

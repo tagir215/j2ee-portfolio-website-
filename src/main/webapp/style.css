@@ -195,12 +195,13 @@ a{
 }
 .front{
 	height: auto;
-	width:90%;
+	width:95%;
 	display:flex;
 	justify-content:center;
 	padding-top:90px;
 	margin-top:50px;
 	background-image:url("pixel5.jpg");
+	background:"grey";
 	background-size:auto 100%;
 	margin-left:auto;
 	margin-right:auto;
@@ -374,42 +375,16 @@ a{
 	position:absolute;
 	width:95%;
 	height:100%;
-	opacity:0;
+	opacity:1;
 	margin-left:auto;
 	margin-right:auto;
 	top:-1vh;
+}
+.color-filter0 {
+    filter: grayscale(100%);
 }
 
-.background2{
-	position:absolute;
-	width:95%;
-	height:100%;
-	opacity:1;
-	margin-left:auto;
-	margin-right:auto;
-	top:-1vh;
-	filter: hue-rotate(200deg);
-}
-.background1{
-	position:absolute;
-	width:95%;
-	height:100%;
-	opacity:1;
-	margin-left:auto;
-	margin-right:auto;
-	top:-1vh;
-	filter: hue-rotate(0deg);
-}
-.background3{
-	position:absolute;
-	width:95%;
-	height:100%;
-	opacity:1;
-	margin-left:auto;
-	margin-right:auto;
-	top:-1vh;
-	filter: hue-rotate(100deg);
-}
+
 .imgPhone{
 	max-width:275px;
 	height:auto;
