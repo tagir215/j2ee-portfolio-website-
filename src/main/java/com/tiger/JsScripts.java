@@ -7,9 +7,10 @@ public class JsScripts {
 	}
 	
 	
-	public static String getAnimateMovementJs(int margin, Topic topic) {
-		return "$('#"+topic.imageContainerId+"').stop().animate({marginLeft:'"+margin+"'},600);"
-				+ ""+CurrentValues.currentPositions.get(topic.number)+"="+margin+";";
+	public static String getAnimateMovementJs(int margin, ImagePickerButton button) {
+		return "$('#"+button.topic.imageContainerId+"').stop().animate({marginLeft:'"+margin+"'},{duration:400,easing:'linear'});"
+				+ ""+CurrentValues.currentPositions.get(button.topic.number)+"="+margin+";"
+				+getHighlightSelectedJs(button.buttonId,button.topic.topicId);
 	}
 	
 	

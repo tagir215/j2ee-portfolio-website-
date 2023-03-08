@@ -18,7 +18,7 @@ public class IntervalMover2 extends AbstractAjaxTimerBehavior {
 			topic.selectedButtonId = topic.currentButton.buttonId;
 			topic.currentButton = topic.currentButton.nextButton;
 			StringBuilder stringBuilder = new StringBuilder();
-			stringBuilder.append(JsScripts.getAnimateMovementJs(topic.currentButton.margin,topic));
+			//stringBuilder.append(JsScripts.getAnimateMovementJs(topic.currentButton.margin,topic));
 			stringBuilder.append(""+CurrentValues.currentPositions.get(topic.number)+"="+topic.currentButton.margin+";");
 			stringBuilder.append(JsScripts.getHighlightSelectedJs(topic.currentButton.buttonId, topic.topicId));
 			target.appendJavaScript(stringBuilder.toString());

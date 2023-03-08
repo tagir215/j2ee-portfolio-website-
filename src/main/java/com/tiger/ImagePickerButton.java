@@ -22,7 +22,7 @@ public class ImagePickerButton extends AjaxButton {
 	
 	@Override
 	protected String getOnClickScript() {
-		return JsScripts.getAnimateMovementJs(margin,topic);
+		return JsScripts.getAnimateMovementJs(margin,this);
 	}
 	
 	@Override
@@ -30,7 +30,6 @@ public class ImagePickerButton extends AjaxButton {
 		super.onSubmit(target);
 		topic.currentButton = this; 
 		topic.waitTime = Constants.WAIT_TIME;
-		target.appendJavaScript(JsScripts.getHighlightSelectedJs(topic.currentButton.buttonId, topic.topicId));
 	}
 	
 	

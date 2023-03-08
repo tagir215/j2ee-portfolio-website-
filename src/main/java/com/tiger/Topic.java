@@ -1,9 +1,8 @@
 package com.tiger;
 
-import java.time.Duration;
 import java.util.ArrayList;
 
-import org.apache.wicket.AttributeModifier;
+import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Form;
@@ -75,7 +74,7 @@ public class Topic extends WebMarkupContainer{
 		Form form = new Form("button-form");
 		containerPlus.add(form);
 		
-		form.add(new IntervalMover2(Duration.ofMillis(4000),this));
+		//form.add(new IntervalMover2(Duration.ofMillis(4000),this));
 		
 		RepeatingView rvSpan = new RepeatingView("span-image");
 		containerSlide.add(rvSpan);
@@ -96,6 +95,14 @@ public class Topic extends WebMarkupContainer{
 			
 			final int margin = i * Constants.MARGIN_LEFT;
 			ImagePickerButton button = new ImagePickerButton("button"+i,buttonId,this,margin,i);
+			if(i>0) {
+				previousButton.add(AttributeAppender.append("data-next","#"+button.buttonId));
+				button.add(AttributeAppender.append("data-previous", "#"+previousButton.buttonId));
+				if(i+1==images.length) {
+					button.add(AttributeAppender.append("data-next","#"+ firstButton.buttonId));
+					firstButton.add(AttributeAppender.append("data-previous","#"+button.buttonId));
+				}
+			}
 			button.setMarkupId(buttonId);
 			button.setOutputMarkupId(true);
 			rvButton.add(button);

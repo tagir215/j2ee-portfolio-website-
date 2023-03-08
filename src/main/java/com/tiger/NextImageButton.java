@@ -28,12 +28,25 @@ public class NextImageButton extends AjaxButton {
 		String var = CurrentValues.currentPositions.get(topic.number);
 		int maxMargin = (imagesCount-1) * Constants.MARGIN_LEFT;
 		String id = topic.imageContainerId;
+		String ref;
+		if(next)
+			ref = "next";
+		else
+			ref = "previous";
 		
 		return ""+var+"+= "+margin+";"
 				+ "if("+var+"<"+maxMargin+"){"+var+"=0};"
 				+ "if("+var+">0){"+var+"="+maxMargin+"}"
-				+ "$('#"+id+"').stop().animate({marginLeft:"+var+"},600);";
+				+ "$('#"+id+"').stop().animate({marginLeft:"+var+"},{duration:300,easing:'linear'});"
+				+ ""
+				+ ""
+				+ "var selectedButton = $('#"+topic.topicId+"').find('.selectedButton');"
+				+ "var nextButton = $(selectedButton.data('"+ref+"'));"
+				+ "selectedButton.removeClass('selectedButton').addClass('button');"
+				+ "nextButton.removeClass('button').addClass('selectedButton');";
 	}
+	
+	
 	
 	@Override
 	protected void onSubmit(AjaxRequestTarget target) {
@@ -42,8 +55,7 @@ public class NextImageButton extends AjaxButton {
 			topic.currentButton = topic.currentButton.nextButton;
 		else 
 			topic.currentButton = topic.currentButton.previousButton;
-			
-		target.appendJavaScript(JsScripts.getHighlightSelectedJs(topic.currentButton.buttonId, topic.topicId));
+	
 		topic.waitTime = Constants.WAIT_TIME;
 	}
 	

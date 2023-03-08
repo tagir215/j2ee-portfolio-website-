@@ -5,7 +5,6 @@ com\tiger\CurrentValues.class
 com\tiger\About.class
 com\tiger\HomePage.class
 com\tiger\GitLink.class
-com\tiger\Rating.class
 com\tiger\WicketApplication.class
 com\tiger\Constants.class
 com\tiger\Topic.class
