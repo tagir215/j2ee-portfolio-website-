@@ -1,6 +1,7 @@
 package com.tiger;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.behavior.AttributeAppender;
@@ -32,7 +33,8 @@ public class Topic extends WebMarkupContainer{
 		number = CurrentValues.topicNumber;
 		WebMarkupContainer background = new WebMarkupContainer("background");
 		background.add(new Image("background-img","sale.jpg"));
-		background.add(AttributeModifier.append("class", "background color-filter"+CurrentValues.topicNumber));
+		String colorFilter = "color-filter"+String.valueOf(number);
+		background.add(AttributeModifier.append("class", "background "+colorFilter));
 		add(background);
 		
 		
