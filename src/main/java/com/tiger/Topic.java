@@ -32,7 +32,7 @@ public class Topic extends WebMarkupContainer{
 		number = CurrentValues.topicNumber;
 		WebMarkupContainer background = new WebMarkupContainer("background");
 		background.add(new Image("background-img","sale.jpg"));
-		background.add(AttributeModifier.append("class", "background color-filter0"));
+		background.add(AttributeModifier.append("class", "background color-filter"+CurrentValues.topicNumber));
 		add(background);
 		
 		

@@ -198,14 +198,14 @@ a{
 	width:95%;
 	display:flex;
 	justify-content:center;
-	padding-top:90px;
+	padding-top:40px;
 	margin-top:50px;
 	background-image:url("pixel5.jpg");
 	background:"grey";
 	background-size:auto 100%;
 	margin-left:auto;
 	margin-right:auto;
-	padding-bottom:120px;
+	padding-bottom:70px;
 	border:1px solid #cacaca;
 	border-radius:20px;
 }
@@ -320,9 +320,8 @@ a{
 	padding-bottom:10px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:40px;
+	margin-top:100px;
 	position:relative;
-	border-radius:50px;
 }
 .left-container{
 	width:100%;
@@ -368,7 +367,6 @@ a{
 	width:100%;
 	height:100%;
 	opacity:1;
-	border-radius:10px;
 }
 
 .background{
@@ -381,13 +379,24 @@ a{
 	top:-1vh;
 }
 .color-filter0 {
-    filter: grayscale(100%);
+    filter: hue-rotate(0deg);
+}
+.color-filter1 {
+    filter: hue-rotate(100deg);
+}
+.color-filter2 {
+    filter: hue-rotate(900deg);
+}
+.color-filter3 {
+    filter: hue-rotate(200deg);
 }
 
 
 .imgPhone{
 	max-width:275px;
 	height:auto;
+	border-radius:30px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .imgPhone-container{
 	margin-top:14px;
