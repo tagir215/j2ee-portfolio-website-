@@ -78,7 +78,7 @@ public class HomePage extends WebPage {
 				"Käyttäjä solmuihin on tallennettu yleisiä käyttäjätietoja ja ryhmille on lisäksi tallennettu "
 				+ "myös ryhmien jäsenet ja erilaisia aikamääreitä kuten milloin kukin henkilö on viimeksi nähty ryhmässä tai "
 				+ "viestien päivämäärät, jotta uusien viestien lukumäärät voitaisiin laskea",
-				"En ollut välttämättä ihan valmistaunut siihen kuinka hankalaa tekstien renderöinti olisi kaikkineen "
+				"Tektstin renderöinti openGl:llä oli ehkä haastavempaa kuin kuvittelin kaikkineen "
 				+ "koordinaattilaskuineen eri kokoisille kirjaimille ja tekstuurikoordinaattilaskuineen ja tekstuuriatlaskoordinaattilaskuineen "
 				+ "ja matriisilaskuineen, mutta onpahan siitäkin nyt selvitty.",
 				"Kaikki tekstit on piirretty yhdelle objektille jotta prosessorin tarvitsi tehdä vain yksi piirtokutsu. Ja samasta syystä tuli käyttää tekstuuri atlasta",
@@ -87,7 +87,7 @@ public class HomePage extends WebPage {
 				+ "ovat yhtä pitkät, joten kirjainten välinen etäisyys muokkautuu kunkin rivin tekstin leveyden perusteella",
 				"Tein kaikki tarvittavat järjestely algoritmit ja matriisi kertomat itse harjoituksen vuoksi",
 				"Tämä projeti oli ehkä vähän suoraviivaisempi kuin nuo edelliset projektit (OpenGL:ää lukuunottamatta), joten siinä meni lopulta vain noin "
-				+"kolme viikkoa. Tein tällä kertaa UI:n heti ensimmäisenä, koska en ilmeisesti jotenkin projektin lopussa enää jaksa "
+				+"kolme viikkoa. Tein tällä kertaa UI:n heti ensimmäisenä, koska en ilmeisesti projektien lopussa enää jaksa "
 				+ "keskittyä visuaaleihin"
 		};
 		
