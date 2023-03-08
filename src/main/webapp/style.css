@@ -342,7 +342,7 @@ a{
 	opacity:0.5;
 	margin-top:300px;
 	justify-content:space-between;
-	width:80%;
+	width:87%;
 }
 .slide-button{
 	background-image: url("arrow.png");
@@ -372,7 +372,7 @@ a{
 
 .background0{
 	position:absolute;
-	width:90%;
+	width:95%;
 	height:100%;
 	opacity:1;
 	margin-left:auto;
@@ -383,7 +383,7 @@ a{
 
 .background2{
 	position:absolute;
-	width:90%;
+	width:95%;
 	height:100%;
 	opacity:1;
 	margin-left:auto;
@@ -393,7 +393,7 @@ a{
 }
 .background1{
 	position:absolute;
-	width:90%;
+	width:95%;
 	height:100%;
 	opacity:1;
 	margin-left:auto;
@@ -403,7 +403,7 @@ a{
 }
 .background3{
 	position:absolute;
-	width:90%;
+	width:95%;
 	height:100%;
 	opacity:1;
 	margin-left:auto;
@@ -498,7 +498,7 @@ a{
 	border-radius:10px;
 	padding-left:10px;
 	padding-right:30px;
-	width:80%;
+	width:92%;
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
