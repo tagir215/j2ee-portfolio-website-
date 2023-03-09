@@ -404,7 +404,6 @@ a{
 	width:275px;
 	height:100%;
 	text-align:center;
-	
 }
 .slider-container-plus{
 	width:100%;
@@ -428,7 +427,7 @@ a{
 	height:565px;
 	margin-left:0;
 	width:2000px;
-	background:blue;
+	background:white;
 	position:absolute;
 }
 .imgSlideShow{

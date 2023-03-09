@@ -37,13 +37,14 @@ public class NextImageButton extends AjaxButton {
 		return ""+var+"+= "+margin+";"
 				+ "if("+var+"<"+maxMargin+"){"+var+"=0};"
 				+ "if("+var+">0){"+var+"="+maxMargin+"}"
-				+ "$('#"+id+"').stop().animate({marginLeft:"+var+"},{duration:300,easing:'linear'});"
+				+ "$('#"+id+"').stop().animate({marginLeft:"+var+"},{duration:10,easing:'linear'});"
 				+ ""
 				+ ""
 				+ "var selectedButton = $('#"+topic.topicId+"').find('.selectedButton');"
 				+ "var nextButton = $(selectedButton.data('"+ref+"'));"
 				+ "selectedButton.removeClass('selectedButton').addClass('button');"
-				+ "nextButton.removeClass('button').addClass('selectedButton');";
+				+ "nextButton.removeClass('button').addClass('selectedButton');"
+				+ JsScripts.getOpacityAnimation();
 	}
 	
 	
