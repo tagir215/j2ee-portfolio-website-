@@ -664,6 +664,23 @@ a{
 	font-style:italic;
 }
 
+.content2{
+	width:95%;
+}
+.content2photo{
+	width:100%;
+	height:auto;	
+}
+
+
+.part3{
+	width:100%;
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;
+	border-top:1px solid #e1e1e1;
+}
+
+
 .part0{
 	padding-bottom:50px;
 	border-left:1px solid #e1e1e1;
@@ -679,11 +696,19 @@ a{
 	border-right:1px solid #e1e1e1;
 	border-top:1px solid #e1e1e1;
 }
+.part25{
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;
+	border-top:1px solid #e1e1e1;
+	padding-bottom:20px;
+}
 .part3{
 	border-left:1px solid #e1e1e1;
 	border-right:1px solid #e1e1e1;
 	border-top:1px solid #e1e1e1;
+	padding-bottom:20px;
 }
+
 
 .part4{
 	border-left:1px solid #e1e1e1;
@@ -694,8 +719,8 @@ a{
 	box-sizing:border-box;
 	justify-content:center;
 	padding-bottom:50px;
-	padding-top:50px;
 	margin-bottom:10px;
+	padding-bottom:20px;
 }
 
 .contact-me{

@@ -86,7 +86,7 @@ public class HomePage extends WebPage {
 				+ "niin ottaa myös ne tilanteet huomioon. Lisäksi Star Wars alkutekstit on aseteltu niin että kaikki rivit "
 				+ "ovat yhtä pitkät, joten kirjainten välinen etäisyys muokkautuu kunkin rivin tekstin leveyden perusteella",
 				"Tein kaikki tarvittavat järjestely algoritmit ja matriisi kertomat itse harjoituksen vuoksi",
-				"Tämä projeti oli ehkä vähän suoraviivaisempi kuin nuo edelliset projektit (OpenGL:ää lukuunottamatta), joten siinä meni lopulta vain noin "
+				"Tämä projekti oli ehkä vähän suoraviivaisempi kuin nuo edelliset projektit (OpenGL:ää lukuunottamatta), joten siinä meni lopulta vain noin "
 				+"kolme viikkoa. Tein tällä kertaa UI:n heti ensimmäisenä, koska en ilmeisesti projektien lopussa enää jaksa "
 				+ "keskittyä visuaaleihin"
 		};

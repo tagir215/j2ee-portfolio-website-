@@ -4,7 +4,6 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.17+8-adhoc..jdk11u"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\openlogic-openjdk-11.0.17+8-windows-x64\bin"/>
-    <property name="user.country.format" value="FI"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\OMISTAJA\Desktop\portfolio\portfolio"/>
     <property name="java.vm.vendor" value="OpenLogic"/>
     <property name="java.vendor.url" value="https://openlogic.com/"/>
@@ -13,7 +12,7 @@
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="CN"/>
+    <property name="user.country" value="FI"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\OMISTAJA\Desktop\portfolio\portfolio"/>
@@ -29,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.8.6\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\openlogic-openjdk-11.0.17+8-windows-x64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\openlogic-openjdk-11.0.17+8-windows-x64\bin;C:\msys64\mingw64\bin;C:\msys64\usr\bin;C:\Program Files\dotnet\;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\Git\cmd;C:\Users\OMISTAJA\Desktop\JavaEE-stuff\Openshift;C:\Users\OMISTAJA\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\OMISTAJA\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\OMISTAJA\AppData\Local\Microsoft\WindowsApps;C:\Users\OMISTAJA\AppData\Local\atom\bin;C:\Users\OMISTAJA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\OMISTAJA\.dotnet\tools;C:\Users\OMISTAJA\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\OMISTAJA\AppData\Local\Programs\Python\Python310\Lib\ffmpeg\bin;C:\Program Files\heroku\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\openlogic-openjdk-11.0.17+8-windows-x64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python311\Scripts\;C:\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\openlogic-openjdk-11.0.17+8-windows-x64\bin;C:\msys64\mingw64\bin;C:\msys64\usr\bin;C:\Program Files\dotnet\;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\Git\cmd;C:\Users\OMISTAJA\Desktop\JavaEE-stuff\Openshift;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\OMISTAJA\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\OMISTAJA\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\OMISTAJA\AppData\Local\Microsoft\WindowsApps;C:\Users\OMISTAJA\AppData\Local\atom\bin;C:\Users\OMISTAJA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\OMISTAJA\.dotnet\tools;C:\Users\OMISTAJA\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\OMISTAJA\AppData\Local\Programs\Python\Python310\Lib\ffmpeg\bin;C:\Program Files\heroku\bin;C:\Users\OMISTAJA\AppData\Roaming\npm;."/>
     <property name="maven.conf" value="C:\Program Files\apache-maven-3.8.6/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
@@ -48,9 +47,8 @@
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.home" value="C:\Program Files\Java\openlogic-openjdk-11.0.17+8-windows-x64"/>
-    <property name="user.language" value="zh"/>
+    <property name="user.language" value="fi"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language.format" value="fi"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.17"/>
