@@ -31,10 +31,9 @@ public class HomePage extends WebPage {
 		
 		String aboutP = "Hei, tässä on portfolio koodaus projekteistani. Olen "
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
-				+ "töitä. En ole välttämättä mikään designeri mutta vahvuuteni on "
-				+ "yksityiskohtainen ohjelmointi. Tarvitsen tosin kipeästi jonkin mentorin "
-				+ "että saan vielä niitä itse tiedostamattomia kohtia koodissa korjattua. Haen tällä hetkellä "
-				+ "junioritason paikkaa, mutta olen tulossa mielelläni myös työkokeiluun"
+				+ "töitä. Olen koodannut vähän yli vuoden ja oppinut aika paljon, mutta tarvitsen toisaalta vielä mentorin "
+				+ "että saan niitä itse tiedostamattomia asioita korjattua. Haen tällä hetkellä "
+				+ "junioritason paikkaa, mutta tulen mielelläni myös työkokeiluun. "
 				+ " ";
 		abouts.add(new About("about","Portfolio 2023",aboutP));
 		
@@ -46,12 +45,6 @@ public class HomePage extends WebPage {
 				+ "oleellisia asioita koodin muotoilusta ja sain lisäksi materiaalia sekä lukuvinkkejä. Olen opiskellut myös ammattikorkeakoulussa "
 				+ "konetekniikkaa. Siellä opin matematiikkaa, elektroniikkaa, fysiikkaa sekä erilaisia cadeja. ";
 		abouts.add(new About("about3","Opiskelut",experienceA));
-		
-		
-		
-		
-	
-		
 		
 		
 		
