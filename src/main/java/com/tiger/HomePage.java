@@ -25,17 +25,17 @@ public class HomePage extends WebPage {
 		Tabs tabs = new Tabs("bar-tabs");
 		add(tabs);
 		
-		add( new Image("front-img","title2.png") );
 		
 		RepeatingView abouts = new RepeatingView("about");
 		add(abouts);
 		
 		String aboutP = "Hei, tässä on portfolio koodaus projekteistani. Olen "
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
-				+ "töitä. Motivoidun parhaiten "
-				+ "haastavista ja uniikeista projekteista, joten olen pyrkinyt valitsemaan "
-				+ "projekteja sen perusteella. Olen oppinut paljon tämän vuoden "
-				+ "aikana, mutta huomannut myös että on vielä paljon opittavaa. ";
+				+ "töitä. En ole välttämättä mikään designeri mutta vahvuuteni on "
+				+ "yksityiskohtainen ohjelmointi. Tarvitsen tosin kipeästi jonkin mentorin "
+				+ "että saan vielä niitä itse tiedostamattomia kohtia koodissa korjattua. Haen tällä hetkellä "
+				+ "junioritason paikkaa, mutta olen tulossa mielelläni myös työkokeiluun"
+				+ " ";
 		abouts.add(new About("about","Portfolio 2023",aboutP));
 		
 		String experienceA= "Olen oppinut lähinnä projekteja tehdessä ja katsomalla opetusvideoita. "
@@ -50,13 +50,10 @@ public class HomePage extends WebPage {
 		
 		
 		
-		RepeatingView skillGraphs = new RepeatingView("skill-div");
-		add(skillGraphs);
+	
 		
 		
-		String[] skills = new String[] {"Java","Kotlin","C#","Javascript","CSS","SQL","Google Cloud","Heroku","Openshift","MySQL","Android","IntelliJ IDEA","Eclipse","Visual Studio","Unity","Apache Wicket"};
-		int[] measures = new int[] {7,5,3,2,3,1,3,2,1,2,7,5,5,4,3,3};
-		skillGraphs.add(new SkillGraph("skill-div1",skills,measures,"Taidot"));
+		
 		
 		
 		RepeatingView topics = new RepeatingView("topic");
@@ -66,7 +63,7 @@ public class HomePage extends WebPage {
 		String[] starImages = new String[] {
 				"starchat0.jpg","starchat6.jpg","starchat2.jpg","starchat3.jpg","starchat7.jpg"
 		};
-		String i0 = "Java, Firebase, OpenGL, Xml, Retrofit, GLSL, JUnit";
+		String i0 = "Java, Firebase, OpenGL, Xml, GLSL";
 		String[] p0 = new String[] {
 				"STAR CHAT on whatsapp klooni, jossa kaikki kirjoittaminen tapahtuu Star Wars alkuteksteistä "
 				+ "insipiroituun tyyliin. Projektissa oli tarkoitus opetella Firebase ja OpenGl "

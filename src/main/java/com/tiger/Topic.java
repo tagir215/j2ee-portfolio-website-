@@ -32,10 +32,10 @@ public class Topic extends WebMarkupContainer{
 		add(new GitLink("gitlink",url));
 		number = CurrentValues.topicNumber;
 		WebMarkupContainer background = new WebMarkupContainer("background");
-		background.add(new Image("background-img","sale.jpg"));
+		//background.add(new Image("background-img","sale.jpg"));
 		String colorFilter = "color-filter"+num;
 		add(background);
-		background.add(new AttributeModifier("class","background "+colorFilter));
+		//background.add(new AttributeModifier("class","background "+colorFilter));
 		
 		CurrentValues.currentPositions.add("currentPosition"+topicId);
 		Form formSlider = new Form("slider-form");
