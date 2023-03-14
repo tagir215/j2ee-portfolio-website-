@@ -78,10 +78,10 @@ body {
 
 .borders{
 	width:auto;
-	margin-right:120px;
-	margin-left:350px;
-	border-left:1px solid #e1e1e1;
-	border-right:1px solid #e1e1e1;
+	margin-right:100px;
+	margin-left:330px;
+	border-left:1px solid transparent;
+	border-right:1px solid transparent;
 }
 
 .side-thing{
@@ -128,9 +128,8 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	opacity:1;
-	position:sticky;
 	display:flex;
-	border-bottom:1px solid #e1e1e1;
+	border-bottom:1px solid transparent;
 	
 }
 .bar-title{
@@ -203,7 +202,7 @@ a{
 	border-bottom:solid 1px #66b3ff;
 }
 .front{
-	height:600px;
+	height:300px;
 	width:90%;
 	padding-left:10px;
 	padding-right:10px;
@@ -214,7 +213,7 @@ a{
 	background-image:url("sky2.png");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-position: 0px -100px;
+	background-position: 0px -280px;
 	margin-right:auto;
 	
 }
@@ -222,7 +221,7 @@ a{
 	position:absolute;
 	top:50%;
 	left:8%;
-	transform:translateY(-200%);
+	transform:translateY(-70%);
 	width:70%;
 }
 .front-title{
@@ -256,7 +255,7 @@ a{
 	font-size:38px;
 }
 .about-container{
-	width:95%;
+	width:97%;
 	margin-left:auto;
 	margin-right:auto;
 	background:transparent;
@@ -500,7 +499,7 @@ a{
 	border-radius:10px;
 	padding-left:10px;
 	padding-right:30px;
-	width:87%;
+	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
@@ -683,23 +682,23 @@ a{
 
 .part3{
 	width:100%;
-	border-left:1px solid #e1e1e1;
-	border-right:1px solid #e1e1e1;
-	border-top:1px solid #e1e1e1;
+	border-left:1px solid transparent;
+	border-right:1px solid transparent;
+	border-top:1px solid transparent;
 }
 
 
 
 .part1{
-	border-top:1px solid #e1e1e1;
+	border-top:1px solid transparent;
 }
 .part2{
 
-	border-top:1px solid #e1e1e1;
+	border-top:1px solid transparent;
 }
 .part25{
 
-	border-top:1px solid #e1e1e1;
+	border-top:1px solid transparent;
 	padding-bottom:20px;
 }
 
