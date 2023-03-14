@@ -31,9 +31,9 @@ public class HomePage extends WebPage {
 		
 		String aboutP = "Hei, tässä on portfolio koodaus projekteistani. Olen "
 				+"pyrkinyt valitsemaan sekä itseä motivoivia, että kehittäviä "
-				+ "töitä. Olen koodannut vähän yli vuoden ja oppinut aika paljon, mutta tarvitsen toisaalta vielä mentorin "
+				+ "töitä. Olen koodannut noin vuoden ja oppinut aika paljon, mutta tarvitsen vielä mentorin "
 				+ "että saan niitä itse tiedostamattomia asioita korjattua. Haen tällä hetkellä "
-				+ "junioritason paikkaa, mutta tulen mielelläni myös työkokeiluun. "
+				+ "työkokeilu tai junioritason työpaikkaa. "
 				+ " ";
 		abouts.add(new About("about","Portfolio 2023",aboutP));
 		
@@ -76,9 +76,7 @@ public class HomePage extends WebPage {
 				+ "niin ottaa myös ne tilanteet huomioon. Lisäksi Star Wars alkutekstit on aseteltu niin että kaikki rivit "
 				+ "ovat yhtä pitkät, joten kirjainten välinen etäisyys muokkautuu kunkin rivin tekstin leveyden perusteella",
 				"Tein kaikki tarvittavat järjestely algoritmit ja matriisi kertomat itse harjoituksen vuoksi",
-				"Tämä projekti oli ehkä vähän suoraviivaisempi kuin nuo edelliset projektit (OpenGL:ää lukuunottamatta), joten siinä meni lopulta vain noin "
-				+"kolme viikkoa. Tein tällä kertaa UI:n heti ensimmäisenä, koska en ilmeisesti projektien lopussa enää jaksa "
-				+ "keskittyä visuaaleihin"
+			
 		};
 		
 		String[] golfImages = new String[] {
@@ -142,7 +140,7 @@ public class HomePage extends WebPage {
 				"Kopionti ja liittämistyökalut",
 				"Keskittämis työkalu",
 				"Kuvien lisäys mahdollisuus",
-				"Tämän ohjelman tekoon minulla meni yli 4 kuukautta. Opin paljon Android "
+				"Opin paljon Android "
 				+ "Frameworkin työkaluja sekä Javan- ja olio-ohjelmoinnin perusteita. Aloitin projektin useaan kertaan alusta "
 				+ "koska minulle tuli ongelmia suoristuskyvyn ja koodin sekavuuden kanssa. "
 		};
@@ -180,7 +178,6 @@ public class HomePage extends WebPage {
 				"Ylesiä asetuksia esim. playback odotusajalle ja temmolle, sekä tahtilajin muutoksille ",
 				"Ohjelma toimii hyvin kitaran kanssa, mutta toistaiseksi vielä puutteellisesti esimerkiksi pianon kanssa, joten "
 				+ "joitakin parannuksia pitää vielä tehdä",
-				"Tämän projektin tekemisessä suurin osa ajasta meni oikeastaan matematiikkaa opiskellessa. Tein tätä noin kuukauden. "
 		};
 		topics.add(new Topic("topic10",starImages,"Star Chat",i0,p0,ul0,"https://github.com/tagir215/Star-Chat/tree/master/main/java/com/android/starchat",0));		
 		topics.add(new Topic("topic13",metronomeImages,"Visual Metronme",i3,p3,ul3,"https://github.com/tagir215/VisualMetronome/tree/master/main/java/com/example/artmetronome",1));

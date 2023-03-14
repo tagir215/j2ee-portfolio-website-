@@ -116,6 +116,10 @@ body {
 	justify-content:center
 }
 
+
+
+
+
 .bar_tabs{
 	z-index:10;
 	background:white;
@@ -135,30 +139,14 @@ body {
 	margin-top:auto;
 	font-size:30px;
 }
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-
-.name{
-  	font-stretch: ultra-expanded;
-	font-size: 1.4vw;
-	color:grey;
+.bar-logo{
+	width:auto;
+	height:50px;
 	margin-top:auto;
 	margin-bottom:auto;
-	font-weight:bold;
-	margin-left:3vw;
+	margin-left:10px;
 }
+
 .list_tabs {
 	display:flex;
 	margin-bottom:auto;
@@ -195,6 +183,13 @@ a{
 	color: grey;
   	text-decoration: none;  
 }
+
+
+
+
+
+
+
 
 
 
@@ -635,7 +630,6 @@ a{
 
 .end-div{
 	margin-bottom:auto;
-	opacity:0.4;
 	text-align:center;
 }
 .end{
@@ -645,9 +639,11 @@ a{
 }
 .end1{
 	color:grey;
+	opacity:0.5;
 }
 .end2{
 	color:grey;
+	opacity:0.5;
 }
 
 .epic-div{
